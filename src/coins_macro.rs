@@ -5,7 +5,6 @@ macro_rules! coins {
         [$id:expr$(,$($ids:expr),+)?],
         $ident:ident,
         $name:expr,
-        $($link:expr)?,
         $($symbol:ident)?,
         $($duplicate_symbol:expr)?
         $(,)?
@@ -66,19 +65,6 @@ macro_rules! coins {
             /// assert_eq!(Coin::UniformFiscalObject.name(), "Uniform Fiscal Object");
             /// ```
             pub fn name(self) -> String { match self { $(Self::$ident => $name.to_string(), )* } }
-
-            /// Coin link extracted from name according to [SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) spec.
-            /// ```
-            /// use slip44::Coin;
-            ///
-            /// assert_eq!(Coin::Bitcoin.link(), Some("https://bitcoin.org/".to_string()));
-            /// ```
-            pub fn link(self) -> Option<String> {
-                match self {
-                    $($(Self::$ident => Some($link.to_string()), )?)*
-                    _ => None
-                }
-            }
 
             /// Coin symbol that's not included into [Symbol] enum due to being a duplicate of another coin by symbol name.
             /// ```
@@ -219,11 +205,11 @@ mod tests {
     coins!(
         (
             /// OG Crypto
-            [0, 500], Bitcoin, "Bitcoin by Satoshi", "https://bitcoin.org", BTC,
+            [0, 500], Bitcoin, "Bitcoin by Satoshi", BTC,
         ),
         (
             /// Any Crypto's Testnet
-            [1], Testnet, "Testnet (all coins)", , , "TSNT",
+            [1], Testnet, "Testnet (all coins)", , "TSNT",
         ),
     );
 
@@ -233,10 +219,6 @@ mod tests {
         assert_eq!(Coin::Bitcoin.id(), 0);
         assert_eq!(Coin::Bitcoin.ids(), vec![0, 500]);
         assert_eq!(Coin::Bitcoin.name(), "Bitcoin by Satoshi");
-        assert_eq!(
-            Coin::Bitcoin.link(),
-            Some("https://bitcoin.org".to_string())
-        );
         assert_eq!(Coin::Bitcoin.duplicate_symbol(), None);
 
         assert_eq!(Coin::try_from(0), Ok(Coin::Bitcoin));
@@ -244,7 +226,6 @@ mod tests {
 
         assert_eq!(Coin::from(Symbol::BTC), Coin::Bitcoin);
 
-        assert_eq!(Coin::Testnet.link(), None);
         assert_eq!(Coin::Testnet.duplicate_symbol(), Some("TSNT".to_string()));
 
         assert_eq!(Coin::from_str("Bitcoin by Satoshi"), Ok(Coin::Bitcoin));

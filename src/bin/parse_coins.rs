@@ -7,7 +7,7 @@ use reqwest;
 
 const SLIP_0044_MARKDOWN_URL: &str =
     "https://raw.githubusercontent.com/satoshilabs/slips/master/slip-0044.md";
-const SLIP_044_MARKDOWN_HEADER: &str = "Coin type | Path component (`coin_type'`) | Symbol | Coin";
+const SLIP_044_MARKDOWN_HEADER: &str = "| Coin type  | Path component (`coin_type'`) | Symbol  | Coin                              |";
 
 #[derive(Debug)]
 struct CoinType {
@@ -17,34 +17,61 @@ struct CoinType {
     symbol: Option<String>,
     name: String,
     original_name: String,
-    link: Option<String>,
     rustdoc_lines: Vec<String>,
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let coin_types = reqwest::blocking::get(SLIP_0044_MARKDOWN_URL)?
-        .text()?
+    println!("Fetching SLIP-0044 markdown from GitHub...");
+    let markdown_content = reqwest::blocking::get(SLIP_0044_MARKDOWN_URL)?.text()?;
+    println!("Successfully fetched {} bytes of markdown", markdown_content.len());
+
+    println!("Processing markdown content...");
+    let coin_types = markdown_content
         .split("\n")
-        .skip_while(|&line| line != SLIP_044_MARKDOWN_HEADER)
+        .skip_while(|&line| {
+            let skip = line != SLIP_044_MARKDOWN_HEADER;
+            if !skip {
+                println!("Found header line, starting processing...");
+            }
+            skip
+        })
         .skip(2)
         .filter_map(|line| {
-            let columns = line.split('|').collect::<Vec<_>>();
-            if columns.len() != 4 {
+            let columns: Vec<_> = line.split('|').collect();
+            if columns.len() != 6 {
+                println!("Warning: Skipping line due to incorrect number of columns: {}", line);
                 return None;
             }
 
-            let (original_name, link) = parse_markdown_link(columns[3].trim());
+            let original_name = columns[4].trim();
             if original_name.is_empty() || original_name == "reserved" {
+                println!("Warning: Skipping coin due to empty or reserved name: {}", original_name);
                 return None;
             }
 
-            let name = original_name_to_short(original_name).unwrap();
+            let name = match original_name_to_short(original_name) {
+                Ok(n) => n,
+                Err(e) => {
+                    println!("Warning: Skipping coin due to name error: {}", e);
+                    return None;
+                }
+            };
+
+            let id = match columns[1].trim().parse::<u32>() {
+                Ok(id) => id,
+                Err(_) => {
+                    println!("Warning: Skipping coin due to invalid ID: {}", columns[1]);
+                    return None;
+                }
+            };
+
+            println!("Processing coin: {} (ID: {})", original_name, id);
 
             Some(CoinType {
-                id: columns[0].trim().parse().ok()?,
+                id,
                 ids: vec![],
-                path_component: columns[1].trim().to_string(),
-                symbol: Some(columns[2].trim())
+                path_component: columns[2].trim().to_string(),
+                symbol: Some(columns[3].trim())
                     .map(prepend_enum)
                     .map(|symbol| match symbol.as_str() {
                         "$DAG" => "DAG".to_string(),
@@ -53,13 +80,14 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                     .filter(|symbol| !symbol.is_empty()),
                 name: name.to_string(),
                 original_name: original_name.to_string(),
-                link: link.map(ToString::to_string),
                 rustdoc_lines: vec![],
             })
-        })
+        });
+
+    println!("Building coin type map...");
+    let coin_types = coin_types
         .fold(HashMap::<_, CoinType>::new(), |mut acc, coin_type| {
             let id = coin_type.id.clone();
-
             acc.entry((
                 coin_type.symbol.clone(),
                 coin_type.name.clone(),
@@ -69,7 +97,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             .ids
             .push(id);
             acc
-        })
+        });
+
+    println!("Processing {} unique coins...", coin_types.len());
+
+    let coin_types = coin_types
         .into_iter()
         .fold(HashMap::<_, Vec<_>>::new(), |mut acc, (_, coin_type)| {
             acc.entry(coin_type.name.clone())
@@ -80,6 +112,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .into_iter()
         .map(|(_, coin_types)| {
             let coin_types = if coin_types.len() > 1 {
+                println!("Found duplicate coins for name: {}", coin_types[0].name);
                 coin_types
                     .into_iter()
                     .map(|coin_type| CoinType {
@@ -116,65 +149,68 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         })
         .flatten();
 
-    let mut file = std::fs::File::create(
-        Path::new(file!())
-            .parent()
-            .ok_or("can't get first parent")?
-            .parent()
-            .ok_or("can't get second parent")?
-            .join("coin.rs"),
-    )?;
+    println!("Creating output file...");
+    let output_path = Path::new(file!())
+        .parent()
+        .ok_or("can't get first parent")?
+        .parent()
+        .ok_or("can't get second parent")?
+        .join("coin.rs");
+    println!("Writing to: {}", output_path.display());
+
+    let mut file = std::fs::File::create(&output_path)?;
 
     writeln!(&mut file, "// Code generated by {}; DO NOT EDIT.", file!())?;
     writeln!(&mut file, "use crate::coins;")?;
     writeln!(&mut file, "coins!(")?;
 
     let mut seen_symbols = HashSet::<String>::new();
+    let mut coin_count = 0;
 
     for coin_type in coin_types.sorted_by_key(|coin_type| coin_type.id) {
+        coin_count += 1;
+        
+        // Pre-compute escaped symbol if it exists
+        let escaped_symbol = coin_type.symbol.as_ref().map(|s| escape_rust_string(s));
+
         writeln!(
             &mut file,
-            "    (
-        {}
-        [{}], {}, \"{}\", {}, {}, {},
-    ),",
+            "    (\n        {}\n        [{}], {}, \"{}\", {}, {},\n    ),",
             coin_type
                 .rustdoc_lines
                 .into_iter()
                 .filter(|s| !s.is_empty())
-                .join("\n        ///\n        "),
+                .join("\n        "),
             coin_type.ids.into_iter().join(",").to_string(),
             coin_type.name,
-            coin_type.original_name,
-            match coin_type.link {
-                Some(ref link) => format!("\"{}\"", link),
-                None => "".to_string(),
-            },
-            match coin_type.symbol {
-                Some(ref symbol) =>
+            escape_rust_string(&coin_type.original_name),
+            match &escaped_symbol {
+                Some(symbol) => {
                     if seen_symbols.contains(symbol) {
                         ""
                     } else {
                         symbol
-                    },
+                    }
+                }
                 None => "",
-            }
-            .to_string(),
-            match coin_type.symbol.clone() {
-                Some(ref symbol) =>
+            },
+            match &escaped_symbol {
+                Some(symbol) => {
                     if seen_symbols.contains(symbol) {
                         format!("\"{}\"", symbol)
                     } else {
                         seen_symbols.insert(symbol.clone());
-
                         "".to_string()
-                    },
+                    }
+                }
                 None => "".to_string(),
-            }
-            .to_string(),
+            },
         )?;
     }
     writeln!(&mut file, ");")?;
+
+    println!("Successfully wrote {} coins to {}", coin_count, output_path.display());
+    println!("Done!");
 
     Ok(())
 }
@@ -232,4 +268,16 @@ fn prepend_enum(name: &str) -> String {
     } else {
         name.to_string()
     }
+}
+
+fn escape_rust_string(s: &str) -> String {
+    s.replace('@', "") // Remove @ symbols
+     .replace('^', "") // Remove ^ symbols
+     .replace('\'', "") // Remove single quotes
+     .replace('"', "") // Remove double quotes
+     .replace('\\', "") // Remove backslashes
+     .replace('$', "") // Remove dollar signs
+     .chars()
+     .filter(|c| c.is_ascii_alphanumeric() || *c == '_' || *c == ' ' || *c == '-' || *c == '+' || *c == '.' || *c == '(' || *c == ')') // Only allow these characters
+     .collect()
 }

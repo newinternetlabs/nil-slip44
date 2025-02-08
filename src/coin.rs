@@ -3,7234 +3,7303 @@ use crate::coins;
 coins!(
     (
         /// Coin type: 0
-        ///
         /// Symbol: BTC
-        ///
         /// Coin: Bitcoin
-        [0], Bitcoin, "Bitcoin", "https://bitcoin.org/", BTC, ,
+        [0], Bitcoin, "Bitcoin", BTC, ,
     ),
     (
         /// Coin type: 1
-        ///
         /// Coin: Testnet (all coins)
-        [1], Testnet, "Testnet (all coins)", , , ,
+        [1], Testnet, "Testnet (all coins)", , ,
     ),
     (
         /// Coin type: 2
-        ///
         /// Symbol: LTC
-        ///
         /// Coin: Litecoin
-        [2], Litecoin, "Litecoin", "https://litecoin.org/", LTC, ,
+        [2], Litecoin, "Litecoin", LTC, ,
     ),
     (
         /// Coin type: 3
-        ///
         /// Symbol: DOGE
-        ///
         /// Coin: Dogecoin
-        [3], Dogecoin, "Dogecoin", "https://github.com/dogecoin/dogecoin", DOGE, ,
+        [3], Dogecoin, "Dogecoin", DOGE, ,
     ),
     (
         /// Coin type: 4
-        ///
         /// Symbol: RDD
-        ///
         /// Coin: Reddcoin
-        [4], Reddcoin, "Reddcoin", , RDD, ,
+        [4], Reddcoin, "Reddcoin", RDD, ,
     ),
     (
         /// Coin type: 5
-        ///
         /// Symbol: DASH
-        ///
         /// Coin: Dash
-        [5], Dash, "Dash", "https://github.com/dashpay/dash", DASH, ,
+        [5], Dash, "Dash", DASH, ,
     ),
     (
         /// Coin type: 6
-        ///
         /// Symbol: PPC
-        ///
         /// Coin: Peercoin
-        [6], Peercoin, "Peercoin", "https://peercoin.net/", PPC, ,
+        [6], Peercoin, "Peercoin", PPC, ,
     ),
     (
         /// Coin type: 7
-        ///
         /// Symbol: NMC
-        ///
         /// Coin: Namecoin
-        [7], Namecoin, "Namecoin", "https://www.namecoin.org/", NMC, ,
+        [7], Namecoin, "Namecoin", NMC, ,
     ),
     (
         /// Coin type: 8
-        ///
         /// Symbol: FTC
-        ///
         /// Coin: Feathercoin
-        [8], Feathercoin, "Feathercoin", "https://www.feathercoin.com/", FTC, ,
+        [8], Feathercoin, "Feathercoin", FTC, ,
     ),
     (
         /// Coin type: 9
-        ///
         /// Symbol: XCP
-        ///
         /// Coin: Counterparty
-        [9], Counterparty, "Counterparty", "https://counterparty.io/", XCP, ,
+        [9], Counterparty, "Counterparty", XCP, ,
     ),
     (
         /// Coin type: 10
-        ///
         /// Symbol: BLK
-        ///
         /// Coin: Blackcoin
-        [10], Blackcoin, "Blackcoin", "https://blackcoin.org/", BLK, ,
+        [10], Blackcoin, "Blackcoin", BLK, ,
     ),
     (
         /// Coin type: 11
-        ///
         /// Symbol: NSR
-        ///
         /// Coin: NuShares
-        [11], NuShares, "NuShares", "https://nubits.com/nushares/introduction", NSR, ,
+        [11], NuShares, "NuShares", NSR, ,
     ),
     (
         /// Coin type: 12
-        ///
         /// Symbol: NBT
-        ///
         /// Coin: NuBits
-        [12], NuBits, "NuBits", , NBT, ,
+        [12], NuBits, "NuBits", NBT, ,
     ),
     (
         /// Coin type: 13
-        ///
         /// Symbol: MZC
-        ///
         /// Coin: Mazacoin
-        [13], Mazacoin, "Mazacoin", , MZC, ,
+        [13], Mazacoin, "Mazacoin", MZC, ,
     ),
     (
         /// Coin type: 14
-        ///
         /// Symbol: VIA
-        ///
         /// Coin: Viacoin
-        [14], Viacoin, "Viacoin", , VIA, ,
+        [14], Viacoin, "Viacoin", VIA, ,
     ),
     (
         /// Coin type: 15
-        ///
         /// Symbol: XCH
-        ///
         /// Coin: ClearingHouse
-        [15], ClearingHouse, "ClearingHouse", , XCH, ,
+        [15], ClearingHouse, "ClearingHouse", XCH, ,
     ),
     (
         /// Coin type: 16
-        ///
         /// Symbol: RBY
-        ///
         /// Coin: Rubycoin
-        [16], Rubycoin, "Rubycoin", , RBY, ,
+        [16], Rubycoin, "Rubycoin", RBY, ,
     ),
     (
         /// Coin type: 17
-        ///
         /// Symbol: GRS
-        ///
         /// Coin: Groestlcoin
-        [17], Groestlcoin, "Groestlcoin", , GRS, ,
+        [17], Groestlcoin, "Groestlcoin", GRS, ,
     ),
     (
         /// Coin type: 18
-        ///
         /// Symbol: DGC
-        ///
         /// Coin: Digitalcoin
-        [18], Digitalcoin, "Digitalcoin", , DGC, ,
+        [18], Digitalcoin, "Digitalcoin", DGC, ,
     ),
     (
         /// Coin type: 19
-        ///
         /// Symbol: CCN
-        ///
         /// Coin: Cannacoin
-        [19], Cannacoin, "Cannacoin", , CCN, ,
+        [19], Cannacoin, "Cannacoin", CCN, ,
     ),
     (
         /// Coin type: 20
-        ///
         /// Symbol: DGB
-        ///
         /// Coin: DigiByte
-        [20], DigiByte, "DigiByte", , DGB, ,
+        [20], DigiByte, "DigiByte", DGB, ,
     ),
     (
         /// Coin type: 21
-        ///
         /// Coin: Open Assets
-        [21], OpenAssets, "Open Assets", "https://github.com/OpenAssets/open-assets-protocol", , ,
+        [21], OpenAssets, "Open Assets", , ,
     ),
     (
         /// Coin type: 22
-        ///
         /// Symbol: MONA
-        ///
         /// Coin: Monacoin
-        [22], Monacoin, "Monacoin", , MONA, ,
+        [22], Monacoin, "Monacoin", MONA, ,
     ),
     (
         /// Coin type: 23
-        ///
         /// Symbol: CLAM
-        ///
         /// Coin: Clams
-        [23], Clams, "Clams", , CLAM, ,
+        [23], Clams, "Clams", CLAM, ,
     ),
     (
         /// Coin type: 24
-        ///
         /// Symbol: XPM
-        ///
         /// Coin: Primecoin
-        [24], Primecoin, "Primecoin", , XPM, ,
+        [24], Primecoin, "Primecoin", XPM, ,
     ),
     (
         /// Coin type: 25
-        ///
         /// Symbol: NEOS
-        ///
         /// Coin: Neoscoin
-        [25], Neoscoin, "Neoscoin", , NEOS, ,
+        [25], Neoscoin, "Neoscoin", NEOS, ,
     ),
     (
         /// Coin type: 26
-        ///
         /// Symbol: JBS
-        ///
         /// Coin: Jumbucks
-        [26], Jumbucks, "Jumbucks", , JBS, ,
+        [26], Jumbucks, "Jumbucks", JBS, ,
     ),
     (
         /// Coin type: 27
-        ///
         /// Symbol: ZRC
-        ///
         /// Coin: ziftrCOIN
-        [27], ziftrCOIN, "ziftrCOIN", , ZRC, ,
+        [27], ziftrCOIN, "ziftrCOIN", ZRC, ,
     ),
     (
         /// Coin type: 28
-        ///
         /// Symbol: VTC
-        ///
         /// Coin: Vertcoin
-        [28], Vertcoin, "Vertcoin", , VTC, ,
+        [28], Vertcoin, "Vertcoin", VTC, ,
     ),
     (
         /// Coin type: 29
-        ///
         /// Symbol: NXT
-        ///
         /// Coin: NXT
-        [29], NXT, "NXT", , NXT, ,
+        [29], NXT, "NXT", NXT, ,
     ),
     (
         /// Coin type: 30
-        ///
         /// Symbol: BURST
-        ///
         /// Coin: Burst
-        [30], Burst, "Burst", , BURST, ,
+        [30], Burst, "Burst", BURST, ,
     ),
     (
         /// Coin type: 31
-        ///
         /// Symbol: MUE
-        ///
         /// Coin: MonetaryUnit
-        [31], MonetaryUnit, "MonetaryUnit", , MUE, ,
+        [31], MonetaryUnit, "MonetaryUnit", MUE, ,
     ),
     (
         /// Coin type: 32
-        ///
         /// Symbol: ZOOM
-        ///
         /// Coin: Zoom
-        [32], Zoom, "Zoom", , ZOOM, ,
+        [32], Zoom, "Zoom", ZOOM, ,
     ),
     (
         /// Coin type: 33
-        ///
         /// Symbol: VASH
-        ///
         /// Coin: Virtual Cash
-        [33], VirtualCash, "Virtual Cash", "http://www.bitnet.cc/", VASH, ,
+        [33], VirtualCash, "Virtual Cash", VASH, ,
     ),
     (
         /// Coin type: 34
-        ///
         /// Symbol: CDN
-        ///
         /// Coin: Canada eCoin
-        [34], CanadaeCoin, "Canada eCoin", "https://github.com/Canada-eCoin/", CDN, ,
+        [34], CanadaeCoin, "Canada eCoin", CDN, ,
     ),
     (
         /// Coin type: 35
-        ///
         /// Symbol: SDC
-        ///
         /// Coin: ShadowCash
-        [35], ShadowCash, "ShadowCash", , SDC, ,
+        [35], ShadowCash, "ShadowCash", SDC, ,
     ),
     (
         /// Coin type: 36
-        ///
         /// Symbol: PKB
-        ///
         /// Coin: ParkByte
-        [36], ParkByte, "ParkByte", "https://github.com/parkbyte/", PKB, ,
+        [36], ParkByte, "ParkByte", PKB, ,
     ),
     (
         /// Coin type: 37
-        ///
         /// Symbol: PND
-        ///
         /// Coin: Pandacoin
-        [37], Pandacoin, "Pandacoin", , PND, ,
+        [37], Pandacoin, "Pandacoin", PND, ,
     ),
     (
         /// Coin type: 38
-        ///
         /// Symbol: START
-        ///
         /// Coin: StartCOIN
-        [38], StartCOIN, "StartCOIN", , START, ,
+        [38], StartCOIN, "StartCOIN", START, ,
     ),
     (
         /// Coin type: 39
-        ///
         /// Symbol: MOIN
-        ///
         /// Coin: MOIN
-        [39], MOIN, "MOIN", "https://discovermoin.com", MOIN, ,
+        [39], MOIN, "MOIN", MOIN, ,
     ),
     (
         /// Coin type: 40
-        ///
         /// Symbol: EXP
-        ///
         /// Coin: Expanse
-        [40], Expanse, "Expanse", "https://expanse.tech/", EXP, ,
+        [40], Expanse, "Expanse", EXP, ,
     ),
     (
         /// Coin type: 41
-        ///
         /// Symbol: EMC2
-        ///
         /// Coin: Einsteinium
-        [41], Einsteinium, "Einsteinium", "https://www.emc2.foundation/", EMC2, ,
+        [41], Einsteinium, "Einsteinium", EMC2, ,
     ),
     (
         /// Coin type: 42
-        ///
         /// Symbol: DCR
-        ///
         /// Coin: Decred
-        [42], Decred, "Decred", "https://decred.org/", DCR, ,
+        [42], Decred, "Decred", DCR, ,
     ),
     (
         /// Coin type: 43
-        ///
         /// Symbol: XEM
-        ///
         /// Coin: NEM
-        [43], NEM, "NEM", "https://github.com/NemProject", XEM, ,
+        [43], NEM, "NEM", XEM, ,
     ),
     (
         /// Coin type: 44
-        ///
         /// Symbol: PART
-        ///
         /// Coin: Particl
-        [44], Particl, "Particl", "https://particl.io/", PART, ,
+        [44], Particl, "Particl", PART, ,
     ),
     (
         /// Coin type: 45
-        ///
         /// Symbol: ARG
-        ///
         /// Coin: Argentum (dead)
-        [45], Argentum, "Argentum (dead)", , ARG, ,
+        [45], Argentum, "Argentum (dead)", ARG, ,
     ),
     (
         /// Coin type: 46
-        ///
         /// Coin: Libertas
-        [46], Libertas, "Libertas", "https://github.com/dangershony/Libertas", , ,
+        [46], Libertas, "Libertas", , ,
     ),
     (
         /// Coin type: 47
-        ///
         /// Coin: Posw coin
-        [47], Poswcoin, "Posw coin", "https://poswallet.com", , ,
+        [47], Poswcoin, "Posw coin", , ,
     ),
     (
         /// Coin type: 48
-        ///
         /// Symbol: SHR
-        ///
         /// Coin: Shreeji
-        [48], Shreeji, "Shreeji", "https://github.com/SMJBIT/SHREEJI", SHR, ,
+        [48], Shreeji, "Shreeji", SHR, ,
     ),
     (
         /// Coin type: 49
-        ///
         /// Symbol: GCR
-        ///
         /// Coin: Global Currency Reserve (GCRcoin)
-        [49], GlobalCurrencyReserve, "Global Currency Reserve (GCRcoin)", , GCR, ,
+        [49], GlobalCurrencyReserve, "Global Currency Reserve (GCRcoin)", GCR, ,
     ),
     (
         /// Coin type: 50
-        ///
         /// Symbol: NVC
-        ///
         /// Coin: Novacoin
-        [50], Novacoin, "Novacoin", "https://github.com/novacoin-project/novacoin", NVC, ,
+        [50], Novacoin, "Novacoin", NVC, ,
     ),
     (
         /// Coin type: 51
-        ///
         /// Symbol: AC
-        ///
         /// Coin: Asiacoin
-        [51], Asiacoin, "Asiacoin", "https://github.com/AsiaCoin/AsiaCoinFix", AC, ,
+        [51], Asiacoin, "Asiacoin", AC, ,
     ),
     (
         /// Coin type: 52
-        ///
         /// Symbol: BTCD
-        ///
         /// Coin: BitcoinDark
-        [52], BitcoinDark, "BitcoinDark", "https://github.com/jl777/btcd", BTCD, ,
+        [52], BitcoinDark, "BitcoinDark", BTCD, ,
     ),
     (
         /// Coin type: 53
-        ///
         /// Symbol: DOPE
-        ///
         /// Coin: Dopecoin
-        [53], Dopecoin, "Dopecoin", "https://github.com/dopecoin-dev/DopeCoinV3", DOPE, ,
+        [53], Dopecoin, "Dopecoin", DOPE, ,
     ),
     (
         /// Coin type: 54
-        ///
         /// Symbol: TPC
-        ///
         /// Coin: Templecoin
-        [54], Templecoin, "Templecoin", "https://github.com/9cat/templecoin", TPC, ,
+        [54], Templecoin, "Templecoin", TPC, ,
     ),
     (
         /// Coin type: 55
-        ///
         /// Symbol: AIB
-        ///
         /// Coin: AIB
-        [55], AIB, "AIB", "https://github.com/iobond/aib", AIB, ,
+        [55], AIB, "AIB", AIB, ,
     ),
     (
         /// Coin type: 56
-        ///
         /// Symbol: EDRC
-        ///
         /// Coin: EDRCoin
-        [56], EDRCoin, "EDRCoin", "https://github.com/EDRCoin/EDRcoin-src", EDRC, ,
+        [56], EDRCoin, "EDRCoin", EDRC, ,
     ),
     (
         /// Coin type: 57
-        ///
         /// Symbol: SYS
-        ///
         /// Coin: Syscoin
-        [57], Syscoin, "Syscoin", "https://github.com/syscoin/syscoin2", SYS, ,
+        [57], Syscoin, "Syscoin", SYS, ,
     ),
     (
         /// Coin type: 58
-        ///
         /// Symbol: SLR
-        ///
         /// Coin: Solarcoin
-        [58], Solarcoin, "Solarcoin", "https://github.com/onsightit/solarcoin", SLR, ,
+        [58], Solarcoin, "Solarcoin", SLR, ,
     ),
     (
         /// Coin type: 59
-        ///
         /// Symbol: SMLY
-        ///
         /// Coin: Smileycoin
-        [59], Smileycoin, "Smileycoin", "https://github.com/tutor-web/smileyCoin", SMLY, ,
+        [59], Smileycoin, "Smileycoin", SMLY, ,
     ),
     (
         /// Coin type: 60
-        ///
         /// Symbol: ETH
-        ///
         /// Coin: Ether
-        [60], Ether, "Ether", "https://ethereum.org/ether", ETH, ,
+        [60], Ether, "Ether", ETH, ,
     ),
     (
         /// Coin type: 61
-        ///
         /// Symbol: ETC
-        ///
         /// Coin: Ether Classic
-        [61], EtherClassic, "Ether Classic", "https://ethereumclassic.github.io", ETC, ,
+        [61], EtherClassic, "Ether Classic", ETC, ,
     ),
     (
         /// Coin type: 62
-        ///
         /// Symbol: PSB
-        ///
         /// Coin: Pesobit
-        [62], Pesobit, "Pesobit", "https://github.com/pesobitph/pesobit-source", PSB, ,
+        [62], Pesobit, "Pesobit", PSB, ,
     ),
     (
         /// Coin type: 63
-        ///
         /// Symbol: LDCN
-        ///
         /// Coin: Landcoin (dead)
-        [63], Landcoin, "Landcoin (dead)", , LDCN, ,
+        [63], Landcoin, "Landcoin (dead)", LDCN, ,
     ),
     (
         /// Coin type: 64
-        ///
         /// Coin: Open Chain
-        [64], OpenChain, "Open Chain", "https://github.com/openchain/", , ,
+        [64], OpenChain, "Open Chain", , ,
     ),
     (
         /// Coin type: 65
-        ///
         /// Symbol: XBC
-        ///
         /// Coin: Bitcoinplus
-        [65], Bitcoinplus, "Bitcoinplus", "https://bitcoinplus.org", XBC, ,
+        [65], Bitcoinplus, "Bitcoinplus", XBC, ,
     ),
     (
         /// Coin type: 66
-        ///
         /// Symbol: IOP
-        ///
         /// Coin: Internet of People
-        [66], InternetofPeople, "Internet of People", "https://iop.global", IOP, ,
+        [66], InternetofPeople, "Internet of People", IOP, ,
     ),
     (
         /// Coin type: 67
-        ///
         /// Symbol: NXS
-        ///
         /// Coin: Nexus
-        [67], Nexus, "Nexus", "https://nexus.io/", NXS, ,
+        [67], Nexus_NXS, "Nexus", NXS, ,
     ),
     (
         /// Coin type: 68
-        ///
         /// Symbol: INSN
-        ///
         /// Coin: InsaneCoin
-        [68], InsaneCoin, "InsaneCoin", "https://insane.network", INSN, ,
+        [68], InsaneCoin, "InsaneCoin", INSN, ,
     ),
     (
         /// Coin type: 69
-        ///
         /// Symbol: OK
-        ///
         /// Coin: OKCash
-        [69], OKCash, "OKCash", "https://github.com/okcashpro/", OK, ,
+        [69], OKCash, "OKCash", OK, ,
     ),
     (
         /// Coin type: 70
-        ///
         /// Symbol: BRIT
-        ///
         /// Coin: BritCoin
-        [70], BritCoin, "BritCoin", "https://britcoin.com", BRIT, ,
+        [70], BritCoin, "BritCoin", BRIT, ,
     ),
     (
         /// Coin type: 71
-        ///
         /// Symbol: CMP
-        ///
         /// Coin: Compcoin
-        [71], Compcoin, "Compcoin", "https://compcoin.com", CMP, ,
+        [71], Compcoin, "Compcoin", CMP, ,
     ),
     (
         /// Coin type: 72
-        ///
         /// Symbol: CRW
-        ///
         /// Coin: Crown
-        [72], Crown, "Crown", "https://www.crownplatform.com", CRW, ,
+        [72], Crown, "Crown", CRW, ,
     ),
     (
         /// Coin type: 73
-        ///
         /// Symbol: BELA
-        ///
         /// Coin: BelaCoin
-        [73], BelaCoin, "BelaCoin", "http://belacoin.org", BELA, ,
+        [73], BelaCoin, "BelaCoin", BELA, ,
     ),
     (
         /// Coin type: 74
-        ///
         /// Symbol: ICX
-        ///
         /// Coin: ICON
-        [74], ICON, "ICON", "https://icon.foundation/", ICX, ,
+        [74], ICON, "ICON", ICX, ,
     ),
     (
         /// Coin type: 75
-        ///
         /// Symbol: FJC
-        ///
         /// Coin: FujiCoin
-        [75], FujiCoin, "FujiCoin", "https://fujicoin.org/", FJC, ,
+        [75], FujiCoin, "FujiCoin", FJC, ,
     ),
     (
         /// Coin type: 76
-        ///
         /// Symbol: MIX
-        ///
         /// Coin: MIX
-        [76], MIX, "MIX", "https://www.mix-blockchain.org/", MIX, ,
+        [76], MIX, "MIX", MIX, ,
     ),
     (
         /// Coin type: 77
-        ///
         /// Symbol: XVG
-        ///
         /// Coin: Verge Currency
-        [77], VergeCurrency, "Verge Currency", "https://vergecurrency.com/", XVG, ,
+        [77], VergeCurrency, "Verge Currency", XVG, ,
     ),
     (
         /// Coin type: 78
-        ///
         /// Symbol: EFL
-        ///
         /// Coin: Electronic Gulden
-        [78], ElectronicGulden, "Electronic Gulden", "https://egulden.org/", EFL, ,
+        [78], ElectronicGulden, "Electronic Gulden", EFL, ,
     ),
     (
         /// Coin type: 79
-        ///
         /// Symbol: CLUB
-        ///
         /// Coin: ClubCoin
-        [79], ClubCoin, "ClubCoin", "https://clubcoin.co/", CLUB, ,
+        [79], ClubCoin, "ClubCoin", CLUB, ,
     ),
     (
         /// Coin type: 80
-        ///
         /// Symbol: RICHX
-        ///
         /// Coin: RichCoin
-        [80], RichCoin, "RichCoin", "https://richcoin.us/", RICHX, ,
+        [80], RichCoin, "RichCoin", RICHX, ,
     ),
     (
         /// Coin type: 81
-        ///
         /// Symbol: POT
-        ///
         /// Coin: Potcoin
-        [81], Potcoin, "Potcoin", "https://www.potcoin.com", POT, ,
+        [81], Potcoin, "Potcoin", POT, ,
     ),
     (
         /// Coin type: 82
-        ///
         /// Symbol: QRK
-        ///
         /// Coin: Quarkcoin
-        [82], Quarkcoin, "Quarkcoin", , QRK, ,
+        [82], Quarkcoin, "Quarkcoin", QRK, ,
     ),
     (
         /// Coin type: 83
-        ///
         /// Symbol: TRC
-        ///
         /// Coin: Terracoin
-        [83], Terracoin, "Terracoin", "https://terracoin.io/", TRC, ,
+        [83], Terracoin, "Terracoin", TRC, ,
     ),
     (
         /// Coin type: 84
-        ///
         /// Symbol: GRC
-        ///
         /// Coin: Gridcoin
-        [84], Gridcoin, "Gridcoin", , GRC, ,
+        [84], Gridcoin, "Gridcoin", GRC, ,
     ),
     (
         /// Coin type: 85
-        ///
         /// Symbol: AUR
-        ///
         /// Coin: Auroracoin
-        [85], Auroracoin, "Auroracoin", "http://auroracoin.is/", AUR, ,
+        [85], Auroracoin, "Auroracoin", AUR, ,
     ),
     (
         /// Coin type: 86
-        ///
         /// Symbol: IXC
-        ///
         /// Coin: IXCoin
-        [86], IXCoin, "IXCoin", , IXC, ,
+        [86], IXCoin, "IXCoin", IXC, ,
     ),
     (
         /// Coin type: 87
-        ///
         /// Symbol: NLG
-        ///
         /// Coin: Gulden
-        [87], Gulden, "Gulden", "https://Gulden.com/", NLG, ,
+        [87], Gulden, "Gulden", NLG, ,
     ),
     (
         /// Coin type: 88
-        ///
         /// Symbol: BITB
-        ///
         /// Coin: BitBean
-        [88], BitBean, "BitBean", "http://bitbean.org/", BITB, ,
+        [88], BitBean, "BitBean", BITB, ,
     ),
     (
         /// Coin type: 89
-        ///
         /// Symbol: BTA
-        ///
         /// Coin: Bata
-        [89], Bata, "Bata", "http://bata.io/", BTA, ,
+        [89], Bata, "Bata", BTA, ,
     ),
     (
         /// Coin type: 90
-        ///
         /// Symbol: XMY
-        ///
         /// Coin: Myriadcoin
-        [90], Myriadcoin, "Myriadcoin", "http://myriadcoin.org", XMY, ,
+        [90], Myriadcoin, "Myriadcoin", XMY, ,
     ),
     (
         /// Coin type: 91
-        ///
         /// Symbol: BSD
-        ///
         /// Coin: BitSend
-        [91], BitSend, "BitSend", "http://bitsend.info", BSD, ,
+        [91], BitSend, "BitSend", BSD, ,
     ),
     (
         /// Coin type: 92
-        ///
         /// Symbol: UNO
-        ///
         /// Coin: Unobtanium
-        [92], Unobtanium, "Unobtanium", "http://http://unobtanium.uno/", UNO, ,
+        [92], Unobtanium, "Unobtanium", UNO, ,
     ),
     (
         /// Coin type: 93
-        ///
         /// Symbol: MTR
-        ///
         /// Coin: MasterTrader
-        [93], MasterTrader, "MasterTrader", "https://github.com/CrypticApplications/MTR-Update/", MTR, ,
+        [93], MasterTrader, "MasterTrader", MTR, ,
     ),
     (
         /// Coin type: 94
-        ///
         /// Symbol: GB
-        ///
         /// Coin: GoldBlocks
-        [94], GoldBlocks, "GoldBlocks", "https://github.com/goldblockscoin/goldblocks", GB, ,
+        [94], GoldBlocks, "GoldBlocks", GB, ,
     ),
     (
         /// Coin type: 95
-        ///
         /// Symbol: SHM
-        ///
         /// Coin: Saham
-        [95], Saham, "Saham", "https://github.com/SahamDev/SahamDev", SHM, ,
+        [95], Saham, "Saham", SHM, ,
     ),
     (
         /// Coin type: 96
-        ///
         /// Symbol: CRX
-        ///
         /// Coin: Chronos
-        [96], Chronos, "Chronos", "https://github.com/chronoscoin/Chronoscoin", CRX, ,
+        [96], Chronos, "Chronos", CRX, ,
     ),
     (
         /// Coin type: 97
-        ///
         /// Symbol: BIQ
-        ///
         /// Coin: Ubiquoin
-        [97], Ubiquoin, "Ubiquoin", "https://github.com/ubiquoin/ubiq", BIQ, ,
+        [97], Ubiquoin, "Ubiquoin", BIQ, ,
     ),
     (
         /// Coin type: 98
-        ///
         /// Symbol: EVO
-        ///
         /// Coin: Evotion
-        [98], Evotion, "Evotion", "https://github.com/evoshiun/Evotion", EVO, ,
+        [98], Evotion, "Evotion", EVO, ,
     ),
     (
         /// Coin type: 99
-        ///
         /// Symbol: STO
-        ///
         /// Coin: SaveTheOcean
-        [99], SaveTheOcean, "SaveTheOcean", "https://github.com/SaveTheOceanMovement/SaveTheOceanCoin", STO, ,
+        [99], SaveTheOcean, "SaveTheOcean", STO, ,
     ),
     (
         /// Coin type: 100
-        ///
         /// Symbol: BIGUP
-        ///
         /// Coin: BigUp
-        [100], BigUp, "BigUp", "https://github.com/BigUps/", BIGUP, ,
+        [100], BigUp, "BigUp", BIGUP, ,
     ),
     (
         /// Coin type: 101
-        ///
         /// Symbol: GAME
-        ///
         /// Coin: GameCredits
-        [101], GameCredits, "GameCredits", "https://github.com/gamecredits-project", GAME, ,
+        [101], GameCredits, "GameCredits", GAME, ,
     ),
     (
         /// Coin type: 102
-        ///
         /// Symbol: DLC
-        ///
         /// Coin: Dollarcoins
-        [102], Dollarcoins, "Dollarcoins", "https://github.com/dollarcoins/source", DLC, ,
+        [102], Dollarcoins, "Dollarcoins", DLC, ,
     ),
     (
         /// Coin type: 103
-        ///
         /// Symbol: ZYD
-        ///
         /// Coin: Zayedcoin
-        [103], Zayedcoin, "Zayedcoin", "https://github.com/ZayedCoin/Zayedcoin", ZYD, ,
+        [103], Zayedcoin, "Zayedcoin", ZYD, ,
     ),
     (
         /// Coin type: 104
-        ///
         /// Symbol: DBIC
-        ///
         /// Coin: Dubaicoin
-        [104], Dubaicoin, "Dubaicoin", "https://github.com/DubaiCoinDev/DubaiCoin", DBIC, ,
+        [104], Dubaicoin, "Dubaicoin", DBIC, ,
     ),
     (
         /// Coin type: 105
-        ///
         /// Symbol: STRAT
-        ///
         /// Coin: Stratis
-        [105], Stratis, "Stratis", "http://www.stratisplatform.com", STRAT, ,
+        [105], Stratis, "Stratis", STRAT, ,
     ),
     (
         /// Coin type: 106
-        ///
         /// Symbol: SH
-        ///
         /// Coin: Shilling
-        [106], Shilling, "Shilling", "https://github.com/yavwa/Shilling", SH, ,
+        [106], Shilling, "Shilling", SH, ,
     ),
     (
         /// Coin type: 107
-        ///
         /// Symbol: MARS
-        ///
         /// Coin: MarsCoin
-        [107], MarsCoin, "MarsCoin", "http://www.marscoin.org/", MARS, ,
+        [107], MarsCoin, "MarsCoin", MARS, ,
     ),
     (
         /// Coin type: 108
-        ///
         /// Symbol: UBQ
-        ///
         /// Coin: Ubiq
-        [108], Ubiq, "Ubiq", "https://github.com/Ubiq", UBQ, ,
+        [108], Ubiq, "Ubiq", UBQ, ,
     ),
     (
         /// Coin type: 109
-        ///
         /// Symbol: PTC
-        ///
         /// Coin: Pesetacoin
-        [109], Pesetacoin, "Pesetacoin", "http://pesetacoin.info/", PTC, ,
+        [109], Pesetacoin, "Pesetacoin", PTC, ,
     ),
     (
         /// Coin type: 110
-        ///
         /// Symbol: NRO
-        ///
         /// Coin: Neurocoin
-        [110], Neurocoin, "Neurocoin", "https://neurocoin.org", NRO, ,
+        [110], Neurocoin, "Neurocoin", NRO, ,
     ),
     (
         /// Coin type: 111
-        ///
         /// Symbol: ARK
-        ///
         /// Coin: ARK
-        [111], ARK, "ARK", "https://ark.io", ARK, ,
+        [111], ARK, "ARK", ARK, ,
     ),
     (
         /// Coin type: 112
-        ///
         /// Symbol: USC
-        ///
         /// Coin: UltimateSecureCashMain
-        [112], UltimateSecureCashMain, "UltimateSecureCashMain", "http://ultimatesecurecash.info", USC, ,
+        [112], UltimateSecureCashMain, "UltimateSecureCashMain", USC, ,
     ),
     (
         /// Coin type: 113
-        ///
         /// Symbol: THC
-        ///
         /// Coin: Hempcoin
-        [113], Hempcoin, "Hempcoin", "http://hempcoin.org", THC, ,
+        [113], Hempcoin, "Hempcoin", THC, ,
     ),
     (
         /// Coin type: 114
-        ///
         /// Symbol: LINX
-        ///
         /// Coin: Linx
-        [114], Linx, "Linx", "https://mylinx.io", LINX, ,
+        [114], Linx, "Linx", LINX, ,
     ),
     (
         /// Coin type: 115
-        ///
         /// Symbol: ECN
-        ///
         /// Coin: Ecoin
-        [115], Ecoin, "Ecoin", "https://www.ecoinsource.com", ECN, ,
+        [115], Ecoin, "Ecoin", ECN, ,
     ),
     (
         /// Coin type: 116
-        ///
         /// Symbol: DNR
-        ///
         /// Coin: Denarius
-        [116], Denarius, "Denarius", "https://denarius.io", DNR, ,
+        [116], Denarius, "Denarius", DNR, ,
     ),
     (
         /// Coin type: 117
-        ///
         /// Symbol: PINK
-        ///
         /// Coin: Pinkcoin
-        [117], Pinkcoin, "Pinkcoin", "http://getstarted.with.pink", PINK, ,
+        [117], Pinkcoin, "Pinkcoin", PINK, ,
     ),
     (
         /// Coin type: 118
-        ///
         /// Symbol: ATOM
-        ///
         /// Coin: Atom
-        [118], Atom, "Atom", "https://cosmos.network", ATOM, ,
+        [118], Atom, "Atom", ATOM, ,
     ),
     (
         /// Coin type: 119
-        ///
         /// Symbol: PIVX
-        ///
         /// Coin: Pivx
-        [119], Pivx, "Pivx", "https://github.com/PIVX-Project/PIVX", PIVX, ,
+        [119], Pivx, "Pivx", PIVX, ,
     ),
     (
         /// Coin type: 120
-        ///
         /// Symbol: FLASH
-        ///
         /// Coin: Flashcoin
-        [120], Flashcoin, "Flashcoin", "https://flashcoin.io", FLASH, ,
+        [120], Flashcoin, "Flashcoin", FLASH, ,
     ),
     (
         /// Coin type: 121
-        ///
         /// Symbol: ZEN
-        ///
         /// Coin: Zencash
-        [121], Zencash, "Zencash", "https://zensystem.io", ZEN, ,
+        [121], Zencash, "Zencash", ZEN, ,
     ),
     (
         /// Coin type: 122
-        ///
         /// Symbol: PUT
-        ///
         /// Coin: Putincoin
-        [122], Putincoin, "Putincoin", "https://putincoin.info", PUT, ,
+        [122], Putincoin, "Putincoin", PUT, ,
     ),
     (
         /// Coin type: 123
-        ///
         /// Symbol: ZNY
-        ///
         /// Coin: BitZeny
-        [123], BitZeny, "BitZeny", "https://bitzeny.tech/", ZNY, ,
+        [123], BitZeny, "BitZeny", ZNY, ,
     ),
     (
         /// Coin type: 124
-        ///
         /// Symbol: UNIFY
-        ///
         /// Coin: Unify
-        [124], Unify, "Unify", "http://unifycryptocurrency.com", UNIFY, ,
+        [124], Unify, "Unify", UNIFY, ,
     ),
     (
         /// Coin type: 125
-        ///
         /// Symbol: XST
-        ///
         /// Coin: StealthCoin
-        [125], StealthCoin, "StealthCoin", "http://www.stealthcoin.com", XST, ,
+        [125], StealthCoin, "StealthCoin", XST, ,
     ),
     (
         /// Coin type: 126
-        ///
         /// Symbol: BRK
-        ///
         /// Coin: Breakout Coin
-        [126], BreakoutCoin, "Breakout Coin", "http://www.breakoutcoin.com", BRK, ,
+        [126], BreakoutCoin, "Breakout Coin", BRK, ,
     ),
     (
         /// Coin type: 127
-        ///
         /// Symbol: VC
-        ///
         /// Coin: Vcash
-        [127], Vcash, "Vcash", "https://vcash.info", VC, ,
+        [127], Vcash, "Vcash", VC, ,
     ),
     (
         /// Coin type: 128
-        ///
         /// Symbol: XMR
-        ///
         /// Coin: Monero
-        [128], Monero, "Monero", "https://getmonero.org/", XMR, ,
+        [128], Monero, "Monero", XMR, ,
     ),
     (
         /// Coin type: 129
-        ///
         /// Symbol: VOX
-        ///
         /// Coin: Voxels
-        [129], Voxels, "Voxels", "https://www.voxelus.com", VOX, ,
+        [129], Voxels, "Voxels", VOX, ,
     ),
     (
         /// Coin type: 130
-        ///
         /// Symbol: NAV
-        ///
         /// Coin: NavCoin
-        [130], NavCoin, "NavCoin", "https://github.com/navcoindev/navcoin2", NAV, ,
+        [130], NavCoin, "NavCoin", NAV, ,
     ),
     (
         /// Coin type: 131
-        ///
         /// Symbol: FCT
-        ///
         /// Coin: Factom Factoids
-        [131], FactomFactoids, "Factom Factoids", "https://github.com/FactomProject/FactomDocs/blob/master/wallet_info/wallet_test_vectors.md", FCT, ,
+        [131], FactomFactoids, "Factom Factoids", FCT, ,
     ),
     (
         /// Coin type: 132
-        ///
         /// Symbol: EC
-        ///
         /// Coin: Factom Entry Credits
-        [132], FactomEntryCredits, "Factom Entry Credits", "https://github.com/FactomProject", EC, ,
+        [132], FactomEntryCredits, "Factom Entry Credits", EC, ,
     ),
     (
         /// Coin type: 133
-        ///
         /// Symbol: ZEC
-        ///
         /// Coin: Zcash
-        [133], Zcash, "Zcash", "https://z.cash", ZEC, ,
+        [133], Zcash, "Zcash", ZEC, ,
     ),
     (
         /// Coin type: 134
-        ///
         /// Symbol: LSK
-        ///
         /// Coin: Lisk
-        [134], Lisk, "Lisk", "https://lisk.io/", LSK, ,
+        [134], Lisk, "Lisk", LSK, ,
     ),
     (
         /// Coin type: 135
-        ///
         /// Symbol: STEEM
-        ///
         /// Coin: Steem
-        [135], Steem, "Steem", "http://steem.io", STEEM, ,
+        [135], Steem, "Steem", STEEM, ,
     ),
     (
         /// Coin type: 136
-        ///
         /// Symbol: XZC
-        ///
         /// Coin: ZCoin
-        [136], ZCoin, "ZCoin", "https://zcoin.io", XZC, ,
+        [136], ZCoin, "ZCoin", XZC, ,
     ),
     (
         /// Coin type: 137
-        ///
         /// Symbol: RBTC
-        ///
-        /// Coin: RSK
-        [137], RSK, "RSK", "http://www.rsk.co/", RBTC, ,
+        /// Coin: Rootstock
+        [137], Rootstock, "Rootstock", RBTC, ,
     ),
     (
         /// Coin type: 138
-        ///
         /// Coin: Giftblock
-        [138], Giftblock, "Giftblock", "https://github.com/gyft/giftblock", , ,
+        [138], Giftblock, "Giftblock", , ,
     ),
     (
         /// Coin type: 139
-        ///
         /// Symbol: RPT
-        ///
         /// Coin: RealPointCoin
-        [139], RealPointCoin, "RealPointCoin", "https://github.com/MaxSmile/RealPointCoinQt", RPT, ,
+        [139], RealPointCoin, "RealPointCoin", RPT, ,
     ),
     (
         /// Coin type: 140
-        ///
         /// Symbol: LBC
-        ///
         /// Coin: LBRY Credits
-        [140], LBRYCredits, "LBRY Credits", "https://lbry.io/", LBC, ,
+        [140], LBRYCredits, "LBRY Credits", LBC, ,
     ),
     (
         /// Coin type: 141
-        ///
         /// Symbol: KMD
-        ///
         /// Coin: Komodo
-        [141], Komodo, "Komodo", "https://komodoplatform.com/", KMD, ,
+        [141], Komodo, "Komodo", KMD, ,
     ),
     (
         /// Coin type: 142
-        ///
         /// Symbol: BSQ
-        ///
         /// Coin: bisq Token
-        [142], bisqToken, "bisq Token", "http://bisq.io/", BSQ, ,
+        [142], bisqToken, "bisq Token", BSQ, ,
     ),
     (
         /// Coin type: 143
-        ///
         /// Symbol: RIC
-        ///
         /// Coin: Riecoin
-        [143], Riecoin, "Riecoin", "https://github.com/riecoin/riecoin", RIC, ,
+        [143], Riecoin, "Riecoin", RIC, ,
     ),
     (
         /// Coin type: 144
-        ///
         /// Symbol: XRP
-        ///
-        /// Coin: Ripple
-        [144], Ripple, "Ripple", "https://ripple.com", XRP, ,
+        /// Coin: XRP
+        [144], XRP, "XRP", XRP, ,
     ),
     (
         /// Coin type: 145
-        ///
         /// Symbol: BCH
-        ///
         /// Coin: Bitcoin Cash
-        [145], BitcoinCash, "Bitcoin Cash", "https://www.bitcoincash.org", BCH, ,
+        [145], BitcoinCash, "Bitcoin Cash", BCH, ,
     ),
     (
         /// Coin type: 146
-        ///
         /// Symbol: NEBL
-        ///
         /// Coin: Neblio
-        [146], Neblio, "Neblio", "https://nebl.io", NEBL, ,
+        [146], Neblio, "Neblio", NEBL, ,
     ),
     (
         /// Coin type: 147
-        ///
         /// Symbol: ZCL
-        ///
         /// Coin: ZClassic
-        [147], ZClassic, "ZClassic", "http://zclassic.org/", ZCL, ,
+        [147], ZClassic, "ZClassic", ZCL, ,
     ),
     (
         /// Coin type: 148
-        ///
         /// Symbol: XLM
-        ///
         /// Coin: Stellar Lumens
-        [148], StellarLumens, "Stellar Lumens", "https://www.stellar.org/", XLM, ,
+        [148], StellarLumens, "Stellar Lumens", XLM, ,
     ),
     (
         /// Coin type: 149
-        ///
         /// Symbol: NLC2
-        ///
         /// Coin: NoLimitCoin2
-        [149], NoLimitCoin2, "NoLimitCoin2", "http://www.nolimitcoin.org", NLC2, ,
+        [149], NoLimitCoin2, "NoLimitCoin2", NLC2, ,
     ),
     (
         /// Coin type: 150
-        ///
         /// Symbol: WHL
-        ///
         /// Coin: WhaleCoin
-        [150], WhaleCoin, "WhaleCoin", "https://whalecoin.org/", WHL, ,
+        [150], WhaleCoin, "WhaleCoin", WHL, ,
     ),
     (
         /// Coin type: 151
-        ///
         /// Symbol: ERC
-        ///
         /// Coin: EuropeCoin
-        [151], EuropeCoin, "EuropeCoin", "https://www.europecoin.eu.org/", ERC, ,
+        [151], EuropeCoin, "EuropeCoin", ERC, ,
     ),
     (
         /// Coin type: 152
-        ///
         /// Symbol: DMD
-        ///
         /// Coin: Diamond
-        [152], Diamond, "Diamond", "http://bit.diamonds", DMD, ,
+        [152], Diamond, "Diamond", DMD, ,
     ),
     (
         /// Coin type: 153
-        ///
         /// Symbol: BTM
-        ///
         /// Coin: Bytom
-        [153], Bytom, "Bytom", "https://bytom.io", BTM, ,
+        [153], Bytom, "Bytom", BTM, ,
     ),
     (
         /// Coin type: 154
-        ///
         /// Symbol: BIO
-        ///
         /// Coin: Biocoin
-        [154], Biocoin, "Biocoin", "https://biocoin.bio", BIO, ,
+        [154], Biocoin, "Biocoin", BIO, ,
     ),
     (
         /// Coin type: 155
-        ///
         /// Symbol: XWCC
-        ///
         /// Coin: Whitecoin Classic
-        [155], WhitecoinClassic, "Whitecoin Classic", "https://old.whitecoin.info", XWCC, ,
+        [155], WhitecoinClassic, "Whitecoin Classic", XWCC, ,
     ),
     (
         /// Coin type: 156
-        ///
         /// Symbol: BTG
-        ///
         /// Coin: Bitcoin Gold
-        [156], BitcoinGold, "Bitcoin Gold", "http://www.btcgpu.org", BTG, ,
+        [156], BitcoinGold, "Bitcoin Gold", BTG, ,
     ),
     (
         /// Coin type: 157
-        ///
         /// Symbol: BTC2X
-        ///
         /// Coin: Bitcoin 2x
-        [157], Bitcoin2x, "Bitcoin 2x", "https://medium.com/@DCGco/bitcoin-scaling-agreement-at-consensus-2017-133521fe9a77", BTC2X, ,
+        [157], Bitcoin2x, "Bitcoin 2x", BTC2X, ,
     ),
     (
         /// Coin type: 158
-        ///
         /// Symbol: SSN
-        ///
         /// Coin: SuperSkynet
-        [158], SuperSkynet, "SuperSkynet", "http://wwww.superskynet.org/", SSN, ,
+        [158], SuperSkynet, "SuperSkynet", SSN, ,
     ),
     (
         /// Coin type: 159
-        ///
         /// Symbol: TOA
-        ///
         /// Coin: TOACoin
-        [159], TOACoin, "TOACoin", "http://www.toacoin.com", TOA, ,
+        [159], TOACoin, "TOACoin", TOA, ,
     ),
     (
         /// Coin type: 160
-        ///
         /// Symbol: BTX
-        ///
         /// Coin: Bitcore
-        [160], Bitcore, "Bitcore", "https://bitcore.cc", BTX, ,
+        [160], Bitcore, "Bitcore", BTX, ,
     ),
     (
         /// Coin type: 161
-        ///
         /// Symbol: ACC
-        ///
         /// Coin: Adcoin
-        [161], Adcoin, "Adcoin", "https://www.getadcoin.com/", ACC, ,
+        [161], Adcoin, "Adcoin", ACC, ,
     ),
     (
         /// Coin type: 162
-        ///
         /// Symbol: BCO
-        ///
         /// Coin: Bridgecoin
-        [162], Bridgecoin, "Bridgecoin", "https://bridgecoin.org/", BCO, ,
+        [162], Bridgecoin, "Bridgecoin", BCO, ,
     ),
     (
         /// Coin type: 163
-        ///
         /// Symbol: ELLA
-        ///
         /// Coin: Ellaism
-        [163], Ellaism, "Ellaism", "https://ellaism.org", ELLA, ,
+        [163], Ellaism, "Ellaism", ELLA, ,
     ),
     (
         /// Coin type: 164
-        ///
         /// Symbol: PIRL
-        ///
         /// Coin: Pirl
-        [164], Pirl, "Pirl", "https://pirl.io", PIRL, ,
+        [164], Pirl, "Pirl", PIRL, ,
     ),
     (
         /// Coin type: 165
-        ///
-        /// Symbol: NANO
-        ///
+        /// Symbol: XNO
         /// Coin: Nano
-        [165], Nano, "Nano", "https://nano.org", NANO, ,
+        [165], Nano, "Nano", XNO, ,
     ),
     (
         /// Coin type: 166
-        ///
         /// Symbol: VIVO
-        ///
         /// Coin: Vivo
-        [166], Vivo, "Vivo", "https://www.vivocrypto.com/", VIVO, ,
+        [166], Vivo, "Vivo", VIVO, ,
     ),
     (
         /// Coin type: 167
-        ///
         /// Symbol: FRST
-        ///
         /// Coin: Firstcoin
-        [167], Firstcoin, "Firstcoin", "http://firstcoinproject.com", FRST, ,
+        [167], Firstcoin, "Firstcoin", FRST, ,
     ),
     (
         /// Coin type: 168
-        ///
         /// Symbol: HNC
-        ///
         /// Coin: Helleniccoin
-        [168], Helleniccoin, "Helleniccoin", "http://www.helleniccoin.gr/", HNC, ,
+        [168], Helleniccoin, "Helleniccoin", HNC, ,
     ),
     (
         /// Coin type: 169
-        ///
         /// Symbol: BUZZ
-        ///
         /// Coin: BUZZ
-        [169], BUZZ, "BUZZ", "http://www.buzzcoin.info/", BUZZ, ,
+        [169], BUZZ, "BUZZ", BUZZ, ,
     ),
     (
         /// Coin type: 170
-        ///
         /// Symbol: MBRS
-        ///
         /// Coin: Ember
-        [170], Ember, "Ember", "https://www.embercoin.io/", MBRS, ,
+        [170], Ember, "Ember", MBRS, ,
     ),
     (
         /// Coin type: 171
-        ///
         /// Symbol: HC
-        ///
         /// Coin: Hcash
-        [171], Hcash, "Hcash", "https://h.cash", HC, ,
+        [171], Hcash, "Hcash", HC, ,
     ),
     (
         /// Coin type: 172
-        ///
         /// Symbol: HTML
-        ///
         /// Coin: HTMLCOIN
-        [172], HTMLCOIN, "HTMLCOIN", "https://htmlcoin.com/", HTML, ,
+        [172], HTMLCOIN, "HTMLCOIN", HTML, ,
     ),
     (
         /// Coin type: 173
-        ///
         /// Symbol: ODN
-        ///
         /// Coin: Obsidian
-        [173], Obsidian, "Obsidian", "https://obsidianplatform.com/", ODN, ,
+        [173], Obsidian, "Obsidian", ODN, ,
     ),
     (
         /// Coin type: 174
-        ///
         /// Symbol: ONX
-        ///
         /// Coin: OnixCoin
-        [174], OnixCoin, "OnixCoin", "https://www.onixcoin.com/", ONX, ,
+        [174], OnixCoin, "OnixCoin", ONX, ,
     ),
     (
         /// Coin type: 175
-        ///
         /// Symbol: RVN
-        ///
         /// Coin: Ravencoin
-        [175], Ravencoin, "Ravencoin", "https://ravencoin.org/", RVN, ,
+        [175], Ravencoin, "Ravencoin", RVN, ,
     ),
     (
         /// Coin type: 176
-        ///
         /// Symbol: GBX
-        ///
         /// Coin: GoByte
-        [176], GoByte, "GoByte", "https://gobyte.network", GBX, ,
+        [176], GoByte, "GoByte", GBX, ,
     ),
     (
         /// Coin type: 177
-        ///
         /// Symbol: BTCZ
-        ///
         /// Coin: BitcoinZ
-        [177], BitcoinZ, "BitcoinZ", "https://btcz.rocks/en/", BTCZ, ,
+        [177], BitcoinZ, "BitcoinZ", BTCZ, ,
     ),
     (
         /// Coin type: 178
-        ///
         /// Symbol: POA
-        ///
         /// Coin: Poa
-        [178], Poa, "Poa", "https://poa.network", POA, ,
+        [178], Poa, "Poa", POA, ,
     ),
     (
         /// Coin type: 179
-        ///
         /// Symbol: NYC
-        ///
         /// Coin: NewYorkCoin
-        [179], NewYorkCoin, "NewYorkCoin", "http://nycoin.net", NYC, ,
+        [179], NewYorkCoin, "NewYorkCoin", NYC, ,
     ),
     (
         /// Coin type: 180
-        ///
         /// Symbol: MXT
-        ///
         /// Coin: MarteXcoin
-        [180], MarteXcoin, "MarteXcoin", "http://martexcoin.org", MXT, ,
+        [180], MarteXcoin, "MarteXcoin", MXT, ,
     ),
     (
         /// Coin type: 181
-        ///
         /// Symbol: WC
-        ///
         /// Coin: Wincoin
-        [181], Wincoin, "Wincoin", "https://wincoin.co", WC, ,
+        [181], Wincoin, "Wincoin", WC, ,
     ),
     (
         /// Coin type: 182
-        ///
         /// Symbol: MNX
-        ///
         /// Coin: Minexcoin
-        [182], Minexcoin, "Minexcoin", "https://minexcoin.com", MNX, ,
+        [182], Minexcoin, "Minexcoin", MNX, ,
     ),
     (
         /// Coin type: 183
-        ///
         /// Symbol: BTCP
-        ///
         /// Coin: Bitcoin Private
-        [183], BitcoinPrivate, "Bitcoin Private", "https://btcprivate.org", BTCP, ,
+        [183], BitcoinPrivate, "Bitcoin Private", BTCP, ,
     ),
     (
         /// Coin type: 184
-        ///
         /// Symbol: MUSIC
-        ///
         /// Coin: Musicoin
-        [184], Musicoin, "Musicoin", "https://www.musicoin.org", MUSIC, ,
+        [184], Musicoin, "Musicoin", MUSIC, ,
     ),
     (
         /// Coin type: 185
-        ///
         /// Symbol: BCA
-        ///
         /// Coin: Bitcoin Atom
-        [185], BitcoinAtom, "Bitcoin Atom", "https://bitcoinatom.io", BCA, ,
+        [185], BitcoinAtom, "Bitcoin Atom", BCA, ,
     ),
     (
         /// Coin type: 186
-        ///
         /// Symbol: CRAVE
-        ///
         /// Coin: Crave
-        [186], Crave, "Crave", "https://craveproject.net", CRAVE, ,
+        [186], Crave, "Crave", CRAVE, ,
     ),
     (
         /// Coin type: 187
-        ///
         /// Symbol: STAK
-        ///
         /// Coin: STRAKS
-        [187], STRAKS, "STRAKS", "https://straks.io", STAK, ,
+        [187], STRAKS, "STRAKS", STAK, ,
     ),
     (
         /// Coin type: 188
-        ///
         /// Symbol: WBTC
-        ///
         /// Coin: World Bitcoin
-        [188], WorldBitcoin, "World Bitcoin", "http://www.wbtcteam.org/", WBTC, ,
+        [188], WorldBitcoin, "World Bitcoin", WBTC, ,
     ),
     (
         /// Coin type: 189
-        ///
         /// Symbol: LCH
-        ///
         /// Coin: LiteCash
-        [189], LiteCash, "LiteCash", "http://www.litecash.info/", LCH, ,
+        [189], LiteCash, "LiteCash", LCH, ,
     ),
     (
         /// Coin type: 190
-        ///
         /// Symbol: EXCL
-        ///
         /// Coin: ExclusiveCoin
-        [190], ExclusiveCoin, "ExclusiveCoin", "https://exclusivecoin.pw/", EXCL, ,
+        [190], ExclusiveCoin, "ExclusiveCoin", EXCL, ,
     ),
     (
         /// Coin type: 191
-        ///
         /// Coin: Lynx
-        [191], Lynx, "Lynx", "https://getlynx.io", , ,
+        [191], Lynx_191, "Lynx", , ,
     ),
     (
         /// Coin type: 192
-        ///
         /// Symbol: LCC
-        ///
         /// Coin: LitecoinCash
-        [192], LitecoinCash, "LitecoinCash", "https://litecoinca.sh", LCC, ,
+        [192], LitecoinCash, "LitecoinCash", LCC, ,
     ),
     (
         /// Coin type: 193
-        ///
         /// Symbol: XFE
-        ///
         /// Coin: Feirm
-        [193], Feirm, "Feirm", "https://www.feirm.com", XFE, ,
+        [193], Feirm, "Feirm", XFE, ,
     ),
     (
         /// Coin type: 194
-        ///
         /// Symbol: EOS
-        ///
         /// Coin: EOS
-        [194], EOS, "EOS", "https://eos.io", EOS, ,
+        [194], EOS, "EOS", EOS, ,
     ),
     (
         /// Coin type: 195
-        ///
         /// Symbol: TRX
-        ///
         /// Coin: Tron
-        [195], Tron, "Tron", "https://tron.network/enindex.html", TRX, ,
+        [195], Tron, "Tron", TRX, ,
     ),
     (
         /// Coin type: 196
-        ///
         /// Symbol: KOBO
-        ///
         /// Coin: Kobocoin
-        [196], Kobocoin, "Kobocoin", "https://kobocoin.com", KOBO, ,
+        [196], Kobocoin, "Kobocoin", KOBO, ,
     ),
     (
         /// Coin type: 197
-        ///
         /// Symbol: HUSH
-        ///
         /// Coin: HUSH
-        [197], HUSH, "HUSH", "https://myhush.org", HUSH, ,
+        [197], HUSH, "HUSH", HUSH, ,
     ),
     (
         /// Coin type: 198
-        ///
-        /// Symbol: BANANO
-        ///
-        /// Coin: Bananos
-        [198], Bananos, "Bananos", "https://banano.co.in", BANANO, ,
+        /// Symbol: BAN
+        /// Coin: Banano
+        [198], Banano, "Banano", BAN, ,
     ),
     (
         /// Coin type: 199
-        ///
         /// Symbol: ETF
-        ///
         /// Coin: ETF
-        [199], ETF, "ETF", "http://ethereumfog.org", ETF, ,
+        [199], ETF, "ETF", ETF, ,
     ),
     (
         /// Coin type: 200
-        ///
         /// Symbol: OMNI
-        ///
         /// Coin: Omni
-        [200], Omni, "Omni", "http://www.omnilayer.org", OMNI, ,
+        [200], Omni, "Omni", OMNI, ,
     ),
     (
         /// Coin type: 201
-        ///
         /// Symbol: BIFI
-        ///
         /// Coin: BitcoinFile
-        [201], BitcoinFile, "BitcoinFile", "https://www.bitcoinfile.org", BIFI, ,
+        [201], BitcoinFile, "BitcoinFile", BIFI, ,
     ),
     (
         /// Coin type: 202
-        ///
         /// Symbol: UFO
-        ///
         /// Coin: Uniform Fiscal Object
-        [202], UniformFiscalObject, "Uniform Fiscal Object", "https://ufobject.com", UFO, ,
+        [202], UniformFiscalObject, "Uniform Fiscal Object", UFO, ,
     ),
     (
         /// Coin type: 203
-        ///
         /// Symbol: CNMC
-        ///
         /// Coin: Cryptonodes
-        [203], Cryptonodes, "Cryptonodes", "https://www.cryptonodes.ch", CNMC, ,
+        [203], Cryptonodes, "Cryptonodes", CNMC, ,
     ),
     (
         /// Coin type: 204
-        ///
         /// Symbol: BCN
-        ///
         /// Coin: Bytecoin
-        [204], Bytecoin, "Bytecoin", "http://bytecoin.org", BCN, ,
+        [204], Bytecoin, "Bytecoin", BCN, ,
     ),
     (
         /// Coin type: 205
-        ///
         /// Symbol: RIN
-        ///
         /// Coin: Ringo
-        [205], Ringo, "Ringo", "http://dkwzjw.github.io/ringo/", RIN, ,
+        [205], Ringo, "Ringo", RIN, ,
     ),
     (
         /// Coin type: 206
-        ///
         /// Symbol: ATP
-        ///
-        /// Coin: PlatON
-        [206], PlatON, "PlatON", "https://www.platon.network", ATP, ,
+        /// Coin: Alaya
+        [206], Alaya, "Alaya", ATP, ,
     ),
     (
         /// Coin type: 207
-        ///
         /// Symbol: EVT
-        ///
         /// Coin: everiToken
-        [207], everiToken, "everiToken", "https://everiToken.io", EVT, ,
+        [207], everiToken, "everiToken", EVT, ,
     ),
     (
         /// Coin type: 208
-        ///
         /// Symbol: ATN
-        ///
         /// Coin: ATN
-        [208], ATN, "ATN", "https://atn.io", ATN, ,
+        [208], ATN, "ATN", ATN, ,
     ),
     (
         /// Coin type: 209
-        ///
         /// Symbol: BIS
-        ///
         /// Coin: Bismuth
-        [209], Bismuth, "Bismuth", "http://www.bismuth.cz", BIS, ,
+        [209], Bismuth, "Bismuth", BIS, ,
     ),
     (
         /// Coin type: 210
-        ///
         /// Symbol: NEET
-        ///
         /// Coin: NEETCOIN
-        [210], NEETCOIN, "NEETCOIN", "https://neetcoin.jp/", NEET, ,
+        [210], NEETCOIN, "NEETCOIN", NEET, ,
     ),
     (
         /// Coin type: 211
-        ///
         /// Symbol: BOPO
-        ///
         /// Coin: BopoChain
-        [211], BopoChain, "BopoChain", "http://www.bopochain.org/", BOPO, ,
+        [211], BopoChain, "BopoChain", BOPO, ,
     ),
     (
         /// Coin type: 212
-        ///
         /// Symbol: OOT
-        ///
         /// Coin: Utrum
-        [212], Utrum, "Utrum", "https://utrum.io/ootcoin/", OOT, ,
+        [212], Utrum, "Utrum", OOT, ,
     ),
     (
         /// Coin type: 213
-        ///
         /// Symbol: ALIAS
-        ///
         /// Coin: Alias
-        [213], Alias, "Alias", "https://alias.cash/", ALIAS, ,
+        [213], Alias, "Alias", ALIAS, ,
     ),
     (
         /// Coin type: 214
-        ///
         /// Symbol: MONK
-        ///
         /// Coin: Monkey Project
-        [214], MonkeyProject, "Monkey Project", "https://www.monkey.vision", MONK, ,
+        [214], MonkeyProject, "Monkey Project", MONK, ,
     ),
     (
         /// Coin type: 215
-        ///
         /// Symbol: BOXY
-        ///
         /// Coin: BoxyCoin
-        [215], BoxyCoin, "BoxyCoin", "http://www.boxycoin.org/", BOXY, ,
+        [215], BoxyCoin, "BoxyCoin", BOXY, ,
     ),
     (
         /// Coin type: 216
-        ///
         /// Symbol: FLO
-        ///
         /// Coin: Flo
-        [216], Flo, "Flo", "https://www.flo.cash/", FLO, ,
+        [216], Flo, "Flo", FLO, ,
     ),
     (
         /// Coin type: 217
-        ///
         /// Symbol: MEC
-        ///
         /// Coin: Megacoin
-        [217], Megacoin, "Megacoin", "https://www.megacoin.eu", MEC, ,
+        [217], Megacoin, "Megacoin", MEC, ,
     ),
     (
         /// Coin type: 218
-        ///
         /// Symbol: BTDX
-        ///
         /// Coin: BitCloud
-        [218], BitCloud, "BitCloud", "https://bit-cloud.info", BTDX, ,
+        [218], BitCloud, "BitCloud", BTDX, ,
     ),
     (
         /// Coin type: 219
-        ///
         /// Symbol: XAX
-        ///
         /// Coin: Artax
-        [219], Artax, "Artax", "https://www.artaxcoin.org/", XAX, ,
+        [219], Artax, "Artax", XAX, ,
     ),
     (
         /// Coin type: 220
-        ///
         /// Symbol: ANON
-        ///
         /// Coin: ANON
-        [220], ANON, "ANON", "https://www.anonfork.io/", ANON, ,
+        [220], ANON, "ANON", ANON, ,
     ),
     (
         /// Coin type: 221
-        ///
         /// Symbol: LTZ
-        ///
         /// Coin: LitecoinZ
-        [221], LitecoinZ, "LitecoinZ", "https://litecoinz.org/", LTZ, ,
+        [221], LitecoinZ, "LitecoinZ", LTZ, ,
     ),
     (
         /// Coin type: 222
-        ///
         /// Symbol: BITG
-        ///
         /// Coin: Bitcoin Green
-        [222], BitcoinGreen, "Bitcoin Green", "https://savebitcoin.io", BITG, ,
+        [222], BitcoinGreen, "Bitcoin Green", BITG, ,
     ),
     (
         /// Coin type: 223
-        ///
         /// Symbol: ICP
-        ///
         /// Coin: Internet Computer (DFINITY)
-        [223], InternetComputer, "Internet Computer (DFINITY)", "DFINITY", ICP, ,
+        [223], InternetComputer, "Internet Computer (DFINITY)", ICP, ,
     ),
     (
         /// Coin type: 224
-        ///
         /// Symbol: SMART
-        ///
         /// Coin: Smartcash
-        [224], Smartcash, "Smartcash", "https://smartcash.cc", SMART, ,
+        [224], Smartcash, "Smartcash", SMART, ,
     ),
     (
         /// Coin type: 225
-        ///
         /// Symbol: XUEZ
-        ///
         /// Coin: XUEZ
-        [225], XUEZ, "XUEZ", "https://xuezcoin.com", XUEZ, ,
+        [225], XUEZ, "XUEZ", XUEZ, ,
     ),
     (
         /// Coin type: 226
-        ///
         /// Symbol: HLM
-        ///
         /// Coin: Helium
-        [226], Helium_HLM, "Helium", "https://www.heliumlabs.org/", HLM, ,
+        [226], Helium_HLM, "Helium", HLM, ,
     ),
     (
         /// Coin type: 227
-        ///
         /// Symbol: WEB
-        ///
         /// Coin: Webchain
-        [227], Webchain, "Webchain", "https://webchain.network/", WEB, ,
+        [227], Webchain, "Webchain", WEB, ,
     ),
     (
         /// Coin type: 228
-        ///
         /// Symbol: ACM
-        ///
         /// Coin: Actinium
-        [228], Actinium, "Actinium", "https://actinium.org", ACM, ,
+        [228], Actinium, "Actinium", ACM, ,
     ),
     (
         /// Coin type: 229
-        ///
         /// Symbol: NOS
-        ///
         /// Coin: NOS Stable Coins
-        [229], NOSStableCoins, "NOS Stable Coins", "https://nos.cash", NOS, ,
+        [229], NOSStableCoins, "NOS Stable Coins", NOS, ,
     ),
     (
         /// Coin type: 230
-        ///
         /// Symbol: BITC
-        ///
         /// Coin: BitCash
-        [230], BitCash, "BitCash", "https://www.choosebitcash.com", BITC, ,
+        [230], BitCash, "BitCash", BITC, ,
     ),
     (
         /// Coin type: 231
-        ///
         /// Symbol: HTH
-        ///
         /// Coin: Help The Homeless Coin
-        [231], HelpTheHomelessCoin, "Help The Homeless Coin", "https://hthcoin.world", HTH, ,
+        [231], HelpTheHomelessCoin, "Help The Homeless Coin", HTH, ,
     ),
     (
         /// Coin type: 232
-        ///
         /// Symbol: TZC
-        ///
         /// Coin: Trezarcoin
-        [232], Trezarcoin, "Trezarcoin", "https://trezarcoin.com", TZC, ,
+        [232], Trezarcoin, "Trezarcoin", TZC, ,
     ),
     (
         /// Coin type: 233
-        ///
         /// Symbol: VAR
-        ///
         /// Coin: Varda
-        [233], Varda, "Varda", "https://varda.io", VAR, ,
+        [233], Varda, "Varda", VAR, ,
     ),
     (
         /// Coin type: 234
-        ///
         /// Symbol: IOV
-        ///
         /// Coin: IOV
-        [234], IOV, "IOV", "https://www.iov.one", IOV, ,
+        [234], IOV, "IOV", IOV, ,
     ),
     (
         /// Coin type: 235
-        ///
         /// Symbol: FIO
-        ///
         /// Coin: FIO
-        [235], FIO, "FIO", "https://fioprotocol.io", FIO, ,
+        [235], FIO, "FIO", FIO, ,
     ),
     (
         /// Coin type: 236
-        ///
         /// Symbol: BSV
-        ///
         /// Coin: BitcoinSV
-        [236], BitcoinSV, "BitcoinSV", "https://bitcoinsv.io", BSV, ,
+        [236], BitcoinSV, "BitcoinSV", BSV, ,
     ),
     (
         /// Coin type: 237
-        ///
         /// Symbol: DXN
-        ///
         /// Coin: DEXON
-        [237], DEXON, "DEXON", "https://dexon.org/", DXN, ,
+        [237], DEXON, "DEXON", DXN, ,
     ),
     (
         /// Coin type: 238
-        ///
         /// Symbol: QRL
-        ///
         /// Coin: Quantum Resistant Ledger
-        [238], QuantumResistantLedger, "Quantum Resistant Ledger", "https://www.theqrl.org/", QRL, ,
+        [238], QuantumResistantLedger, "Quantum Resistant Ledger", QRL, ,
     ),
     (
         /// Coin type: 239
-        ///
         /// Symbol: PCX
-        ///
         /// Coin: ChainX
-        [239], ChainX, "ChainX", "https://github.com/chainx-org/ChainX", PCX, ,
+        [239], ChainX, "ChainX", PCX, ,
     ),
     (
         /// Coin type: 240
-        ///
         /// Symbol: LOKI
-        ///
         /// Coin: Loki
-        [240], Loki, "Loki", "https://github.com/loki-project/loki", LOKI, ,
+        [240], Loki, "Loki", LOKI, ,
     ),
     (
         /// Coin type: 241
-        ///
         /// Coin: Imagewallet
-        [241], Imagewallet, "Imagewallet", "https://imagewallet.io", , ,
+        [241], Imagewallet, "Imagewallet", , ,
     ),
     (
         /// Coin type: 242
-        ///
         /// Symbol: NIM
-        ///
         /// Coin: Nimiq
-        [242], Nimiq, "Nimiq", "https://nimiq.com/", NIM, ,
+        [242], Nimiq, "Nimiq", NIM, ,
     ),
     (
         /// Coin type: 243
-        ///
         /// Symbol: SOV
-        ///
         /// Coin: Sovereign Coin
-        [243], SovereignCoin, "Sovereign Coin", "http://www.sovcore.org/", SOV, ,
+        [243], SovereignCoin, "Sovereign Coin", SOV, ,
     ),
     (
         /// Coin type: 244
-        ///
         /// Symbol: JCT
-        ///
         /// Coin: Jibital Coin
-        [244], JibitalCoin, "Jibital Coin", "https://jibital.ir/", JCT, ,
+        [244], JibitalCoin, "Jibital Coin", JCT, ,
     ),
     (
         /// Coin type: 245
-        ///
         /// Symbol: SLP
-        ///
         /// Coin: Simple Ledger Protocol
-        [245], SimpleLedgerProtocol, "Simple Ledger Protocol", "https://simpleledger.cash", SLP, ,
+        [245], SimpleLedgerProtocol, "Simple Ledger Protocol", SLP, ,
     ),
     (
         /// Coin type: 246
-        ///
         /// Symbol: EWT
-        ///
         /// Coin: Energy Web
-        [246], EnergyWeb, "Energy Web", "https://energyweb.org", EWT, ,
+        [246], EnergyWeb, "Energy Web", EWT, ,
     ),
     (
         /// Coin type: 247
-        ///
         /// Symbol: UC
-        ///
         /// Coin: Ulord
-        [247], Ulord, "Ulord", "http://ulord.one", UC, ,
+        [247], Ulord, "Ulord", UC, ,
     ),
     (
         /// Coin type: 248
-        ///
         /// Symbol: EXOS
-        ///
         /// Coin: EXOS
-        [248], EXOS, "EXOS", "https://economy.openexo.com", EXOS, ,
+        [248], EXOS, "EXOS", EXOS, ,
     ),
     (
         /// Coin type: 249
-        ///
         /// Symbol: ECA
-        ///
         /// Coin: Electra
-        [249], Electra, "Electra", "https://www.electraproject.org", ECA, ,
+        [249], Electra, "Electra", ECA, ,
     ),
     (
         /// Coin type: 250
-        ///
         /// Symbol: SOOM
-        ///
         /// Coin: Soom
-        [250], Soom, "Soom", "http://www.fourthblockchain.org/", SOOM, ,
+        [250], Soom, "Soom", SOOM, ,
     ),
     (
         /// Coin type: 251
-        ///
         /// Symbol: XRD
-        ///
         /// Coin: Redstone
-        [251], Redstone, "Redstone", "https://www.redstoneplatform.com/", XRD, ,
+        [251], Redstone, "Redstone", XRD, ,
     ),
     (
         /// Coin type: 252
-        ///
         /// Symbol: FREE
-        ///
         /// Coin: FreeCoin
-        [252], FreeCoin, "FreeCoin", "https://web.freepay.biz", FREE, ,
+        [252], FreeCoin, "FreeCoin", FREE, ,
     ),
     (
         /// Coin type: 253
-        ///
         /// Symbol: NPW
-        ///
         /// Coin: NewPowerCoin
-        [253], NewPowerCoin, "NewPowerCoin", "https://npw.live", NPW, ,
+        [253], NewPowerCoin, "NewPowerCoin", NPW, ,
     ),
     (
         /// Coin type: 254
-        ///
         /// Symbol: BST
-        ///
         /// Coin: BlockStamp
-        [254], BlockStamp, "BlockStamp", "https://blockstamp.info", BST, ,
+        [254], BlockStamp, "BlockStamp", BST, ,
     ),
     (
         /// Coin type: 255
-        ///
         /// Coin: SmartHoldem
-        [255], SmartHoldem, "SmartHoldem", "https://smartholdem.io", , ,
+        [255], SmartHoldem, "SmartHoldem", , ,
     ),
     (
         /// Coin type: 256
-        ///
         /// Symbol: NANO
-        ///
         /// Coin: Bitcoin Nano
-        [256], BitcoinNano, "Bitcoin Nano", "https://www.btcnano.org", , "NANO",
+        [256], BitcoinNano, "Bitcoin Nano", NANO, ,
     ),
     (
         /// Coin type: 257
-        ///
         /// Symbol: BTCC
-        ///
         /// Coin: Bitcoin Core
-        [257], BitcoinCore, "Bitcoin Core", "https://thebitcoincore.org", BTCC, ,
+        [257], BitcoinCore, "Bitcoin Core", BTCC, ,
     ),
     (
         /// Coin type: 258
-        ///
         /// Coin: Zen Protocol
-        [258], ZenProtocol, "Zen Protocol", "https://www.zenprotocol.com/", , ,
+        [258], ZenProtocol, "Zen Protocol", , ,
     ),
     (
         /// Coin type: 259
-        ///
         /// Symbol: ZEST
-        ///
         /// Coin: Zest
-        [259], Zest, "Zest", "https://www.zestcoin.io", ZEST, ,
+        [259], Zest, "Zest", ZEST, ,
     ),
     (
         /// Coin type: 260
-        ///
         /// Symbol: ABT
-        ///
         /// Coin: ArcBlock
-        [260], ArcBlock, "ArcBlock", "https://arcblock.io", ABT, ,
+        [260], ArcBlock, "ArcBlock", ABT, ,
     ),
     (
         /// Coin type: 261
-        ///
         /// Symbol: PION
-        ///
         /// Coin: Pion
-        [261], Pion, "Pion", "https://pioncoin.org/", PION, ,
+        [261], Pion, "Pion", PION, ,
     ),
     (
         /// Coin type: 262
-        ///
         /// Symbol: DT3
-        ///
         /// Coin: DreamTeam3
-        [262], DreamTeam3, "DreamTeam3", "https://crypto-dreamteam.com", DT3, ,
+        [262], DreamTeam3, "DreamTeam3", DT3, ,
     ),
     (
         /// Coin type: 263
-        ///
         /// Symbol: ZBUX
-        ///
         /// Coin: Zbux
-        [263], Zbux, "Zbux", "https://z-bux.org", ZBUX, ,
+        [263], Zbux, "Zbux", ZBUX, ,
     ),
     (
         /// Coin type: 264
-        ///
         /// Symbol: KPL
-        ///
         /// Coin: Kepler
-        [264], Kepler, "Kepler", "https://kepler.cash", KPL, ,
+        [264], Kepler, "Kepler", KPL, ,
     ),
     (
         /// Coin type: 265
-        ///
         /// Symbol: TPAY
-        ///
         /// Coin: TokenPay
-        [265], TokenPay, "TokenPay", "https://tokenpay.com", TPAY, ,
+        [265], TokenPay, "TokenPay", TPAY, ,
     ),
     (
         /// Coin type: 266
-        ///
         /// Symbol: ZILLA
-        ///
         /// Coin: ChainZilla
-        [266], ChainZilla, "ChainZilla", "https://www.chainzilla.io", ZILLA, ,
+        [266], ChainZilla, "ChainZilla", ZILLA, ,
     ),
     (
         /// Coin type: 267
-        ///
         /// Symbol: ANK
-        ///
         /// Coin: Anker
-        [267], Anker, "Anker", "https://ankerid.com", ANK, ,
+        [267], Anker, "Anker", ANK, ,
     ),
     (
         /// Coin type: 268
-        ///
         /// Symbol: BCC
-        ///
         /// Coin: BCChain
-        [268], BCChain, "BCChain", "https://github.com/bc-chain/BCC", BCC, ,
+        [268], BCChain, "BCChain", BCC, ,
     ),
     (
         /// Coin type: 269
-        ///
         /// Symbol: HPB
-        ///
         /// Coin: HPB
-        [269], HPB, "HPB", "https://hpb.io", HPB, ,
+        [269], HPB, "HPB", HPB, ,
     ),
     (
         /// Coin type: 270
-        ///
         /// Symbol: ONE
-        ///
         /// Coin: ONE
-        [270], ONE, "ONE", "http://www.onechain.one/", ONE, ,
+        [270], ONE, "ONE", ONE, ,
     ),
     (
         /// Coin type: 271
-        ///
         /// Symbol: SBC
-        ///
         /// Coin: SBC
-        [271], SBC, "SBC", "http://www.smartbitcoin.one", SBC, ,
+        [271], SBC, "SBC", SBC, ,
     ),
     (
         /// Coin type: 272
-        ///
         /// Symbol: IPC
-        ///
         /// Coin: IPChain
-        [272], IPChain, "IPChain", "https://www.ipcchain.org", IPC, ,
+        [272], IPChain, "IPChain", IPC, ,
     ),
     (
         /// Coin type: 273
-        ///
         /// Symbol: DMTC
-        ///
         /// Coin: Dominantchain
-        [273], Dominantchain, "Dominantchain", "https://dominantchain.com/", DMTC, ,
+        [273], Dominantchain, "Dominantchain", DMTC, ,
     ),
     (
         /// Coin type: 274
-        ///
         /// Symbol: OGC
-        ///
         /// Coin: Onegram
-        [274], Onegram, "Onegram", "https://onegram.org/", OGC, ,
+        [274], Onegram, "Onegram", OGC, ,
     ),
     (
         /// Coin type: 275
-        ///
         /// Symbol: SHIT
-        ///
         /// Coin: Shitcoin
-        [275], Shitcoin, "Shitcoin", "https://shitcoin.org", SHIT, ,
+        [275], Shitcoin, "Shitcoin", SHIT, ,
     ),
     (
         /// Coin type: 276
-        ///
         /// Symbol: ANDES
-        ///
         /// Coin: Andescoin
-        [276], Andescoin, "Andescoin", "https://andes-coin.com", ANDES, ,
+        [276], Andescoin, "Andescoin", ANDES, ,
     ),
     (
         /// Coin type: 277
-        ///
         /// Symbol: AREPA
-        ///
         /// Coin: Arepacoin
-        [277], Arepacoin, "Arepacoin", "https://arepacoinve.info", AREPA, ,
+        [277], Arepacoin, "Arepacoin", AREPA, ,
     ),
     (
         /// Coin type: 278
-        ///
         /// Symbol: BOLI
-        ///
         /// Coin: Bolivarcoin
-        [278], Bolivarcoin, "Bolivarcoin", "https://bolis.info", BOLI, ,
+        [278], Bolivarcoin, "Bolivarcoin", BOLI, ,
     ),
     (
         /// Coin type: 279
-        ///
         /// Symbol: RIL
-        ///
         /// Coin: Rilcoin
-        [279], Rilcoin, "Rilcoin", "https://www.rilcoincrypto.org", RIL, ,
+        [279], Rilcoin, "Rilcoin", RIL, ,
     ),
     (
         /// Coin type: 280
-        ///
         /// Symbol: HTR
-        ///
         /// Coin: Hathor Network
-        [280], HathorNetwork, "Hathor Network", "https://hathor.network/", HTR, ,
+        [280], HathorNetwork, "Hathor Network", HTR, ,
     ),
     (
         /// Coin type: 281
-        ///
-        /// Symbol: FCTID
-        ///
-        /// Coin: Factom ID
-        [281], FactomID, "Factom ID", "https://github.com/FactomProject", FCTID, ,
+        /// Symbol: ACME
+        /// Coin: Accumulate
+        [281], Accumulate, "Accumulate", ACME, ,
     ),
     (
         /// Coin type: 282
-        ///
         /// Symbol: BRAVO
-        ///
         /// Coin: BRAVO
-        [282], BRAVO, "BRAVO", "https://bravocoin.com/", BRAVO, ,
+        [282], BRAVO, "BRAVO", BRAVO, ,
     ),
     (
         /// Coin type: 283
-        ///
         /// Symbol: ALGO
-        ///
         /// Coin: Algorand
-        [283], Algorand, "Algorand", "https://www.algorand.com/", ALGO, ,
+        [283], Algorand, "Algorand", ALGO, ,
     ),
     (
         /// Coin type: 284
-        ///
         /// Symbol: BZX
-        ///
         /// Coin: Bitcoinzero
-        [284], Bitcoinzero, "Bitcoinzero", "https://bitcoinzerox.net", BZX, ,
+        [284], Bitcoinzero, "Bitcoinzero", BZX, ,
     ),
     (
         /// Coin type: 285
-        ///
         /// Symbol: GXX
-        ///
         /// Coin: GravityCoin
-        [285], GravityCoin, "GravityCoin", "https://www.gravitycoin.io/", GXX, ,
+        [285], GravityCoin, "GravityCoin", GXX, ,
     ),
     (
         /// Coin type: 286
-        ///
         /// Symbol: HEAT
-        ///
         /// Coin: HEAT
-        [286], HEAT, "HEAT", "https://heatledger.com/", HEAT, ,
+        [286], HEAT, "HEAT", HEAT, ,
     ),
     (
         /// Coin type: 287
-        ///
         /// Symbol: XDN
-        ///
         /// Coin: DigitalNote
-        [287], DigitalNote, "DigitalNote", "https://digitalnote.biz", XDN, ,
+        [287], DigitalNote, "DigitalNote", XDN, ,
     ),
     (
         /// Coin type: 288
-        ///
         /// Symbol: FSN
-        ///
         /// Coin: FUSION
-        [288], FUSION, "FUSION", "https://www.fusion.org/", FSN, ,
+        [288], FUSION, "FUSION", FSN, ,
     ),
     (
         /// Coin type: 289
-        ///
         /// Symbol: CPC
-        ///
         /// Coin: Capricoin
-        [289], Capricoin, "Capricoin", "https://capricoin.org", CPC, ,
+        [289], Capricoin, "Capricoin", CPC, ,
     ),
     (
         /// Coin type: 290
-        ///
         /// Symbol: BOLD
-        ///
         /// Coin: Bold
-        [290], Bold, "Bold", "https://boldprivate.network", BOLD, ,
+        [290], Bold, "Bold", BOLD, ,
     ),
     (
         /// Coin type: 291
-        ///
         /// Symbol: IOST
-        ///
         /// Coin: IOST
-        [291], IOST, "IOST", "https://iost.io/", IOST, ,
+        [291], IOST, "IOST", IOST, ,
     ),
     (
         /// Coin type: 292
-        ///
         /// Symbol: TKEY
-        ///
         /// Coin: Tkeycoin
-        [292], Tkeycoin, "Tkeycoin", "https://tkeycoin.com", TKEY, ,
+        [292], Tkeycoin, "Tkeycoin", TKEY, ,
     ),
     (
         /// Coin type: 293
-        ///
         /// Symbol: USE
-        ///
         /// Coin: Usechain
-        [293], Usechain, "Usechain", "https://usechain.net", USE, ,
+        [293], Usechain, "Usechain", USE, ,
     ),
     (
         /// Coin type: 294
-        ///
         /// Symbol: BCZ
-        ///
         /// Coin: BitcoinCZ
-        [294], BitcoinCZ, "BitcoinCZ", "https://www.bitcoincz.org/", BCZ, ,
+        [294], BitcoinCZ, "BitcoinCZ", BCZ, ,
     ),
     (
         /// Coin type: 295
-        ///
         /// Symbol: IOC
-        ///
         /// Coin: Iocoin
-        [295], Iocoin, "Iocoin", "https://iocoin.io", IOC, ,
+        [295], Iocoin, "Iocoin", IOC, ,
     ),
     (
         /// Coin type: 296
-        ///
         /// Symbol: ASF
-        ///
         /// Coin: Asofe
-        [296], Asofe, "Asofe", "https://github.com/TheLightSide/asofe", ASF, ,
+        [296], Asofe, "Asofe", ASF, ,
     ),
     (
         /// Coin type: 297
-        ///
         /// Symbol: MASS
-        ///
         /// Coin: MASS
-        [297], MASS, "MASS", "https://www.massnet.org", MASS, ,
+        [297], MASS, "MASS", MASS, ,
     ),
     (
         /// Coin type: 298
-        ///
         /// Symbol: FAIR
-        ///
         /// Coin: FairCoin
-        [298], FairCoin, "FairCoin", "https://faircoin.world/", FAIR, ,
+        [298], FairCoin, "FairCoin", FAIR, ,
     ),
     (
         /// Coin type: 299
-        ///
         /// Symbol: NUKO
-        ///
         /// Coin: Nekonium
-        [299], Nekonium, "Nekonium", "https://nekonium.github.io/", NUKO, ,
+        [299], Nekonium, "Nekonium", NUKO, ,
     ),
     (
         /// Coin type: 300
-        ///
         /// Symbol: GNX
-        ///
         /// Coin: Genaro Network
-        [300], GenaroNetwork, "Genaro Network", "https://genaro.network/", GNX, ,
+        [300], GenaroNetwork, "Genaro Network", GNX, ,
     ),
     (
         /// Coin type: 301
-        ///
         /// Symbol: DIVI
-        ///
         /// Coin: Divi Project
-        [301], DiviProject, "Divi Project", "https://diviproject.org", DIVI, ,
+        [301], DiviProject, "Divi Project", DIVI, ,
     ),
     (
         /// Coin type: 302
-        ///
         /// Symbol: CMT
-        ///
         /// Coin: Community
-        [302], Community, "Community", "https://thecriptocommunity.com", CMT, ,
+        [302], Community, "Community", CMT, ,
     ),
     (
         /// Coin type: 303
-        ///
         /// Symbol: EUNO
-        ///
         /// Coin: EUNO
-        [303], EUNO, "EUNO", "https://euno.co/", EUNO, ,
+        [303], EUNO, "EUNO", EUNO, ,
     ),
     (
         /// Coin type: 304
-        ///
         /// Symbol: IOTX
-        ///
         /// Coin: IoTeX
-        [304], IoTeX, "IoTeX", "https://iotex.io/", IOTX, ,
+        [304], IoTeX, "IoTeX", IOTX, ,
     ),
     (
         /// Coin type: 305
-        ///
         /// Symbol: ONION
-        ///
         /// Coin: DeepOnion
-        [305], DeepOnion, "DeepOnion", "https://deeponion.org", ONION, ,
+        [305], DeepOnion, "DeepOnion", ONION, ,
     ),
     (
         /// Coin type: 306
-        ///
         /// Symbol: _8BIT
-        ///
         /// Coin: 8Bit
-        [306], _8Bit, "8Bit", "https://8bit.cash", _8BIT, ,
+        [306], _8Bit, "8Bit", _8BIT, ,
     ),
     (
         /// Coin type: 307
-        ///
         /// Symbol: ATC
-        ///
         /// Coin: AToken Coin
-        [307], ATokenCoin, "AToken Coin", "https://www.atoken.com/", ATC, ,
+        [307], ATokenCoin, "AToken Coin", ATC, ,
     ),
     (
         /// Coin type: 308
-        ///
         /// Symbol: BTS
-        ///
         /// Coin: Bitshares
-        [308], Bitshares, "Bitshares", "https://bitshares.org/", BTS, ,
+        [308], Bitshares, "Bitshares", BTS, ,
     ),
     (
         /// Coin type: 309
-        ///
         /// Symbol: CKB
-        ///
         /// Coin: Nervos CKB
-        [309], NervosCKB, "Nervos CKB", "https://www.nervos.org", CKB, ,
+        [309], NervosCKB, "Nervos CKB", CKB, ,
     ),
     (
         /// Coin type: 310
-        ///
         /// Symbol: UGAS
-        ///
         /// Coin: Ultrain
-        [310], Ultrain, "Ultrain", "https://www.ultrain.io/", UGAS, ,
+        [310], Ultrain, "Ultrain", UGAS, ,
     ),
     (
         /// Coin type: 311
-        ///
         /// Symbol: ADS
-        ///
         /// Coin: Adshares
-        [311], Adshares, "Adshares", "https://adshares.net/", ADS, ,
+        [311], Adshares, "Adshares", ADS, ,
     ),
     (
         /// Coin type: 312
-        ///
         /// Symbol: ARA
-        ///
         /// Coin: Aura
-        [312], Aura, "Aura", "https://auraledger.com/", ARA, ,
+        [312], Aura, "Aura", ARA, ,
     ),
     (
         /// Coin type: 313
-        ///
         /// Symbol: ZIL
-        ///
         /// Coin: Zilliqa
-        [313], Zilliqa, "Zilliqa", "https://zilliqa.com/", ZIL, ,
+        [313], Zilliqa, "Zilliqa", ZIL, ,
     ),
     (
         /// Coin type: 314
-        ///
         /// Symbol: MOAC
-        ///
         /// Coin: MOAC
-        [314], MOAC, "MOAC", "https://moac.io/", MOAC, ,
+        [314], MOAC, "MOAC", MOAC, ,
     ),
     (
         /// Coin type: 315
-        ///
         /// Symbol: SWTC
-        ///
         /// Coin: SWTC
-        [315], SWTC, "SWTC", "http://swtc.top/", SWTC, ,
+        [315], SWTC, "SWTC", SWTC, ,
     ),
     (
         /// Coin type: 316
-        ///
         /// Symbol: VNSC
-        ///
         /// Coin: vnscoin
-        [316], vnscoin, "vnscoin", "http://www.vnscoin.org/", VNSC, ,
+        [316], vnscoin, "vnscoin", VNSC, ,
     ),
     (
         /// Coin type: 317
-        ///
         /// Symbol: PLUG
-        ///
         /// Coin: Pl^g
-        [317], Plug, "Pl^g", "https://www.poweredbyplug.com/", PLUG, ,
+        [317], Plug, "Plg", PLUG, ,
     ),
     (
         /// Coin type: 318
-        ///
         /// Symbol: MAN
-        ///
         /// Coin: Matrix AI Network
-        [318], MatrixAINetwork, "Matrix AI Network", "https://www.matrix.io/", MAN, ,
+        [318], MatrixAINetwork, "Matrix AI Network", MAN, ,
     ),
     (
         /// Coin type: 319
-        ///
         /// Symbol: ECC
-        ///
         /// Coin: ECCoin
-        [319], ECCoin, "ECCoin", "https://ecc.network", ECC, ,
+        [319], ECCoin, "ECCoin", ECC, ,
     ),
     (
         /// Coin type: 320
-        ///
         /// Symbol: RPD
-        ///
         /// Coin: Rapids
-        [320], Rapids, "Rapids", "https://www.rapidsnetwork.io/", RPD, ,
+        [320], Rapids, "Rapids", RPD, ,
     ),
     (
         /// Coin type: 321
-        ///
         /// Symbol: RAP
-        ///
         /// Coin: Rapture
-        [321], Rapture, "Rapture", "https://our-rapture.com/", RAP, ,
+        [321], Rapture, "Rapture", RAP, ,
     ),
     (
         /// Coin type: 322
-        ///
         /// Symbol: GARD
-        ///
         /// Coin: Hashgard
-        [322], Hashgard, "Hashgard", "https://www.hashgard.io/", GARD, ,
+        [322], Hashgard, "Hashgard", GARD, ,
     ),
     (
         /// Coin type: 323
-        ///
         /// Symbol: ZER
-        ///
         /// Coin: Zero
-        [323], Zero, "Zero", "https://www.zerocurrency.io/", ZER, ,
+        [323], Zero, "Zero", ZER, ,
     ),
     (
         /// Coin type: 324
-        ///
         /// Symbol: EBST
-        ///
         /// Coin: eBoost
-        [324], eBoost, "eBoost", "https://eboost.fun/", EBST, ,
+        [324], eBoost, "eBoost", EBST, ,
     ),
     (
         /// Coin type: 325
-        ///
         /// Symbol: SHARD
-        ///
         /// Coin: Shard
-        [325], Shard, "Shard", "https://shardcoin.io/", SHARD, ,
+        [325], Shard, "Shard", SHARD, ,
     ),
     (
         /// Coin type: 326
-        ///
-        /// Symbol: LINDA
-        ///
-        /// Coin: Linda Coin
-        [326], LindaCoin, "Linda Coin", "https://lindacoin.com/", LINDA, ,
+        /// Symbol: MRX
+        /// Coin: Metrix Coin
+        [326], MetrixCoin, "Metrix Coin", MRX, ,
     ),
     (
         /// Coin type: 327
-        ///
         /// Symbol: CMM
-        ///
         /// Coin: Commercium
-        [327], Commercium, "Commercium", "https://www.commercium.net/", CMM, ,
+        [327], Commercium, "Commercium", CMM, ,
     ),
     (
         /// Coin type: 328
-        ///
         /// Symbol: BLOCK
-        ///
         /// Coin: Blocknet
-        [328], Blocknet, "Blocknet", "https://blocknet.co/", BLOCK, ,
+        [328], Blocknet, "Blocknet", BLOCK, ,
     ),
     (
         /// Coin type: 329
-        ///
         /// Symbol: AUDAX
-        ///
         /// Coin: AUDAX
-        [329], AUDAX, "AUDAX", "https://www.audaxproject.io", AUDAX, ,
+        [329], AUDAX, "AUDAX", AUDAX, ,
     ),
     (
         /// Coin type: 330
-        ///
         /// Symbol: LUNA
-        ///
         /// Coin: Terra
-        [330], Terra, "Terra", "https://terra.money", LUNA, ,
+        [330], Terra, "Terra", LUNA, ,
     ),
     (
         /// Coin type: 331
-        ///
         /// Symbol: ZPM
-        ///
         /// Coin: zPrime
-        [331], zPrime, "zPrime", "https://github.com/zprimecoin/zprime", ZPM, ,
+        [331], zPrime, "zPrime", ZPM, ,
     ),
     (
         /// Coin type: 332
-        ///
         /// Symbol: KUVA
-        ///
         /// Coin: Kuva Utility Note
-        [332], KuvaUtilityNote, "Kuva Utility Note", "https://www.kuvacash.com", KUVA, ,
+        [332], KuvaUtilityNote, "Kuva Utility Note", KUVA, ,
     ),
     (
         /// Coin type: 333
-        ///
         /// Symbol: MEM
-        ///
         /// Coin: MemCoin
-        [333], MemCoin, "MemCoin", "https://memcoin.org", MEM, ,
+        [333], MemCoin, "MemCoin", MEM, ,
     ),
     (
         /// Coin type: 334, 498
-        ///
         /// Symbol: CS
-        ///
         /// Coin: Credits
-        [334,498], Credits, "Credits", "https://credits.com", CS, ,
+        [334,498], Credits, "Credits", CS, ,
     ),
     (
         /// Coin type: 335
-        ///
         /// Symbol: SWIFT
-        ///
         /// Coin: SwiftCash
-        [335], SwiftCash, "SwiftCash", "https://swiftcash.cc", SWIFT, ,
+        [335], SwiftCash, "SwiftCash", SWIFT, ,
     ),
     (
         /// Coin type: 336
-        ///
         /// Symbol: FIX
-        ///
         /// Coin: FIX
-        [336], FIX, "FIX", "https://fix.network", FIX, ,
+        [336], FIX, "FIX", FIX, ,
     ),
     (
         /// Coin type: 337
-        ///
         /// Symbol: CPC
-        ///
         /// Coin: CPChain
-        [337], CPChain, "CPChain", "https://cpchain.io", , "CPC",
+        [337], CPChain, "CPChain", , "CPC",
     ),
     (
         /// Coin type: 338
-        ///
         /// Symbol: VGO
-        ///
         /// Coin: VirtualGoodsToken
-        [338], VirtualGoodsToken, "VirtualGoodsToken", "http://vgo.life", VGO, ,
+        [338], VirtualGoodsToken, "VirtualGoodsToken", VGO, ,
     ),
     (
         /// Coin type: 339
-        ///
         /// Symbol: DVT
-        ///
         /// Coin: DeVault
-        [339], DeVault, "DeVault", "https://devault.cc", DVT, ,
+        [339], DeVault, "DeVault", DVT, ,
     ),
     (
         /// Coin type: 340
-        ///
         /// Symbol: N8V
-        ///
         /// Coin: N8VCoin
-        [340], N8VCoin, "N8VCoin", "https://n8vcoin.io", N8V, ,
+        [340], N8VCoin, "N8VCoin", N8V, ,
     ),
     (
         /// Coin type: 341
-        ///
         /// Symbol: MTNS
-        ///
         /// Coin: OmotenashiCoin
-        [341], OmotenashiCoin, "OmotenashiCoin", "http://omotenashicoin.site/", MTNS, ,
+        [341], OmotenashiCoin, "OmotenashiCoin", MTNS, ,
     ),
     (
         /// Coin type: 342
-        ///
         /// Symbol: BLAST
-        ///
         /// Coin: BLAST
-        [342], BLAST, "BLAST", "https://blastblastblast.com/", BLAST, ,
+        [342], BLAST, "BLAST", BLAST, ,
     ),
     (
         /// Coin type: 343
-        ///
         /// Symbol: DCT
-        ///
         /// Coin: DECENT
-        [343], DECENT, "DECENT", "https://decent.ch", DCT, ,
+        [343], DECENT, "DECENT", DCT, ,
     ),
     (
         /// Coin type: 344
-        ///
         /// Symbol: AUX
-        ///
         /// Coin: Auxilium
-        [344], Auxilium, "Auxilium", "https://auxilium.global", AUX, ,
+        [344], Auxilium, "Auxilium", AUX, ,
     ),
     (
         /// Coin type: 345
-        ///
         /// Symbol: USDP
-        ///
         /// Coin: USDP
-        [345], USDP, "USDP", "http://www.usdp.pro/", USDP, ,
+        [345], USDP, "USDP", USDP, ,
     ),
     (
         /// Coin type: 346
-        ///
         /// Symbol: HTDF
-        ///
         /// Coin: HTDF
-        [346], HTDF, "HTDF", "https://www.orientwalt.com/", HTDF, ,
+        [346], HTDF, "HTDF", HTDF, ,
     ),
     (
         /// Coin type: 347
-        ///
         /// Symbol: YEC
-        ///
         /// Coin: Ycash
-        [347], Ycash, "Ycash", "https://www.ycash.xyz/", YEC, ,
+        [347], Ycash, "Ycash", YEC, ,
     ),
     (
         /// Coin type: 348
-        ///
         /// Symbol: QLC
-        ///
         /// Coin: QLC Chain
-        [348], QLCChain, "QLC Chain", "https://qlcchain.org", QLC, ,
+        [348], QLCChain, "QLC Chain", QLC, ,
     ),
     (
         /// Coin type: 349
-        ///
         /// Symbol: TEA
-        ///
         /// Coin: Icetea Blockchain
-        [349], IceteaBlockchain, "Icetea Blockchain", "https://icetea.io/", TEA, ,
+        [349], IceteaBlockchain, "Icetea Blockchain", TEA, ,
     ),
     (
         /// Coin type: 350
-        ///
         /// Symbol: ARW
-        ///
         /// Coin: ArrowChain
-        [350], ArrowChain, "ArrowChain", "https://www.arrowchain.io/", ARW, ,
+        [350], ArrowChain, "ArrowChain", ARW, ,
     ),
     (
         /// Coin type: 351
-        ///
         /// Symbol: MDM
-        ///
         /// Coin: Medium
-        [351], Medium, "Medium", "https://www.themedium.io/", MDM, ,
+        [351], Medium, "Medium", MDM, ,
     ),
     (
         /// Coin type: 352
-        ///
         /// Symbol: CYB
-        ///
         /// Coin: Cybex
-        [352], Cybex, "Cybex", "https://dex.cybex.io/", CYB, ,
+        [352], Cybex, "Cybex", CYB, ,
     ),
     (
         /// Coin type: 353
-        ///
         /// Symbol: LTO
-        ///
         /// Coin: LTO Network
-        [353], LTONetwork, "LTO Network", "https://lto.network", LTO, ,
+        [353], LTONetwork, "LTO Network", LTO, ,
     ),
     (
         /// Coin type: 354
-        ///
         /// Symbol: DOT
-        ///
         /// Coin: Polkadot
-        [354], Polkadot, "Polkadot", "https://polkadot.network/", DOT, ,
+        [354], Polkadot, "Polkadot", DOT, ,
     ),
     (
         /// Coin type: 355
-        ///
         /// Symbol: AEON
-        ///
         /// Coin: Aeon
-        [355], Aeon, "Aeon", "https://www.aeon.cash/", AEON, ,
+        [355], Aeon, "Aeon", AEON, ,
     ),
     (
         /// Coin type: 356
-        ///
         /// Symbol: RES
-        ///
         /// Coin: Resistance
-        [356], Resistance, "Resistance", "https://www.resistance.io", RES, ,
+        [356], Resistance, "Resistance", RES, ,
     ),
     (
         /// Coin type: 357
-        ///
         /// Symbol: AYA
-        ///
         /// Coin: Aryacoin
-        [357], Aryacoin, "Aryacoin", "https://aryacoin.io/", AYA, ,
+        [357], Aryacoin, "Aryacoin", AYA, ,
     ),
     (
         /// Coin type: 358
-        ///
         /// Symbol: DAPS
-        ///
         /// Coin: Dapscoin
-        [358], Dapscoin, "Dapscoin", "https://officialdapscoin.com", DAPS, ,
+        [358], Dapscoin, "Dapscoin", DAPS, ,
     ),
     (
         /// Coin type: 359
-        ///
         /// Symbol: CSC
-        ///
         /// Coin: CasinoCoin
-        [359], CasinoCoin, "CasinoCoin", "https://casinocoin.org", CSC, ,
+        [359], CasinoCoin, "CasinoCoin", CSC, ,
     ),
     (
         /// Coin type: 360
-        ///
         /// Symbol: VSYS
-        ///
         /// Coin: V Systems
-        [360], VSystems, "V Systems", "https://www.v.systems/", VSYS, ,
+        [360], VSystems, "V Systems", VSYS, ,
     ),
     (
         /// Coin type: 361
-        ///
         /// Symbol: NOLLAR
-        ///
         /// Coin: Nollar
-        [361], Nollar, "Nollar", "https://nollar.org", NOLLAR, ,
+        [361], Nollar, "Nollar", NOLLAR, ,
     ),
     (
         /// Coin type: 362
-        ///
         /// Symbol: XNOS
-        ///
         /// Coin: NOS
-        [362], NOS, "NOS", "https://nos.cash", XNOS, ,
+        [362], NOS, "NOS", XNOS, ,
     ),
     (
         /// Coin type: 363
-        ///
         /// Symbol: CPU
-        ///
         /// Coin: CPUchain
-        [363], CPUchain, "CPUchain", "https://cpuchain.org", CPU, ,
+        [363], CPUchain, "CPUchain", CPU, ,
     ),
     (
         /// Coin type: 364
-        ///
         /// Symbol: LAMB
-        ///
         /// Coin: Lambda Storage Chain
-        [364], LambdaStorageChain, "Lambda Storage Chain", "https://lambda.im", LAMB, ,
+        [364], LambdaStorageChain, "Lambda Storage Chain", LAMB, ,
     ),
     (
         /// Coin type: 365
-        ///
         /// Symbol: VCT
-        ///
         /// Coin: ValueCyber
-        [365], ValueCyber, "ValueCyber", "https://valuecyber.org", VCT, ,
+        [365], ValueCyber, "ValueCyber", VCT, ,
     ),
     (
         /// Coin type: 366
-        ///
         /// Symbol: CZR
-        ///
         /// Coin: Canonchain
-        [366], Canonchain, "Canonchain", "http://www.canonchain.com/", CZR, ,
+        [366], Canonchain, "Canonchain", CZR, ,
     ),
     (
         /// Coin type: 367
-        ///
         /// Symbol: ABBC
-        ///
         /// Coin: ABBC
-        [367], ABBC, "ABBC", "https://www.abbcfoundation.com/", ABBC, ,
+        [367], ABBC, "ABBC", ABBC, ,
     ),
     (
         /// Coin type: 368
-        ///
         /// Symbol: HET
-        ///
         /// Coin: HET
-        [368], HET, "HET", "http://www.hetcoin.info/", HET, ,
+        [368], HET, "HET", HET, ,
     ),
     (
         /// Coin type: 369
-        ///
         /// Symbol: XAS
-        ///
         /// Coin: Asch
-        [369], Asch, "Asch", "https://asch.io", XAS, ,
+        [369], Asch, "Asch", XAS, ,
     ),
     (
         /// Coin type: 370
-        ///
         /// Symbol: VDL
-        ///
         /// Coin: Vidulum
-        [370], Vidulum, "Vidulum", "https://vidulum.app", VDL, ,
+        [370], Vidulum, "Vidulum", VDL, ,
     ),
     (
         /// Coin type: 371
-        ///
         /// Symbol: MED
-        ///
         /// Coin: MediBloc
-        [371], MediBloc, "MediBloc", "https://medibloc.org", MED, ,
+        [371], MediBloc, "MediBloc", MED, ,
     ),
     (
         /// Coin type: 372
-        ///
         /// Symbol: ZVC
-        ///
         /// Coin: ZVChain
-        [372], ZVChain, "ZVChain", "https://www.zvchain.io", ZVC, ,
+        [372], ZVChain, "ZVChain", ZVC, ,
     ),
     (
         /// Coin type: 373
-        ///
         /// Symbol: VESTX
-        ///
         /// Coin: Vestx
-        [373], Vestx, "Vestx", "https://www.vestxcoin.com", VESTX, ,
+        [373], Vestx, "Vestx", VESTX, ,
     ),
     (
         /// Coin type: 374
-        ///
         /// Symbol: DBT
-        ///
         /// Coin: DarkBit
-        [374], DarkBit, "DarkBit", "https://www.DarkBitPay.com", DBT, ,
+        [374], DarkBit, "DarkBit", DBT, ,
     ),
     (
         /// Coin type: 375
-        ///
         /// Symbol: SEOS
-        ///
         /// Coin: SuperEOS
-        [375], SuperEOS, "SuperEOS", "https://github.com/supereos", SEOS, ,
+        [375], SuperEOS, "SuperEOS", SEOS, ,
     ),
     (
         /// Coin type: 376
-        ///
         /// Symbol: MXW
-        ///
         /// Coin: Maxonrow
-        [376], Maxonrow, "Maxonrow", "https://maxonrow.com/", MXW, ,
+        [376], Maxonrow, "Maxonrow", MXW, ,
     ),
     (
         /// Coin type: 377
-        ///
         /// Symbol: ZNZ
-        ///
         /// Coin: ZENZO
-        [377], ZENZO, "ZENZO", "https://zenzo.io/", ZNZ, ,
+        [377], ZENZO, "ZENZO", ZNZ, ,
     ),
     (
         /// Coin type: 378
-        ///
         /// Symbol: XCX
-        ///
         /// Coin: XChain
-        [378], XChain, "XChain", "https://github.com/xchainxchain", XCX, ,
+        [378], XChain, "XChain", XCX, ,
     ),
     (
         /// Coin type: 379
-        ///
         /// Symbol: SOX
-        ///
         /// Coin: SonicX
-        [379], SonicX, "SonicX", "https://sonicx.org/", SOX, ,
+        [379], SonicX, "SonicX", SOX, ,
     ),
     (
         /// Coin type: 380
-        ///
         /// Symbol: NYZO
-        ///
         /// Coin: Nyzo
-        [380], Nyzo, "Nyzo", "https://nyzo.co/", NYZO, ,
+        [380], Nyzo, "Nyzo", NYZO, ,
     ),
     (
         /// Coin type: 381
-        ///
         /// Symbol: ULC
-        ///
         /// Coin: ULCoin
-        [381], ULCoin, "ULCoin", "http://www.ulwallet.io", ULC, ,
+        [381], ULCoin, "ULCoin", ULC, ,
     ),
     (
         /// Coin type: 382
-        ///
         /// Symbol: RYO
-        ///
         /// Coin: Ryo Currency
-        [382], RyoCurrency, "Ryo Currency", "https://ryo-currency.com/", RYO, ,
+        [382], RyoCurrency, "Ryo Currency", RYO, ,
     ),
     (
         /// Coin type: 383
-        ///
         /// Symbol: KAL
-        ///
         /// Coin: Kaleidochain
-        [383], Kaleidochain, "Kaleidochain", "https://kaleidochain.io/", KAL, ,
+        [383], Kaleidochain, "Kaleidochain", KAL, ,
     ),
     (
         /// Coin type: 384
-        ///
         /// Symbol: XSN
-        ///
         /// Coin: Stakenet
-        [384], Stakenet, "Stakenet", "https://xsncoin.io/", XSN, ,
+        [384], Stakenet, "Stakenet", XSN, ,
     ),
     (
         /// Coin type: 385
-        ///
         /// Symbol: DOGEC
-        ///
         /// Coin: DogeCash
-        [385], DogeCash, "DogeCash", "https://dogec.io/", DOGEC, ,
+        [385], DogeCash, "DogeCash", DOGEC, ,
     ),
     (
         /// Coin type: 386
-        ///
         /// Symbol: BMV
-        ///
         /// Coin: Bitcoin Matteo's Vision
-        [386], BitcoinMatteosVision, "Bitcoin Matteo's Vision", "https://btcmv.org/", BMV, ,
+        [386], BitcoinMatteosVision, "Bitcoin Matteos Vision", BMV, ,
     ),
     (
         /// Coin type: 387
-        ///
         /// Symbol: QBC
-        ///
         /// Coin: Quebecoin
-        [387], Quebecoin, "Quebecoin", "https://github.com/QuebecoinQBC/quebecoin/", QBC, ,
+        [387], Quebecoin, "Quebecoin", QBC, ,
     ),
     (
         /// Coin type: 388
-        ///
         /// Symbol: IMG
-        ///
         /// Coin: ImageCoin
-        [388], ImageCoin, "ImageCoin", "https://imagecoin.imagehosty.com/", IMG, ,
+        [388], ImageCoin, "ImageCoin", IMG, ,
     ),
     (
         /// Coin type: 389
-        ///
         /// Symbol: QOS
-        ///
         /// Coin: QOS
-        [389], QOS, "QOS", "https://github.com/QOSGroup/qos", QOS, ,
+        [389], QOS, "QOS", QOS, ,
     ),
     (
         /// Coin type: 390
-        ///
         /// Symbol: PKT
-        ///
         /// Coin: PKT
-        [390], PKT, "PKT", "https://github.com/pkt-cash/pktd", PKT, ,
+        [390], PKT, "PKT", PKT, ,
     ),
     (
         /// Coin type: 391
-        ///
         /// Symbol: LHD
-        ///
         /// Coin: LitecoinHD
-        [391], LitecoinHD, "LitecoinHD", "https://ltchd.io", LHD, ,
+        [391], LitecoinHD, "LitecoinHD", LHD, ,
     ),
     (
         /// Coin type: 392
-        ///
         /// Symbol: CENNZ
-        ///
         /// Coin: CENNZnet
-        [392], CENNZnet, "CENNZnet", "https://centrality.ai", CENNZ, ,
+        [392], CENNZnet, "CENNZnet", CENNZ, ,
     ),
     (
         /// Coin type: 393
-        ///
         /// Symbol: HSN
-        ///
         /// Coin: Hyper Speed Network
-        [393], HyperSpeedNetwork, "Hyper Speed Network", "https://www.hsn.link/", HSN, ,
+        [393], HyperSpeedNetwork, "Hyper Speed Network", HSN, ,
     ),
     (
         /// Coin type: 394
-        ///
         /// Symbol: CRO
-        ///
-        /// Coin: Crypto.org Chain
-        [394], CryptoOrgChain, "Crypto.org Chain", "https://crypto.org", CRO, ,
+        /// Coin: Crypto Chain
+        [394], CryptoChain, "Crypto Chain", CRO, ,
     ),
     (
         /// Coin type: 395
-        ///
         /// Symbol: UMBRU
-        ///
         /// Coin: Umbru
-        [395], Umbru, "Umbru", "https://umbru.io", UMBRU, ,
+        [395], Umbru, "Umbru", UMBRU, ,
     ),
     (
         /// Coin type: 396
-        ///
-        /// Symbol: TON
-        ///
-        /// Coin: Free TON
-        [396], FreeTON, "Free TON", "https://freeton.org/", TON, ,
+        /// Symbol: EVER
+        /// Coin: Everscale
+        [396], Everscale, "Everscale", EVER, ,
     ),
     (
         /// Coin type: 397
-        ///
         /// Symbol: NEAR
-        ///
         /// Coin: NEAR Protocol
-        [397], NEARProtocol, "NEAR Protocol", "https://nearprotocol.com/", NEAR, ,
+        [397], NEARProtocol, "NEAR Protocol", NEAR, ,
     ),
     (
         /// Coin type: 398
-        ///
         /// Symbol: XPC
-        ///
         /// Coin: XPChain
-        [398], XPChain, "XPChain", "https://www.xpchain.io/", XPC, ,
+        [398], XPChain, "XPChain", XPC, ,
     ),
     (
         /// Coin type: 399
-        ///
         /// Symbol: ZOC
-        ///
         /// Coin: 01coin
-        [399], _01coin, "01coin", "https://01coin.io/", ZOC, ,
+        [399], _01coin, "01coin", ZOC, ,
     ),
     (
         /// Coin type: 400
-        ///
         /// Symbol: NIX
-        ///
         /// Coin: NIX
-        [400], NIX, "NIX", "https://nixplatform.io", NIX, ,
+        [400], NIX, "NIX", NIX, ,
     ),
     (
         /// Coin type: 401
-        ///
         /// Symbol: UC
-        ///
         /// Coin: Utopiacoin
-        [401], Utopiacoin, "Utopiacoin", "https://utopiacoin.org", , "UC",
+        [401], Utopiacoin, "Utopiacoin", , "UC",
     ),
     (
         /// Coin type: 402
-        ///
         /// Symbol: GALI
-        ///
         /// Coin: Galilel
-        [402], Galilel, "Galilel", "https://galilel.org/", GALI, ,
+        [402], Galilel, "Galilel", GALI, ,
     ),
     (
         /// Coin type: 403
-        ///
         /// Symbol: OLT
-        ///
         /// Coin: Oneledger
-        [403], Oneledger, "Oneledger", "https://www.oneledger.io/", OLT, ,
+        [403], Oneledger, "Oneledger", OLT, ,
     ),
     (
         /// Coin type: 404
-        ///
         /// Symbol: XBI
-        ///
         /// Coin: XBI
-        [404], XBI, "XBI", "https://bitcoinincognito.org", XBI, ,
+        [404], XBI, "XBI", XBI, ,
     ),
     (
         /// Coin type: 405
-        ///
         /// Symbol: DONU
-        ///
         /// Coin: DONU
-        [405], DONU, "DONU", "https://donu.io/", DONU, ,
+        [405], DONU, "DONU", DONU, ,
     ),
     (
         /// Coin type: 406
-        ///
         /// Symbol: EARTHS
-        ///
         /// Coin: Earths
-        [406], Earths, "Earths", "https://earths.ga/", EARTHS, ,
+        [406], Earths, "Earths", EARTHS, ,
     ),
     (
         /// Coin type: 407
-        ///
         /// Symbol: HDD
-        ///
         /// Coin: HDDCash
-        [407], HDDCash, "HDDCash", "https://hdd.cash", HDD, ,
+        [407], HDDCash, "HDDCash", HDD, ,
     ),
     (
         /// Coin type: 408
-        ///
         /// Symbol: SUGAR
-        ///
         /// Coin: Sugarchain
-        [408], Sugarchain, "Sugarchain", "https://sugarchain.org/", SUGAR, ,
+        [408], Sugarchain, "Sugarchain", SUGAR, ,
     ),
     (
         /// Coin type: 409
-        ///
         /// Symbol: AILE
-        ///
         /// Coin: AileCoin
-        [409], AileCoin, "AileCoin", "https://ailecoin.com/", AILE, ,
+        [409], AileCoin, "AileCoin", AILE, ,
     ),
     (
         /// Coin type: 410
-        ///
         /// Symbol: TENT
-        ///
         /// Coin: TENT
-        [410], TENT, "TENT", "https://tent.app/", TENT, ,
+        [410], TENT, "TENT", TENT, ,
     ),
     (
         /// Coin type: 411
-        ///
         /// Symbol: TAN
-        ///
         /// Coin: Tangerine Network
-        [411], TangerineNetwork, "Tangerine Network", "https://tangerine-network.io", TAN, ,
+        [411], TangerineNetwork, "Tangerine Network", TAN, ,
     ),
     (
         /// Coin type: 412
-        ///
         /// Symbol: AIN
-        ///
         /// Coin: AIN
-        [412], AIN, "AIN", "https://www.ainetwork.ai", AIN, ,
+        [412], AIN, "AIN", AIN, ,
     ),
     (
         /// Coin type: 413
-        ///
         /// Symbol: MSR
-        ///
         /// Coin: Masari
-        [413], Masari, "Masari", "https://getmasari.org", MSR, ,
+        [413], Masari, "Masari", MSR, ,
     ),
     (
         /// Coin type: 414
-        ///
         /// Symbol: SUMO
-        ///
         /// Coin: Sumokoin
-        [414], Sumokoin, "Sumokoin", "https://www.sumokoin.org", SUMO, ,
+        [414], Sumokoin, "Sumokoin", SUMO, ,
     ),
     (
         /// Coin type: 415
-        ///
         /// Symbol: ETN
-        ///
         /// Coin: Electroneum
-        [415], Electroneum, "Electroneum", "https://electroneum.com", ETN, ,
+        [415], Electroneum, "Electroneum", ETN, ,
     ),
     (
         /// Coin type: 416
-        ///
         /// Symbol: BYTZ
-        ///
         /// Coin: BYTZ
-        [416], BYTZ, "BYTZ", "https://bytz.gg/", BYTZ, ,
+        [416], BYTZ, "BYTZ", BYTZ, ,
     ),
     (
         /// Coin type: 417
-        ///
         /// Symbol: WOW
-        ///
         /// Coin: Wownero
-        [417], Wownero, "Wownero", "http://wownero.org/", WOW, ,
+        [417], Wownero, "Wownero", WOW, ,
     ),
     (
         /// Coin type: 418
-        ///
         /// Symbol: XTNC
-        ///
         /// Coin: XtendCash
-        [418], XtendCash, "XtendCash", "https://xtendcash.com/", XTNC, ,
+        [418], XtendCash, "XtendCash", XTNC, ,
     ),
     (
         /// Coin type: 419
-        ///
         /// Symbol: LTHN
-        ///
         /// Coin: Lethean
-        [419], Lethean, "Lethean", "https://lethean.io/", LTHN, ,
+        [419], Lethean, "Lethean", LTHN, ,
     ),
     (
         /// Coin type: 420
-        ///
         /// Symbol: NODE
-        ///
         /// Coin: NodeHost
-        [420], NodeHost, "NodeHost", "https://nodehost.online", NODE, ,
+        [420], NodeHost, "NodeHost", NODE, ,
     ),
     (
         /// Coin type: 421
-        ///
         /// Symbol: AGM
-        ///
         /// Coin: Argoneum
-        [421], Argoneum, "Argoneum", "https://argoneum.net", AGM, ,
+        [421], Argoneum, "Argoneum", AGM, ,
     ),
     (
         /// Coin type: 422
-        ///
         /// Symbol: CCX
-        ///
         /// Coin: Conceal Network
-        [422], ConcealNetwork, "Conceal Network", "https://conceal.network", CCX, ,
+        [422], ConcealNetwork, "Conceal Network", CCX, ,
     ),
     (
         /// Coin type: 423
-        ///
         /// Symbol: TNET
-        ///
         /// Coin: Title Network
-        [423], TitleNetwork, "Title Network", "https://title.network/", TNET, ,
+        [423], TitleNetwork, "Title Network", TNET, ,
     ),
     (
         /// Coin type: 424
-        ///
         /// Symbol: TELOS
-        ///
         /// Coin: TelosCoin
-        [424], TelosCoin, "TelosCoin", "https://teloscoin.org", TELOS, ,
+        [424], TelosCoin, "TelosCoin", TELOS, ,
     ),
     (
         /// Coin type: 425
-        ///
         /// Symbol: AION
-        ///
         /// Coin: Aion
-        [425], Aion, "Aion", "https://aion.network", AION, ,
+        [425], Aion, "Aion", AION, ,
     ),
     (
         /// Coin type: 426
-        ///
         /// Symbol: BC
-        ///
         /// Coin: Bitcoin Confidential
-        [426], BitcoinConfidential, "Bitcoin Confidential", "https://www.bitcoinconfidential.cc/", BC, ,
+        [426], BitcoinConfidential, "Bitcoin Confidential", BC, ,
     ),
     (
         /// Coin type: 427
-        ///
         /// Symbol: KTV
-        ///
         /// Coin: KmushiCoin
-        [427], KmushiCoin, "KmushiCoin", "https://tierravivaplanet.com", KTV, ,
+        [427], KmushiCoin, "KmushiCoin", KTV, ,
     ),
     (
         /// Coin type: 428
-        ///
         /// Symbol: ZCR
-        ///
         /// Coin: ZCore
-        [428], ZCore, "ZCore", "https://zcore.cash", ZCR, ,
+        [428], ZCore, "ZCore", ZCR, ,
     ),
     (
         /// Coin type: 429
-        ///
         /// Symbol: ERG
-        ///
         /// Coin: Ergo
-        [429], Ergo, "Ergo", "https://ergoplatform.org", ERG, ,
+        [429], Ergo, "Ergo", ERG, ,
     ),
     (
         /// Coin type: 430
-        ///
         /// Symbol: PESO
-        ///
         /// Coin: Criptopeso
-        [430], Criptopeso, "Criptopeso", "https://criptopeso.io/", PESO, ,
+        [430], Criptopeso, "Criptopeso", PESO, ,
     ),
     (
         /// Coin type: 431
-        ///
         /// Symbol: BTC2
-        ///
         /// Coin: Bitcoin 2
-        [431], Bitcoin2, "Bitcoin 2", "https://www.bitc2.org/", BTC2, ,
+        [431], Bitcoin2, "Bitcoin 2", BTC2, ,
     ),
     (
         /// Coin type: 432
-        ///
         /// Symbol: XRPHD
-        ///
         /// Coin: XRPHD
-        [432], XRPHD, "XRPHD", "https://xrphd.org", XRPHD, ,
+        [432], XRPHD, "XRPHD", XRPHD, ,
     ),
     (
         /// Coin type: 433
-        ///
         /// Symbol: WE
-        ///
         /// Coin: WE Coin
-        [433], WECoin, "WE Coin", "https://we-corp.io", WE, ,
+        [433], WECoin, "WE Coin", WE, ,
     ),
     (
         /// Coin type: 434
-        ///
         /// Symbol: KSM
-        ///
         /// Coin: Kusama
-        [434], Kusama, "Kusama", "https://kusama.network", KSM, ,
+        [434], Kusama, "Kusama", KSM, ,
     ),
     (
         /// Coin type: 435
-        ///
         /// Symbol: PCN
-        ///
         /// Coin: Peepcoin
-        [435], Peepcoin, "Peepcoin", "https://pxn.foundation/peepcoin", PCN, ,
+        [435], Peepcoin, "Peepcoin", PCN, ,
     ),
     (
         /// Coin type: 436
-        ///
         /// Symbol: NCH
-        ///
         /// Coin: NetCloth
-        [436], NetCloth, "NetCloth", "https://www.netcloth.org", NCH, ,
+        [436], NetCloth, "NetCloth", NCH, ,
     ),
     (
         /// Coin type: 437
-        ///
         /// Symbol: ICU
-        ///
         /// Coin: CHIPO
-        [437], CHIPO, "CHIPO", "http://www.chipo.icu", ICU, ,
+        [437], CHIPO, "CHIPO", ICU, ,
     ),
     (
         /// Coin type: 438
-        ///
-        /// Symbol: LN
-        ///
-        /// Coin: LINK
-        [438], LINK, "LINK", "https://link.network/", LN, ,
+        /// Symbol: FNSA
+        /// Coin: FINSCHIA
+        [438], FINSCHIA, "FINSCHIA", FNSA, ,
     ),
     (
         /// Coin type: 439
-        ///
         /// Symbol: DTP
-        ///
         /// Coin: DeVault Token Protocol
-        [439], DeVaultTokenProtocol, "DeVault Token Protocol", "https://devault.cc/token-protocol.html", DTP, ,
+        [439], DeVaultTokenProtocol, "DeVault Token Protocol", DTP, ,
     ),
     (
         /// Coin type: 440
-        ///
         /// Symbol: BTCR
-        ///
         /// Coin: Bitcoin Royale
-        [440], BitcoinRoyale, "Bitcoin Royale", "https://bitcoinroyale.org", BTCR, ,
+        [440], BitcoinRoyale, "Bitcoin Royale", BTCR, ,
     ),
     (
         /// Coin type: 441
-        ///
         /// Symbol: AERGO
-        ///
         /// Coin: AERGO
-        [441], AERGO, "AERGO", "https://www.aergo.io/", AERGO, ,
+        [441], AERGO, "AERGO", AERGO, ,
     ),
     (
         /// Coin type: 442
-        ///
         /// Symbol: XTH
-        ///
         /// Coin: Dothereum
-        [442], Dothereum, "Dothereum", "https://dothereum.net", XTH, ,
+        [442], Dothereum, "Dothereum", XTH, ,
     ),
     (
         /// Coin type: 443
-        ///
         /// Symbol: LV
-        ///
         /// Coin: Lava
-        [443], Lava, "Lava", "https://www.lavatech.org/", LV, ,
+        [443], Lava, "Lava", LV, ,
     ),
     (
         /// Coin type: 444
-        ///
         /// Symbol: PHR
-        ///
         /// Coin: Phore
-        [444], Phore, "Phore", "https://phore.io", PHR, ,
+        [444], Phore, "Phore", PHR, ,
     ),
     (
         /// Coin type: 445
-        ///
         /// Symbol: VITAE
-        ///
         /// Coin: Vitae
-        [445], Vitae, "Vitae", "https://www.vitaetoken.io/", VITAE, ,
+        [445], Vitae, "Vitae", VITAE, ,
     ),
     (
         /// Coin type: 446
-        ///
         /// Symbol: COCOS
-        ///
         /// Coin: Cocos-BCX
-        [446], CocosBCX, "Cocos-BCX", "https://www.cocosbcx.io/", COCOS, ,
+        [446], CocosBCX, "Cocos-BCX", COCOS, ,
     ),
     (
         /// Coin type: 447
-        ///
         /// Symbol: DIN
-        ///
         /// Coin: Dinero
-        [447], Dinero, "Dinero", "https://dinerocoin.org/", DIN, ,
+        [447], Dinero, "Dinero", DIN, ,
     ),
     (
         /// Coin type: 448
-        ///
         /// Symbol: SPL
-        ///
         /// Coin: Simplicity
-        [448], Simplicity, "Simplicity", "https://simplicity-coin.com/", SPL, ,
+        [448], Simplicity, "Simplicity", SPL, ,
     ),
     (
         /// Coin type: 449
-        ///
         /// Symbol: YCE
-        ///
         /// Coin: MYCE
-        [449], MYCE, "MYCE", "https://myce.world/", YCE, ,
+        [449], MYCE, "MYCE", YCE, ,
     ),
     (
         /// Coin type: 450
-        ///
         /// Symbol: XLR
-        ///
         /// Coin: Solaris
-        [450], Solaris, "Solaris", "https://solarisplatform.com", XLR, ,
+        [450], Solaris, "Solaris", XLR, ,
     ),
     (
         /// Coin type: 451
-        ///
         /// Symbol: KTS
-        ///
         /// Coin: Klimatas
-        [451], Klimatas, "Klimatas", "https://www.klimatas.com", KTS, ,
+        [451], Klimatas, "Klimatas", KTS, ,
     ),
     (
         /// Coin type: 452
-        ///
         /// Symbol: DGLD
-        ///
         /// Coin: DGLD
-        [452], DGLD, "DGLD", "http://dgld.ch", DGLD, ,
+        [452], DGLD, "DGLD", DGLD, ,
     ),
     (
         /// Coin type: 453
-        ///
         /// Symbol: XNS
-        ///
         /// Coin: Insolar
-        [453], Insolar, "Insolar", "https://insolar.io", XNS, ,
+        [453], Insolar, "Insolar", XNS, ,
     ),
     (
         /// Coin type: 454
-        ///
         /// Symbol: EM
-        ///
         /// Coin: EMPOW
-        [454], EMPOW, "EMPOW", "https://empow.io", EM, ,
+        [454], EMPOW, "EMPOW", EM, ,
     ),
     (
         /// Coin type: 455
-        ///
         /// Symbol: SHN
-        ///
         /// Coin: ShineBlocks
-        [455], ShineBlocks, "ShineBlocks", "https://www.shineblocks.com", SHN, ,
+        [455], ShineBlocks, "ShineBlocks", SHN, ,
     ),
     (
         /// Coin type: 456
-        ///
         /// Symbol: SEELE
-        ///
         /// Coin: Seele
-        [456], Seele, "Seele", "https://seelenet.com/", SEELE, ,
+        [456], Seele, "Seele", SEELE, ,
     ),
     (
         /// Coin type: 457
-        ///
         /// Symbol: AE
-        ///
         /// Coin: æternity
-        [457], aeternity, "æternity", "https://aeternity.com", AE, ,
+        [457], aeternity, "ternity", AE, ,
     ),
     (
         /// Coin type: 458
-        ///
         /// Symbol: ODX
-        ///
         /// Coin: ObsidianX
-        [458], ObsidianX, "ObsidianX", "https://obsidianproject.org/", ODX, ,
+        [458], ObsidianX, "ObsidianX", ODX, ,
     ),
     (
         /// Coin type: 459
-        ///
         /// Symbol: KAVA
-        ///
         /// Coin: Kava
-        [459], Kava, "Kava", "https://kava.io", KAVA, ,
+        [459], Kava, "Kava", KAVA, ,
     ),
     (
         /// Coin type: 460
-        ///
         /// Symbol: GLEEC
-        ///
         /// Coin: GLEEC
-        [460], GLEEC, "GLEEC", "https://gleecoin.com", GLEEC, ,
+        [460], GLEEC, "GLEEC", GLEEC, ,
     ),
     (
         /// Coin type: 461
-        ///
         /// Symbol: FIL
-        ///
         /// Coin: Filecoin
-        [461], Filecoin, "Filecoin", "https://filecoin.io/", FIL, ,
+        [461], Filecoin, "Filecoin", FIL, ,
     ),
     (
         /// Coin type: 462
-        ///
         /// Symbol: RUTA
-        ///
         /// Coin: Rutanio
-        [462], Rutanio, "Rutanio", "https://rutanio.com/", RUTA, ,
+        [462], Rutanio, "Rutanio", RUTA, ,
     ),
     (
         /// Coin type: 463
-        ///
         /// Symbol: CSDT
-        ///
         /// Coin: CSDT
-        [463], CSDT, "CSDT", "https://xar.network", CSDT, ,
+        [463], CSDT, "CSDT", CSDT, ,
     ),
     (
         /// Coin type: 464
-        ///
         /// Symbol: ETI
-        ///
         /// Coin: EtherInc
-        [464], EtherInc, "EtherInc", "https://einc.io", ETI, ,
+        [464], EtherInc, "EtherInc", ETI, ,
     ),
     (
         /// Coin type: 465
-        ///
         /// Symbol: ZSLP
-        ///
         /// Coin: Zclassic Simple Ledger Protocol
-        [465], ZclassicSimpleLedgerProtocol, "Zclassic Simple Ledger Protocol", "https://zslp.org", ZSLP, ,
+        [465], ZclassicSimpleLedgerProtocol, "Zclassic Simple Ledger Protocol", ZSLP, ,
     ),
     (
         /// Coin type: 466
-        ///
         /// Symbol: ERE
-        ///
         /// Coin: EtherCore
-        [466], EtherCore, "EtherCore", "https://ethercore.org", ERE, ,
+        [466], EtherCore, "EtherCore", ERE, ,
     ),
     (
         /// Coin type: 467
-        ///
         /// Symbol: DX
-        ///
         /// Coin: DxChain Token
-        [467], DxChainToken, "DxChain Token", "https://dxchain.com/", DX, ,
+        [467], DxChainToken, "DxChain Token", DX, ,
     ),
     (
         /// Coin type: 468
-        ///
         /// Symbol: CPS
-        ///
         /// Coin: Capricoin+
-        [468], CapricoinPlus, "Capricoin+", "https://capricoin.org", CPS, ,
+        [468], CapricoinPlus, "Capricoin+", CPS, ,
     ),
     (
         /// Coin type: 469
-        ///
         /// Symbol: BTH
-        ///
         /// Coin: Bithereum
-        [469], Bithereum, "Bithereum", "https://bithereum.network", BTH, ,
+        [469], Bithereum, "Bithereum", BTH, ,
     ),
     (
         /// Coin type: 470
-        ///
         /// Symbol: MESG
-        ///
         /// Coin: MESG
-        [470], MESG, "MESG", "https://mesg.com", MESG, ,
+        [470], MESG, "MESG", MESG, ,
     ),
     (
         /// Coin type: 471
-        ///
         /// Symbol: FIMK
-        ///
         /// Coin: FIMK
-        [471], FIMK, "FIMK", "https://wallet.fimk.fi/", FIMK, ,
+        [471], FIMK, "FIMK", FIMK, ,
     ),
     (
         /// Coin type: 472
-        ///
         /// Symbol: AR
-        ///
         /// Coin: Arweave
-        [472], Arweave, "Arweave", "https://arweave.org", AR, ,
+        [472], Arweave, "Arweave", AR, ,
     ),
     (
         /// Coin type: 473
-        ///
         /// Symbol: OGO
-        ///
         /// Coin: Origo
-        [473], Origo, "Origo", "https://origo.network", OGO, ,
+        [473], Origo, "Origo", OGO, ,
     ),
     (
         /// Coin type: 474
-        ///
         /// Symbol: ROSE
-        ///
         /// Coin: Oasis Network
-        [474], OasisNetwork, "Oasis Network", "https://www.oasis-protocol.org/", ROSE, ,
+        [474], OasisNetwork, "Oasis Network", ROSE, ,
     ),
     (
         /// Coin type: 475
-        ///
         /// Symbol: BARE
-        ///
         /// Coin: BARE Network
-        [475], BARENetwork, "BARE Network", "https://bare.network", BARE, ,
+        [475], BARENetwork, "BARE Network", BARE, ,
     ),
     (
         /// Coin type: 476
-        ///
         /// Symbol: GLEEC
-        ///
         /// Coin: GleecBTC
-        [476], GleecBTC, "GleecBTC", "https://gleecbtc.com", , "GLEEC",
+        [476], GleecBTC, "GleecBTC", , "GLEEC",
     ),
     (
         /// Coin type: 477
-        ///
         /// Symbol: CLR
-        ///
         /// Coin: Color Coin
-        [477], ColorCoin, "Color Coin", "https://color-platform.org", CLR, ,
+        [477], ColorCoin, "Color Coin", CLR, ,
     ),
     (
         /// Coin type: 478
-        ///
         /// Symbol: RNG
-        ///
         /// Coin: Ring
-        [478], Ring, "Ring", "https://ringcoin.tech", RNG, ,
+        [478], Ring, "Ring", RNG, ,
     ),
     (
         /// Coin type: 479
-        ///
         /// Symbol: OLO
-        ///
         /// Coin: Tool Global
-        [479], ToolGlobal, "Tool Global", "https://ibdt.io", OLO, ,
+        [479], ToolGlobal, "Tool Global", OLO, ,
     ),
     (
         /// Coin type: 480
-        ///
         /// Symbol: PEXA
-        ///
         /// Coin: Pexa
-        [480], Pexa, "Pexa", "https://pexaproject.com", PEXA, ,
+        [480], Pexa, "Pexa", PEXA, ,
     ),
     (
         /// Coin type: 481
-        ///
         /// Symbol: MOON
-        ///
         /// Coin: Mooncoin
-        [481], Mooncoin, "Mooncoin", "https://mooncoin.eco/", MOON, ,
+        [481], Mooncoin, "Mooncoin", MOON, ,
     ),
     (
         /// Coin type: 482
-        ///
         /// Symbol: OCEAN
-        ///
         /// Coin: Ocean Protocol
-        [482], OceanProtocol, "Ocean Protocol", "https://oceanprotocol.com", OCEAN, ,
+        [482], OceanProtocol, "Ocean Protocol", OCEAN, ,
     ),
     (
         /// Coin type: 483
-        ///
         /// Symbol: BNT
-        ///
         /// Coin: Bluzelle Native
-        [483], BluzelleNative, "Bluzelle Native", "https://bluzelle.com/", BNT, ,
+        [483], BluzelleNative, "Bluzelle Native", BNT, ,
     ),
     (
         /// Coin type: 484
-        ///
         /// Symbol: AMO
-        ///
         /// Coin: AMO Blockchain
-        [484], AMOBlockchain, "AMO Blockchain", "https://amo.foundation/", AMO, ,
+        [484], AMOBlockchain, "AMO Blockchain", AMO, ,
     ),
     (
         /// Coin type: 485
-        ///
         /// Symbol: FCH
-        ///
         /// Coin: FreeCash
-        [485], FreeCash, "FreeCash", "https://www.freecash.org/", FCH, ,
+        [485], FreeCash, "FreeCash", FCH, ,
     ),
     (
         /// Coin type: 486
-        ///
         /// Symbol: LAT
-        ///
-        /// Coin: LatticeX
-        [486], LatticeX, "LatticeX", "https://latticex.foundation/", LAT, ,
+        /// Coin: PlatON
+        [486], PlatON, "PlatON", LAT, ,
     ),
     (
         /// Coin type: 487
-        ///
         /// Symbol: COIN
-        ///
         /// Coin: Bitcoin Bank
-        [487], BitcoinBank, "Bitcoin Bank", "https://github.com/coin-core/coin/", COIN, ,
+        [487], BitcoinBank, "Bitcoin Bank", COIN, ,
     ),
     (
         /// Coin type: 488
-        ///
         /// Symbol: VEO
-        ///
         /// Coin: Amoveo
-        [488], Amoveo, "Amoveo", "https://github.com/zack-bitcoin/amoveo/", VEO, ,
+        [488], Amoveo, "Amoveo", VEO, ,
     ),
     (
         /// Coin type: 489
-        ///
         /// Symbol: CCA
-        ///
         /// Coin: Counos Coin
-        [489], CounosCoin, "Counos Coin", "https://counos.io/cousnocoin", CCA, ,
+        [489], CounosCoin, "Counos Coin", CCA, ,
     ),
     (
         /// Coin type: 490
-        ///
         /// Symbol: GFN
-        ///
         /// Coin: Graphene
-        [490], Graphene, "Graphene", "https://getgraphene.io", GFN, ,
+        [490], Graphene, "Graphene", GFN, ,
     ),
     (
         /// Coin type: 491
-        ///
         /// Symbol: BIP
-        ///
         /// Coin: Minter Network
-        [491], MinterNetwork, "Minter Network", "https://minter.network", BIP, ,
+        [491], MinterNetwork, "Minter Network", BIP, ,
     ),
     (
         /// Coin type: 492
-        ///
         /// Symbol: KPG
-        ///
         /// Coin: Kunpeng Network
-        [492], KunpengNetwork, "Kunpeng Network", "https://kunpeng.network", KPG, ,
+        [492], KunpengNetwork, "Kunpeng Network", KPG, ,
     ),
     (
         /// Coin type: 493
-        ///
         /// Symbol: FIN
-        ///
         /// Coin: FINL Chain
-        [493], FINLChain, "FINL Chain", "http://finl.network", FIN, ,
+        [493], FINLChain, "FINL Chain", FIN, ,
     ),
     (
         /// Coin type: 494
-        ///
         /// Symbol: BAND
-        ///
         /// Coin: Band
-        [494], Band, "Band", "https://bandprotocol.com", BAND, ,
+        [494], Band, "Band", BAND, ,
     ),
     (
         /// Coin type: 495
-        ///
         /// Symbol: DROP
-        ///
         /// Coin: Dropil
-        [495], Dropil, "Dropil", "https://dropilchain.com", DROP, ,
+        [495], Dropil, "Dropil", DROP, ,
     ),
     (
         /// Coin type: 496
-        ///
         /// Symbol: BHT
-        ///
         /// Coin: Bluehelix Chain
-        [496], BluehelixChain, "Bluehelix Chain", "https://bluehelix.network", BHT, ,
+        [496], BluehelixChain, "Bluehelix Chain", BHT, ,
     ),
     (
         /// Coin type: 497
-        ///
         /// Symbol: LYRA
-        ///
         /// Coin: Scrypta
-        [497], Scrypta, "Scrypta", "https://scryptachain.org", LYRA, ,
+        [497], Scrypta, "Scrypta", LYRA, ,
     ),
     (
         /// Coin type: 499
-        ///
         /// Symbol: RUPX
-        ///
         /// Coin: Rupaya
-        [499], Rupaya, "Rupaya", "https://rupx.io", RUPX, ,
+        [499], Rupaya, "Rupaya", RUPX, ,
     ),
     (
         /// Coin type: 500
-        ///
         /// Symbol: THETA
-        ///
         /// Coin: Theta
-        [500], Theta_THETA, "Theta", "https://www.thetatoken.org/", THETA, ,
+        [500], Theta_THETA, "Theta", THETA, ,
     ),
     (
         /// Coin type: 501
-        ///
         /// Symbol: SOL
-        ///
         /// Coin: Solana
-        [501], Solana, "Solana", "https://solana.com", SOL, ,
+        [501], Solana, "Solana", SOL, ,
     ),
     (
         /// Coin type: 502
-        ///
         /// Symbol: THT
-        ///
         /// Coin: ThoughtAI
-        [502], ThoughtAI, "ThoughtAI", "https://github.com/thoughtnetwork/thought", THT, ,
+        [502], ThoughtAI, "ThoughtAI", THT, ,
     ),
     (
         /// Coin type: 503
-        ///
         /// Symbol: CFX
-        ///
         /// Coin: Conflux
-        [503], Conflux, "Conflux", "https://confluxnetwork.org/", CFX, ,
+        [503], Conflux, "Conflux", CFX, ,
     ),
     (
         /// Coin type: 504
-        ///
         /// Symbol: KUMA
-        ///
         /// Coin: Kumacoin
-        [504], Kumacoin, "Kumacoin", "https://www.kumacoin.dev/", KUMA, ,
+        [504], Kumacoin, "Kumacoin", KUMA, ,
     ),
     (
         /// Coin type: 505
-        ///
         /// Symbol: HASH
-        ///
         /// Coin: Provenance
-        [505], Provenance, "Provenance", "https://provenance.io", HASH, ,
+        [505], Provenance, "Provenance", HASH, ,
     ),
     (
         /// Coin type: 506
-        ///
         /// Symbol: CSPR
-        ///
         /// Coin: Casper
-        [506], Casper, "Casper", "https://casper.network", CSPR, ,
+        [506], Casper, "Casper", CSPR, ,
     ),
     (
         /// Coin type: 507
-        ///
         /// Symbol: EARTH
-        ///
         /// Coin: EARTH
-        [507], EARTH, "EARTH", "https://www.earth.engineering", EARTH, ,
+        [507], EARTH, "EARTH", EARTH, ,
     ),
     (
         /// Coin type: 508
-        ///
-        /// Symbol: ERD
-        ///
-        /// Coin: Elrond
-        [508], Elrond, "Elrond", "https://elrond.com/", ERD, ,
+        /// Symbol: EGLD
+        /// Coin: MultiversX
+        [508], MultiversX, "MultiversX", EGLD, ,
     ),
     (
         /// Coin type: 509
-        ///
         /// Symbol: CHI
-        ///
         /// Coin: Xaya
-        [509], Xaya, "Xaya", "https://xaya.io/", CHI, ,
+        [509], Xaya, "Xaya", CHI, ,
     ),
     (
         /// Coin type: 510
-        ///
         /// Symbol: KOTO
-        ///
         /// Coin: Koto
-        [510], Koto, "Koto", "https://ko-to.org/", KOTO, ,
+        [510], Koto, "Koto", KOTO, ,
     ),
     (
         /// Coin type: 511
-        ///
         /// Symbol: OTC
-        ///
         /// Coin: θ
-        [511], Theta_OTC, "θ", "https://otc.network/", OTC, ,
+        [511], Theta_OTC, "", OTC, ,
     ),
     (
         /// Coin type: 512
-        ///
-        /// Symbol: XRD
-        ///
+        /// Symbol: RXD
         /// Coin: Radiant
-        [512], Radiant, "Radiant", "https://radiant.cash/", , "XRD",
+        [512], Radiant, "Radiant", RXD, ,
     ),
     (
         /// Coin type: 513
-        ///
         /// Symbol: SEELEN
-        ///
         /// Coin: Seele-N
-        [513], SeeleN, "Seele-N", "https://seelen.pro/", SEELEN, ,
+        [513], SeeleN, "Seele-N", SEELEN, ,
     ),
     (
         /// Coin type: 514
-        ///
         /// Symbol: AETH
-        ///
         /// Coin: AETH
-        [514], AETH, "AETH", "https://aeth.io", AETH, ,
+        [514], AETH, "AETH", AETH, ,
     ),
     (
         /// Coin type: 515
-        ///
         /// Symbol: DNA
-        ///
         /// Coin: Idena
-        [515], Idena, "Idena", "https://idena.io", DNA, ,
+        [515], Idena, "Idena", DNA, ,
     ),
     (
         /// Coin type: 516
-        ///
         /// Symbol: VEE
-        ///
         /// Coin: Virtual Economy Era
-        [516], VirtualEconomyEra, "Virtual Economy Era", "https://www.vee.tech/", VEE, ,
+        [516], VirtualEconomyEra, "Virtual Economy Era", VEE, ,
     ),
     (
         /// Coin type: 517
-        ///
         /// Symbol: SIERRA
-        ///
         /// Coin: SierraCoin
-        [517], SierraCoin, "SierraCoin", "https://sierracoin.org/", SIERRA, ,
+        [517], SierraCoin, "SierraCoin", SIERRA, ,
     ),
     (
         /// Coin type: 518
-        ///
         /// Symbol: LET
-        ///
         /// Coin: Linkeye
-        [518], Linkeye, "Linkeye", "https://www.linkeye.com/", LET, ,
+        [518], Linkeye, "Linkeye", LET, ,
     ),
     (
         /// Coin type: 519
-        ///
         /// Symbol: BSC
-        ///
         /// Coin: Bitcoin Smart Contract
-        [519], BitcoinSmartContract, "Bitcoin Smart Contract", "https://bsc.net/", BSC, ,
+        [519], BitcoinSmartContract, "Bitcoin Smart Contract", BSC, ,
     ),
     (
         /// Coin type: 520
-        ///
         /// Symbol: BTCV
-        ///
         /// Coin: BitcoinVIP
-        [520], BitcoinVIP, "BitcoinVIP", "https://www.bitvip.org/", BTCV, ,
+        [520], BitcoinVIP, "BitcoinVIP", BTCV, ,
     ),
     (
         /// Coin type: 521
-        ///
         /// Symbol: ABA
-        ///
         /// Coin: Dabacus
-        [521], Dabacus, "Dabacus", "https://www.dabacus.org", ABA, ,
+        [521], Dabacus, "Dabacus", ABA, ,
     ),
     (
         /// Coin type: 522
-        ///
         /// Symbol: SCC
-        ///
         /// Coin: StakeCubeCoin
-        [522], StakeCubeCoin, "StakeCubeCoin", "https://stakecube.net", SCC, ,
+        [522], StakeCubeCoin, "StakeCubeCoin", SCC, ,
     ),
     (
         /// Coin type: 523
-        ///
         /// Symbol: EDG
-        ///
         /// Coin: Edgeware
-        [523], Edgeware, "Edgeware", "https://edgewa.re/", EDG, ,
+        [523], Edgeware, "Edgeware", EDG, ,
     ),
     (
         /// Coin type: 524
-        ///
         /// Symbol: AMS
-        ///
         /// Coin: AmsterdamCoin
-        [524], AmsterdamCoin, "AmsterdamCoin", "https://www.amsterdamcoin.com/", AMS, ,
+        [524], AmsterdamCoin, "AmsterdamCoin", AMS, ,
     ),
     (
         /// Coin type: 525
-        ///
         /// Symbol: GOSS
-        ///
         /// Coin: GOSSIP Coin
-        [525], GOSSIPCoin, "GOSSIP Coin", "https://gossipcoin.net/", GOSS, ,
+        [525], GOSSIPCoin, "GOSSIP Coin", GOSS, ,
     ),
     (
         /// Coin type: 526
-        ///
         /// Symbol: BU
-        ///
         /// Coin: BUMO
-        [526], BUMO, "BUMO", "https://www.bumo.io/", BU, ,
+        [526], BUMO, "BUMO", BU, ,
     ),
     (
         /// Coin type: 527
-        ///
         /// Symbol: GRAM
-        ///
         /// Coin: GRAM
-        [527], GRAM, "GRAM", "https://github.com/tongram", GRAM, ,
+        [527], GRAM, "GRAM", GRAM, ,
     ),
     (
         /// Coin type: 528
-        ///
         /// Symbol: YAP
-        ///
         /// Coin: Yapstone
-        [528], Yapstone, "Yapstone", "https://yapstone.pro/", YAP, ,
+        [528], Yapstone, "Yapstone", YAP, ,
     ),
     (
         /// Coin type: 529
-        ///
         /// Symbol: SCRT
-        ///
         /// Coin: Secret Network
-        [529], SecretNetwork, "Secret Network", "https://scrt.network/", SCRT, ,
+        [529], SecretNetwork, "Secret Network", SCRT, ,
     ),
     (
         /// Coin type: 530
-        ///
         /// Symbol: NOVO
-        ///
         /// Coin: Novo
-        [530], Novo, "Novo", "https://novocurrency.com/", NOVO, ,
+        [530], Novo, "Novo", NOVO, ,
     ),
     (
         /// Coin type: 531
-        ///
         /// Symbol: GHOST
-        ///
         /// Coin: Ghost
-        [531], Ghost, "Ghost", "https://ghostbymcafee.com/", GHOST, ,
+        [531], Ghost, "Ghost", GHOST, ,
     ),
     (
         /// Coin type: 532
-        ///
         /// Symbol: HST
-        ///
         /// Coin: HST
-        [532], HST, "HST", "https://www.hschain.io/", HST, ,
+        [532], HST, "HST", HST, ,
     ),
     (
         /// Coin type: 533
-        ///
         /// Symbol: PRJ
-        ///
         /// Coin: ProjectCoin
-        [533], ProjectCoin, "ProjectCoin", "https://projectcoin.net/", PRJ, ,
+        [533], ProjectCoin, "ProjectCoin", PRJ, ,
     ),
     (
         /// Coin type: 534
-        ///
         /// Symbol: YOU
-        ///
         /// Coin: YOUChain
-        [534], YOUChain, "YOUChain", "https://youchain.cc/", YOU, ,
+        [534], YOUChain, "YOUChain", YOU, ,
     ),
     (
         /// Coin type: 535
-        ///
         /// Symbol: XHV
-        ///
         /// Coin: Haven Protocol
-        [535], HavenProtocol, "Haven Protocol", "https://havenprotocol.org", XHV, ,
+        [535], HavenProtocol, "Haven Protocol", XHV, ,
     ),
     (
         /// Coin type: 536
-        ///
         /// Symbol: BYND
-        ///
         /// Coin: Beyondcoin
-        [536], Beyondcoin, "Beyondcoin", "https://beyondcoin.io", BYND, ,
+        [536], Beyondcoin, "Beyondcoin", BYND, ,
     ),
     (
         /// Coin type: 537
-        ///
         /// Symbol: JOYS
-        ///
         /// Coin: Joys Digital
-        [537], JoysDigital, "Joys Digital", "https://joys.digital", JOYS, ,
+        [537], JoysDigital, "Joys Digital", JOYS, ,
     ),
     (
         /// Coin type: 538
-        ///
         /// Symbol: VAL
-        ///
         /// Coin: Valorbit
-        [538], Valorbit, "Valorbit", "https://valorbit.com/", VAL, ,
+        [538], Valorbit, "Valorbit", VAL, ,
     ),
     (
         /// Coin type: 539
-        ///
         /// Symbol: FLOW
-        ///
         /// Coin: Flow
-        [539], Flow, "Flow", "https://www.onflow.org/", FLOW, ,
+        [539], Flow, "Flow", FLOW, ,
     ),
     (
         /// Coin type: 540
-        ///
         /// Symbol: SMESH
-        ///
         /// Coin: Spacemesh Coin
-        [540], SpacemeshCoin, "Spacemesh Coin", "https://spacemesh.io", SMESH, ,
+        [540], SpacemeshCoin, "Spacemesh Coin", SMESH, ,
     ),
     (
         /// Coin type: 541
-        ///
         /// Symbol: SCDO
-        ///
         /// Coin: SCDO
-        [541], SCDO, "SCDO", "https://scdoproject.org/", SCDO, ,
+        [541], SCDO, "SCDO", SCDO, ,
     ),
     (
         /// Coin type: 542
-        ///
         /// Symbol: IQS
-        ///
         /// Coin: IQ-Cash
-        [542], IQCash, "IQ-Cash", "https://iq.cash", IQS, ,
+        [542], IQCash, "IQ-Cash", IQS, ,
     ),
     (
         /// Coin type: 543
-        ///
         /// Symbol: BIND
-        ///
         /// Coin: Compendia
-        [543], Compendia, "Compendia", "https://compendia.org/", BIND, ,
+        [543], Compendia, "Compendia", BIND, ,
     ),
     (
         /// Coin type: 544
-        ///
         /// Symbol: COINEVO
-        ///
         /// Coin: Coinevo
-        [544], Coinevo, "Coinevo", "https://coinevo.tech", COINEVO, ,
+        [544], Coinevo, "Coinevo", COINEVO, ,
     ),
     (
         /// Coin type: 545
-        ///
         /// Symbol: SCRIBE
-        ///
         /// Coin: Scribe
-        [545], Scribe, "Scribe", "https://scribe.network", SCRIBE, ,
+        [545], Scribe, "Scribe", SCRIBE, ,
     ),
     (
         /// Coin type: 546
-        ///
         /// Symbol: HYN
-        ///
         /// Coin: Hyperion
-        [546], Hyperion, "Hyperion", "https://www.hyn.space/", HYN, ,
+        [546], Hyperion, "Hyperion", HYN, ,
     ),
     (
         /// Coin type: 547
-        ///
         /// Symbol: BHP
-        ///
         /// Coin: BHP
-        [547], BHP, "BHP", "https://www.bhpa.io/", BHP, ,
+        [547], BHP, "BHP", BHP, ,
     ),
     (
         /// Coin type: 548
-        ///
         /// Symbol: BBC
-        ///
         /// Coin: BigBang Core
-        [548], BigBangCore, "BigBang Core", "https://github.com/bigbangcore", BBC, ,
+        [548], BigBangCore, "BigBang Core", BBC, ,
     ),
     (
         /// Coin type: 549
-        ///
         /// Symbol: MKF
-        ///
         /// Coin: MarketFinance
-        [549], MarketFinance, "MarketFinance", "https://mkf.io/", MKF, ,
+        [549], MarketFinance, "MarketFinance", MKF, ,
     ),
     (
         /// Coin type: 550
-        ///
         /// Symbol: XDC
-        ///
-        /// Coin: XinFin.Network
-        [550], XinFinNetwork, "XinFin.Network", "https://xinfin.network", XDC, ,
+        /// Coin: XinFin
+        [550], XinFin, "XinFin", XDC, ,
     ),
     (
         /// Coin type: 551
-        ///
         /// Symbol: STR
-        ///
         /// Coin: Straightedge
-        [551], Straightedge, "Straightedge", "https://straighted.ge/", STR, ,
+        [551], Straightedge, "Straightedge", STR, ,
     ),
     (
         /// Coin type: 552
-        ///
         /// Symbol: SUM
-        ///
         /// Coin: Sumcoin
-        [552], Sumcoin, "Sumcoin", "https://sumcoin.org", SUM, ,
+        [552], Sumcoin, "Sumcoin", SUM, ,
     ),
     (
         /// Coin type: 553
-        ///
         /// Symbol: HBC
-        ///
         /// Coin: HuobiChain
-        [553], HuobiChain, "HuobiChain", "https://www.huobichain.com/", HBC, ,
+        [553], HuobiChain, "HuobiChain", HBC, ,
     ),
     (
         /// Coin type: 555
-        ///
         /// Symbol: BCS
-        ///
         /// Coin: Bitcoin Smart
-        [555], BitcoinSmart, "Bitcoin Smart", "http://bcs.info", BCS, ,
+        [555], BitcoinSmart, "Bitcoin Smart", BCS, ,
     ),
     (
         /// Coin type: 556
-        ///
         /// Symbol: KTS
-        ///
         /// Coin: Kratos
-        [556], Kratos, "Kratos", "https://github.com/KuChainNetwork/kratos", , "KTS",
+        [556], Kratos, "Kratos", , "KTS",
     ),
     (
         /// Coin type: 557
-        ///
         /// Symbol: LKR
-        ///
         /// Coin: Lkrcoin
-        [557], Lkrcoin, "Lkrcoin", "https://lkrcoin.io/", LKR, ,
+        [557], Lkrcoin, "Lkrcoin", LKR, ,
     ),
     (
         /// Coin type: 558
-        ///
         /// Symbol: TAO
-        ///
         /// Coin: Tao
-        [558], Tao, "Tao", "https://tao.network", TAO, ,
+        [558], Tao, "Tao", TAO, ,
     ),
     (
         /// Coin type: 559
-        ///
         /// Symbol: XWC
-        ///
         /// Coin: Whitecoin
-        [559], Whitecoin, "Whitecoin", "https://www.whitecoin.info/", XWC, ,
+        [559], Whitecoin, "Whitecoin", XWC, ,
     ),
     (
         /// Coin type: 560
-        ///
         /// Symbol: DEAL
-        ///
         /// Coin: DEAL
-        [560], DEAL, "DEAL", "https://idealcash.io/", DEAL, ,
+        [560], DEAL, "DEAL", DEAL, ,
     ),
     (
         /// Coin type: 561
-        ///
         /// Symbol: NTY
-        ///
         /// Coin: Nexty
-        [561], Nexty, "Nexty", "https://nexty.io/", NTY, ,
+        [561], Nexty, "Nexty", NTY, ,
     ),
     (
         /// Coin type: 562
-        ///
         /// Symbol: TOP
-        ///
         /// Coin: TOP NetWork
-        [562], TOPNetWork, "TOP NetWork", "https://www.topnetwork.org", TOP, ,
-    ),
-    (
-        /// Coin type: 563
-        ///
-        /// Symbol: STARS
-        ///
-        /// Coin: Stargaze
-        [563], Stargaze, "Stargaze", "https://www.stargaze.fi/", STARS, ,
+        [562], TOPNetWork, "TOP NetWork", TOP, ,
     ),
     (
         /// Coin type: 564
-        ///
         /// Symbol: AG
-        ///
         /// Coin: Agoric
-        [564], Agoric, "Agoric", "https://agoric.com/", AG, ,
+        [564], Agoric, "Agoric", AG, ,
     ),
     (
         /// Coin type: 565
-        ///
         /// Symbol: CICO
-        ///
         /// Coin: Coinicles
-        [565], Coinicles, "Coinicles", "https://github.com/coinicles/cico", CICO, ,
+        [565], Coinicles, "Coinicles", CICO, ,
     ),
     (
         /// Coin type: 566
-        ///
         /// Symbol: IRIS
-        ///
         /// Coin: Irisnet
-        [566], Irisnet, "Irisnet", "https://www.irisnet.org/", IRIS, ,
+        [566], Irisnet, "Irisnet", IRIS, ,
     ),
     (
         /// Coin type: 567
-        ///
         /// Symbol: NCG
-        ///
         /// Coin: Nine Chronicles
-        [567], NineChronicles, "Nine Chronicles", "https://nine-chronicles.com/", NCG, ,
+        [567], NineChronicles, "Nine Chronicles", NCG, ,
     ),
     (
         /// Coin type: 568
-        ///
         /// Symbol: LRG
-        ///
         /// Coin: Large Coin
-        [568], LargeCoin, "Large Coin", "https://www.largocoin.io/", LRG, ,
+        [568], LargeCoin, "Large Coin", LRG, ,
     ),
     (
         /// Coin type: 569
-        ///
         /// Symbol: SERO
-        ///
         /// Coin: Super Zero Protocol
-        [569], SuperZeroProtocol, "Super Zero Protocol", "https://sero.cash/", SERO, ,
+        [569], SuperZeroProtocol, "Super Zero Protocol", SERO, ,
     ),
     (
         /// Coin type: 570
-        ///
         /// Symbol: BDX
-        ///
         /// Coin: Beldex
-        [570], Beldex, "Beldex", "https://www.beldex.io/", BDX, ,
+        [570], Beldex, "Beldex", BDX, ,
     ),
     (
         /// Coin type: 571
-        ///
         /// Symbol: CCXX
-        ///
         /// Coin: Counos X
-        [571], CounosX, "Counos X", "https://www.counos.io/CounosX", CCXX, ,
+        [571], CounosX, "Counos X", CCXX, ,
     ),
     (
         /// Coin type: 572
-        ///
         /// Symbol: SLS
-        ///
         /// Coin: Saluscoin
-        [572], Saluscoin, "Saluscoin", "https://saluscoin.info/", SLS, ,
+        [572], Saluscoin, "Saluscoin", SLS, ,
     ),
     (
         /// Coin type: 573
-        ///
         /// Symbol: SRM
-        ///
         /// Coin: Serum
-        [573], Serum, "Serum", "https://projectserum.com/", SRM, ,
-    ),
-    (
-        /// Coin type: 574
-        ///
-        /// Symbol: VLX
-        ///
-        /// Coin: Velas
-        [574], Velas, "Velas", "https://velas.com/", VLX, ,
+        [573], Serum, "Serum", SRM, ,
     ),
     (
         /// Coin type: 575
-        ///
         /// Symbol: VIVT
-        ///
         /// Coin: VIDT Datalink
-        [575], VIDTDatalink, "VIDT Datalink", "https://about.v-id.org/", VIVT, ,
+        [575], VIDTDatalink, "VIDT Datalink", VIVT, ,
     ),
     (
         /// Coin type: 576
-        ///
         /// Symbol: BPS
-        ///
         /// Coin: BitcoinPoS
-        [576], BitcoinPoS, "BitcoinPoS", "https://bitcoinpos.net/", BPS, ,
+        [576], BitcoinPoS, "BitcoinPoS", BPS, ,
     ),
     (
         /// Coin type: 577
-        ///
         /// Symbol: NKN
-        ///
         /// Coin: NKN
-        [577], NKN, "NKN", "https://www.nkn.org/", NKN, ,
+        [577], NKN, "NKN", NKN, ,
     ),
     (
         /// Coin type: 578
-        ///
         /// Symbol: ICL
-        ///
         /// Coin: ILCOIN
-        [578], ILCOIN, "ILCOIN", "https://ilcoincrypto.com/", ICL, ,
+        [578], ILCOIN, "ILCOIN", ICL, ,
     ),
     (
         /// Coin type: 579
-        ///
         /// Symbol: BONO
-        ///
         /// Coin: Bonorum
-        [579], Bonorum, "Bonorum", "https://www.bonorum.io/", BONO, ,
+        [579], Bonorum, "Bonorum", BONO, ,
     ),
     (
         /// Coin type: 580
-        ///
         /// Symbol: PLC
-        ///
         /// Coin: PLATINCOIN
-        [580], PLATINCOIN, "PLATINCOIN", "https://platincoin.com/en", PLC, ,
+        [580], PLATINCOIN, "PLATINCOIN", PLC, ,
     ),
     (
         /// Coin type: 581
-        ///
         /// Symbol: DUN
-        ///
         /// Coin: Dune
-        [581], Dune, "Dune", "https://dune.network", DUN, ,
+        [581], Dune, "Dune", DUN, ,
     ),
     (
         /// Coin type: 582
-        ///
         /// Symbol: DMCH
-        ///
         /// Coin: Darmacash
-        [582], Darmacash, "Darmacash", "https://www.darmacash.com/", DMCH, ,
+        [582], Darmacash, "Darmacash", DMCH, ,
     ),
     (
         /// Coin type: 583
-        ///
         /// Symbol: CTC
-        ///
         /// Coin: Creditcoin
-        [583], Creditcoin, "Creditcoin", "https://www.creditcoin.org/", CTC, ,
+        [583], Creditcoin, "Creditcoin", CTC, ,
     ),
     (
         /// Coin type: 584
-        ///
         /// Symbol: KELP
-        ///
         /// Coin: Haidai Network
-        [584], HaidaiNetwork, "Haidai Network", "https://haidai.one", KELP, ,
+        [584], HaidaiNetwork, "Haidai Network", KELP, ,
     ),
     (
         /// Coin type: 585
-        ///
         /// Symbol: GBCR
-        ///
         /// Coin: GoldBCR
-        [585], GoldBCR, "GoldBCR", "https://goldbcr.io/", GBCR, ,
+        [585], GoldBCR, "GoldBCR", GBCR, ,
     ),
     (
         /// Coin type: 586
-        ///
         /// Symbol: XDAG
-        ///
         /// Coin: XDAG
-        [586], XDAG, "XDAG", "https://xdag.io", XDAG, ,
+        [586], XDAG, "XDAG", XDAG, ,
     ),
     (
         /// Coin type: 587
-        ///
         /// Symbol: PRV
-        ///
         /// Coin: Incognito Privacy
-        [587], IncognitoPrivacy, "Incognito Privacy", "https://incognito.org", PRV, ,
+        [587], IncognitoPrivacy, "Incognito Privacy", PRV, ,
     ),
     (
         /// Coin type: 588
-        ///
         /// Symbol: SCAP
-        ///
         /// Coin: SafeCapital
-        [588], SafeCapital, "SafeCapital", "https://www.safecapital.io/", SCAP, ,
+        [588], SafeCapital, "SafeCapital", SCAP, ,
     ),
     (
         /// Coin type: 589
-        ///
         /// Symbol: TFUEL
-        ///
         /// Coin: Theta Fuel
-        [589], ThetaFuel, "Theta Fuel", "https://community.theta.tv/tfuel-on-sliver-faq/", TFUEL, ,
+        [589], ThetaFuel, "Theta Fuel", TFUEL, ,
     ),
     (
         /// Coin type: 590
-        ///
         /// Symbol: GTM
-        ///
         /// Coin: Gentarium
-        [590], Gentarium, "Gentarium", "https://gtmcoin.io/", GTM, ,
+        [590], Gentarium, "Gentarium", GTM, ,
     ),
     (
         /// Coin type: 591
-        ///
         /// Symbol: RNL
-        ///
         /// Coin: RentalChain
-        [591], RentalChain, "RentalChain", "https://rentalchain.net/", RNL, ,
+        [591], RentalChain, "RentalChain", RNL, ,
     ),
     (
         /// Coin type: 592
-        ///
         /// Symbol: GRIN
-        ///
         /// Coin: Grin
-        [592], Grin, "Grin", "https://grin.mw/", GRIN, ,
+        [592], Grin, "Grin", GRIN, ,
     ),
     (
         /// Coin type: 593
-        ///
         /// Symbol: MWC
-        ///
         /// Coin: MimbleWimbleCoin
-        [593], MimbleWimbleCoin, "MimbleWimbleCoin", "https://www.mwc.mw/", MWC, ,
+        [593], MimbleWimbleCoin, "MimbleWimbleCoin", MWC, ,
     ),
     (
         /// Coin type: 594
-        ///
         /// Symbol: DOCK
-        ///
         /// Coin: Dock
-        [594], Dock, "Dock", "https://dock.io/", DOCK, ,
+        [594], Dock, "Dock", DOCK, ,
     ),
     (
         /// Coin type: 595
-        ///
         /// Symbol: POLYX
-        ///
         /// Coin: Polymesh
-        [595], Polymesh, "Polymesh", "https://polymath.network/", POLYX, ,
+        [595], Polymesh, "Polymesh", POLYX, ,
     ),
     (
         /// Coin type: 596
-        ///
         /// Symbol: DIVER
-        ///
         /// Coin: Divergenti
-        [596], Divergenti, "Divergenti", "https://www.divergenti.cl/", DIVER, ,
+        [596], Divergenti, "Divergenti", DIVER, ,
     ),
     (
         /// Coin type: 597
-        ///
         /// Symbol: XEP
-        ///
         /// Coin: Electra Protocol
-        [597], ElectraProtocol, "Electra Protocol", "https://www.electraprotocol.com/", XEP, ,
+        [597], ElectraProtocol, "Electra Protocol", XEP, ,
     ),
     (
         /// Coin type: 598
-        ///
         /// Symbol: APN
-        ///
         /// Coin: Apron
-        [598], Apron, "Apron", "https://apron.network/", APN, ,
+        [598], Apron, "Apron", APN, ,
     ),
     (
         /// Coin type: 599
-        ///
         /// Symbol: TFC
-        ///
         /// Coin: Turbo File Coin
-        [599], TurboFileCoin, "Turbo File Coin", "http://turbofil.cc", TFC, ,
+        [599], TurboFileCoin, "Turbo File Coin", TFC, ,
     ),
     (
         /// Coin type: 600
-        ///
         /// Symbol: UTE
-        ///
         /// Coin: Unit-e
-        [600], UnitE, "Unit-e", "https://dtr.org/unit-e/", UTE, ,
+        [600], UnitE, "Unit-e", UTE, ,
     ),
     (
         /// Coin type: 601
-        ///
         /// Symbol: MTC
-        ///
         /// Coin: Metacoin
-        [601], Metacoin, "Metacoin", "https://metacoin.network", MTC, ,
+        [601], Metacoin, "Metacoin", MTC, ,
     ),
     (
         /// Coin type: 602
-        ///
         /// Symbol: NC
-        ///
         /// Coin: NobodyCash
-        [602], NobodyCash, "NobodyCash", "https://nobodycash.world", NC, ,
+        [602], NobodyCash, "NobodyCash", NC, ,
     ),
     (
         /// Coin type: 603
-        ///
         /// Symbol: XINY
-        ///
         /// Coin: Xinyuehu
-        [603], Xinyuehu, "Xinyuehu", "https://xinyuehu.xyz", XINY, ,
+        [603], Xinyuehu, "Xinyuehu", XINY, ,
     ),
     (
         /// Coin type: 604
-        ///
         /// Symbol: DYN
-        ///
         /// Coin: Dynamo
-        [604], Dynamo, "Dynamo", "https://www.dynamocoin.org", DYN, ,
+        [604], Dynamo, "Dynamo", DYN, ,
     ),
     (
         /// Coin type: 605
-        ///
         /// Symbol: BUFS
-        ///
         /// Coin: Buffer
-        [605], Buffer, "Buffer", "https://bufferbufs.com", BUFS, ,
+        [605], Buffer, "Buffer", BUFS, ,
     ),
     (
         /// Coin type: 606
-        ///
         /// Symbol: STOS
-        ///
         /// Coin: Stratos
-        [606], Stratos, "Stratos", "https://thestratos.org", STOS, ,
+        [606], Stratos, "Stratos", STOS, ,
     ),
     (
         /// Coin type: 607
-        ///
         /// Symbol: TON
-        ///
         /// Coin: TON
-        [607], TON, "TON", "https://toncoin.org", , "TON",
+        [607], TON, "TON", TON, ,
     ),
     (
         /// Coin type: 608
-        ///
         /// Symbol: TAFT
-        ///
         /// Coin: TAFT
-        [608], TAFT, "TAFT", "https://www.tafchain.com", TAFT, ,
+        [608], TAFT, "TAFT", TAFT, ,
     ),
     (
         /// Coin type: 609
-        ///
         /// Symbol: HYDRA
-        ///
         /// Coin: HYDRA
-        [609], HYDRA, "HYDRA", "https://hydrachain.org/", HYDRA, ,
+        [609], HYDRA, "HYDRA", HYDRA, ,
     ),
     (
         /// Coin type: 610
-        ///
         /// Symbol: NOR
-        ///
         /// Coin: Noir
-        [610], Noir, "Noir", "http://www.noirofficial.org/", NOR, ,
+        [610], Noir, "Noir", NOR, ,
     ),
     (
         /// Coin type: 611
-        ///
         /// Coin: Manta Network Private Asset
-        [611], MantaNetworkPrivateAsset, "Manta Network Private Asset", "https://manta.network/", , ,
+        [611], MantaNetworkPrivateAsset, "Manta Network Private Asset", , ,
     ),
     (
         /// Coin type: 612
-        ///
         /// Coin: Calamari Network Private Asset
-        [612], CalamariNetworkPrivateAsset, "Calamari Network Private Asset", "https://calamari.manta.network/", , ,
+        [612], CalamariNetworkPrivateAsset, "Calamari Network Private Asset", , ,
     ),
     (
         /// Coin type: 613
-        ///
         /// Symbol: WCN
-        ///
         /// Coin: Widecoin
-        [613], Widecoin, "Widecoin", "https://Widecoin.org/", WCN, ,
+        [613], Widecoin, "Widecoin", WCN, ,
     ),
     (
         /// Coin type: 614
-        ///
         /// Symbol: OPT
-        ///
         /// Coin: Optimistic Ethereum
-        [614], OptimisticEthereum, "Optimistic Ethereum", "https://www.optimism.io/", OPT, ,
+        [614], OptimisticEthereum, "Optimistic Ethereum", OPT, ,
     ),
     (
         /// Coin type: 615
-        ///
         /// Symbol: PSWAP
-        ///
         /// Coin: PolkaSwap
-        [615], PolkaSwap, "PolkaSwap", "https://polkaswap.io", PSWAP, ,
+        [615], PolkaSwap, "PolkaSwap", PSWAP, ,
     ),
     (
         /// Coin type: 616
-        ///
         /// Symbol: VAL
-        ///
         /// Coin: Validator
-        [616], Validator, "Validator", "https://sora.org/soratokens", , "VAL",
+        [616], Validator, "Validator", , "VAL",
     ),
     (
         /// Coin type: 617
-        ///
         /// Symbol: XOR
-        ///
         /// Coin: Sora
-        [617], Sora, "Sora", "https://sora.org/soratokens", XOR, ,
+        [617], Sora, "Sora", XOR, ,
     ),
     (
         /// Coin type: 618
-        ///
         /// Symbol: SSP
-        ///
         /// Coin: SmartShare
-        [618], SmartShare, "SmartShare", "http://www.smartshare.vip/", SSP, ,
+        [618], SmartShare, "SmartShare", SSP, ,
     ),
     (
         /// Coin type: 619
-        ///
         /// Symbol: DEI
-        ///
         /// Coin: DeimosX
-        [619], DeimosX, "DeimosX", "https://deimosx.org/", DEI, ,
+        [619], DeimosX, "DeimosX", DEI, ,
     ),
     (
-        /// Coin type: 620
-        ///
-        /// Symbol: AXL
-        ///
-        /// Coin: Axelar
-        [620], Axelar, "Axelar", "https://axelar.network/", AXL, ,
+        /// Coin type: 621
+        /// Symbol: ZERO
+        /// Coin: Singularity
+        [621], Singularity, "Singularity", ZERO, ,
+    ),
+    (
+        /// Coin type: 622
+        /// Symbol: ALPHA
+        /// Coin: AlphaDAO
+        [622], AlphaDAO, "AlphaDAO", ALPHA, ,
+    ),
+    (
+        /// Coin type: 623
+        /// Symbol: BDECO
+        /// Coin: BDCashProtocol Ecosystem
+        [623], BDCashProtocolEcosystem, "BDCashProtocol Ecosystem", BDECO, ,
     ),
     (
         /// Coin type: 624
-        ///
         /// Symbol: NOBL
-        ///
         /// Coin: Nobility
-        [624], Nobility, "Nobility", "https://github.com/nobilitysociety/", NOBL, ,
+        [624], Nobility, "Nobility", NOBL, ,
     ),
     (
         /// Coin type: 625
-        ///
         /// Symbol: EAST
-        ///
         /// Coin: Eastcoin
-        [625], Eastcoin, "Eastcoin", "http://easthub.io/", EAST, ,
+        [625], Eastcoin, "Eastcoin", EAST, ,
+    ),
+    (
+        /// Coin type: 626
+        /// Symbol: KDA
+        /// Coin: Kadena
+        [626], Kadena, "Kadena", KDA, ,
+    ),
+    (
+        /// Coin type: 627
+        /// Symbol: SOUL
+        /// Coin: Phantasma
+        [627], Phantasma, "Phantasma", SOUL, ,
     ),
     (
         /// Coin type: 628
-        ///
         /// Symbol: LORE
-        ///
         /// Coin: Gitopia
-        [628], Gitopia, "Gitopia", "https://gitopia.com/", LORE, ,
+        [628], Gitopia, "Gitopia", LORE, ,
+    ),
+    (
+        /// Coin type: 629
+        /// Symbol: FNR
+        /// Coin: Fincor
+        [629], Fincor, "Fincor", FNR, ,
+    ),
+    (
+        /// Coin type: 630
+        /// Symbol: NEXUS
+        /// Coin: Nexus
+        [630], Nexus_NEXUS, "Nexus", NEXUS, ,
+    ),
+    (
+        /// Coin type: 631
+        /// Symbol: QTZ
+        /// Coin: Quartz
+        [631], Quartz, "Quartz", QTZ, ,
+    ),
+    (
+        /// Coin type: 632
+        /// Symbol: MAS
+        /// Coin: Massa
+        [632], Massa, "Massa", MAS, ,
+    ),
+    (
+        /// Coin type: 633
+        /// Symbol: CALL
+        /// Coin: Callchain
+        [633], Callchain, "Callchain", CALL, ,
+    ),
+    (
+        /// Coin type: 634
+        /// Symbol: VAL
+        /// Coin: Validity
+        [634], Validity, "Validity", , "VAL",
+    ),
+    (
+        /// Coin type: 635
+        /// Symbol: POKT
+        /// Coin: Pocket Network
+        [635], PocketNetwork, "Pocket Network", POKT, ,
+    ),
+    (
+        /// Coin type: 636
+        /// Symbol: EMIT
+        /// Coin: EMIT
+        [636], EMIT, "EMIT", EMIT, ,
+    ),
+    (
+        /// Coin type: 637
+        /// Symbol: APTOS
+        /// Coin: Aptos
+        [637], Aptos, "Aptos", APTOS, ,
+    ),
+    (
+        /// Coin type: 638
+        /// Symbol: ADON
+        /// Coin: ADON
+        [638], ADON, "ADON", ADON, ,
     ),
     (
         /// Coin type: 639
-        ///
         /// Symbol: BTSG
-        ///
         /// Coin: BitSong
-        [639], BitSong, "BitSong", "https://bitsong.io", BTSG, ,
+        [639], BitSong, "BitSong", BTSG, ,
     ),
     (
         /// Coin type: 640
-        ///
         /// Symbol: LFC
-        ///
         /// Coin: Leofcoin
-        [640], Leofcoin, "Leofcoin", "https://leofcoin.org", LFC, ,
+        [640], Leofcoin, "Leofcoin", LFC, ,
+    ),
+    (
+        /// Coin type: 641
+        /// Symbol: KCS
+        /// Coin: KuCoin Shares
+        [641], KuCoinShares, "KuCoin Shares", KCS, ,
+    ),
+    (
+        /// Coin type: 642
+        /// Symbol: KCC
+        /// Coin: KuCoin Community Chain
+        [642], KuCoinCommunityChain, "KuCoin Community Chain", KCC, ,
+    ),
+    (
+        /// Coin type: 643
+        /// Symbol: AZERO
+        /// Coin: Aleph Zero
+        [643], AlephZero, "Aleph Zero", AZERO, ,
+    ),
+    (
+        /// Coin type: 644
+        /// Symbol: TREE
+        /// Coin: Tree
+        [644], Tree, "Tree", TREE, ,
+    ),
+    (
+        /// Coin type: 645
+        /// Symbol: LX
+        /// Coin: Lynx
+        [645], Lynx_LX, "Lynx", LX, ,
+    ),
+    (
+        /// Coin type: 646
+        /// Symbol: XLN
+        /// Coin: Lunarium
+        [646], Lunarium, "Lunarium", XLN, ,
+    ),
+    (
+        /// Coin type: 647
+        /// Symbol: CIC
+        /// Coin: CIC Chain
+        [647], CICChain, "CIC Chain", CIC, ,
     ),
     (
         /// Coin type: 648
-        ///
         /// Symbol: ZRB
-        ///
         /// Coin: Zarb
-        [648], Zarb, "Zarb", "https://zarb.network", ZRB, ,
+        [648], Zarb, "Zarb", ZRB, ,
+    ),
+    (
+        /// Coin type: 650
+        /// Symbol: UCO
+        /// Coin: Archethic
+        [650], Archethic, "Archethic", UCO, ,
+    ),
+    (
+        /// Coin type: 651
+        /// Symbol: SFX
+        /// Coin: Safex Cash
+        [651], SafexCash, "Safex Cash", SFX, ,
+    ),
+    (
+        /// Coin type: 652
+        /// Symbol: SFT
+        /// Coin: Safex Token
+        [652], SafexToken, "Safex Token", SFT, ,
+    ),
+    (
+        /// Coin type: 653
+        /// Symbol: WSFX
+        /// Coin: Wrapped Safex Cash
+        [653], WrappedSafexCash, "Wrapped Safex Cash", WSFX, ,
+    ),
+    (
+        /// Coin type: 654
+        /// Symbol: USDG
+        /// Coin: US Digital Gold
+        [654], USDigitalGold, "US Digital Gold", USDG, ,
+    ),
+    (
+        /// Coin type: 655
+        /// Symbol: WMP
+        /// Coin: WAMP
+        [655], WAMP, "WAMP", WMP, ,
+    ),
+    (
+        /// Coin type: 656
+        /// Symbol: EKTA
+        /// Coin: Ekta
+        [656], Ekta, "Ekta", EKTA, ,
+    ),
+    (
+        /// Coin type: 657
+        /// Symbol: YDA
+        /// Coin: YadaCoin
+        [657], YadaCoin, "YadaCoin", YDA, ,
+    ),
+    (
+        /// Coin type: 658
+        /// Symbol: WHIVE
+        /// Coin: Whive
+        [658], Whive, "Whive", WHIVE, ,
+    ),
+    (
+        /// Coin type: 659
+        /// Symbol: KOIN
+        /// Coin: Koinos
+        [659], Koinos, "Koinos", KOIN, ,
     ),
     (
         /// Coin type: 660
-        ///
         /// Symbol: PIRATE
-        ///
         /// Coin: PirateCash
-        [660], PirateCash, "PirateCash", "https://piratecash.net/", PIRATE, ,
+        [660], PirateCash, "PirateCash", PIRATE, ,
+    ),
+    (
+        /// Coin type: 661
+        /// Symbol: UNQ
+        /// Coin: Unique
+        [661], Unique, "Unique", UNQ, ,
+    ),
+    (
+        /// Coin type: 662
+        /// Symbol: ULM
+        /// Coin: UltonSmartchain
+        [662], UltonSmartchain, "UltonSmartchain", ULM, ,
     ),
     (
         /// Coin type: 663
-        ///
         /// Symbol: SFRX
-        ///
         /// Coin: EtherGem Sapphire
-        [663], EtherGemSapphire, "EtherGem Sapphire", "https://egem.io", SFRX, ,
+        [663], EtherGemSapphire, "EtherGem Sapphire", SFRX, ,
+    ),
+    (
+        /// Coin type: 665
+        /// Symbol: IMP
+        /// Coin: Impact Protocol
+        [665], ImpactProtocol, "Impact Protocol", IMP, ,
     ),
     (
         /// Coin type: 666
-        ///
         /// Symbol: ACT
-        ///
         /// Coin: Achain
-        [666], Achain, "Achain", "https://www.achain.com/", ACT, ,
+        [666], Achain, "Achain", ACT, ,
     ),
     (
         /// Coin type: 667
-        ///
         /// Symbol: PRKL
-        ///
         /// Coin: Perkle
-        [667], Perkle, "Perkle", "https://esprezzo.io/", PRKL, ,
+        [667], Perkle, "Perkle", PRKL, ,
     ),
     (
         /// Coin type: 668
-        ///
         /// Symbol: SSC
-        ///
         /// Coin: SelfSell
-        [668], SelfSell, "SelfSell", "https://www.selfsell.com/", SSC, ,
+        [668], SelfSell, "SelfSell", SSC, ,
     ),
     (
         /// Coin type: 669
-        ///
         /// Symbol: GC
-        ///
         /// Coin: GateChain
-        [669], GateChain, "GateChain", "https://www.gatechain.io", GC, ,
+        [669], GateChain, "GateChain", GC, ,
+    ),
+    (
+        /// Coin type: 670
+        /// Symbol: PLGR
+        /// Coin: Pledger
+        [670], Pledger_PLGR, "Pledger", PLGR, ,
+    ),
+    (
+        /// Coin type: 671
+        /// Symbol: MPLGR
+        /// Coin: Pledger
+        [671], Pledger_MPLGR, "Pledger", MPLGR, ,
+    ),
+    (
+        /// Coin type: 672
+        /// Symbol: KNOX
+        /// Coin: Knox
+        [672], Knox, "Knox", KNOX, ,
+    ),
+    (
+        /// Coin type: 673
+        /// Symbol: ZED
+        /// Coin: ZED
+        [673], ZED, "ZED", ZED, ,
+    ),
+    (
+        /// Coin type: 674
+        /// Symbol: CNDL
+        /// Coin: Candle
+        [674], Candle, "Candle", CNDL, ,
+    ),
+    (
+        /// Coin type: 675
+        /// Symbol: WLKR
+        /// Coin: Walker Crypto Innovation Index
+        [675], WalkerCryptoInnovationIndex, "Walker Crypto Innovation Index", WLKR, ,
+    ),
+    (
+        /// Coin type: 676
+        /// Symbol: WLKRR
+        /// Coin: Walker
+        [676], Walker, "Walker", WLKRR, ,
     ),
     (
         /// Coin type: 677
-        ///
         /// Symbol: YUNGE
-        ///
         /// Coin: Yunge
-        [677], Yunge, "Yunge", "https://yunge.one", YUNGE, ,
+        [677], Yunge, "Yunge", YUNGE, ,
     ),
     (
         /// Coin type: 678
-        ///
         /// Symbol: Voken
-        ///
         /// Coin: Voken
-        [678], Voken, "Voken", "https://voken.io", Voken, ,
+        [678], Voken, "Voken", Voken, ,
+    ),
+    (
+        /// Coin type: 679
+        /// Symbol: APL
+        /// Coin: Apollo
+        [679], Apollo, "Apollo", APL, ,
     ),
     (
         /// Coin type: 680
-        ///
         /// Symbol: Evrynet
-        ///
         /// Coin: Evrynet
-        [680], Evrynet, "Evrynet", "https://evrynet.io", Evrynet, ,
+        [680], Evrynet, "Evrynet", Evrynet, ,
+    ),
+    (
+        /// Coin type: 681
+        /// Symbol: NENG
+        /// Coin: Nengcoin
+        [681], Nengcoin, "Nengcoin", NENG, ,
+    ),
+    (
+        /// Coin type: 682
+        /// Symbol: CHTA
+        /// Coin: Cheetahcoin
+        [682], Cheetahcoin, "Cheetahcoin", CHTA, ,
+    ),
+    (
+        /// Coin type: 683
+        /// Symbol: ALEO
+        /// Coin: Aleo Network
+        [683], AleoNetwork, "Aleo Network", ALEO, ,
+    ),
+    (
+        /// Coin type: 684
+        /// Symbol: HMS
+        /// Coin: Hemis
+        [684], Hemis, "Hemis", HMS, ,
+    ),
+    (
+        /// Coin type: 685
+        /// Symbol: OAS
+        /// Coin: Oasys
+        [685], Oasys, "Oasys", OAS, ,
     ),
     (
         /// Coin type: 686
-        ///
         /// Symbol: KAR
-        ///
         /// Coin: Karura Network
-        [686], KaruraNetwork, "Karura Network", "https://karura.network", KAR, ,
+        [686], KaruraNetwork, "Karura Network", KAR, ,
+    ),
+    (
+        /// Coin type: 687
+        /// Symbol: FLON
+        /// Coin: FullOn Network
+        [687], FullOnNetwork, "FullOn Network", FLON, ,
     ),
     (
         /// Coin type: 688
-        ///
         /// Symbol: CET
-        ///
         /// Coin: CoinEx Chain
-        [688], CoinExChain, "CoinEx Chain", "https://www.coinex.org/", CET, ,
+        [688], CoinExChain, "CoinEx Chain", CET, ,
+    ),
+    (
+        /// Coin type: 689
+        /// Symbol: XLINK
+        /// Coin: XLink Chain
+        [689], XLinkChain, "XLink Chain", XLINK, ,
+    ),
+    (
+        /// Coin type: 690
+        /// Symbol: KLV
+        /// Coin: KleverChain
+        [690], KleverChain, "KleverChain", KLV, ,
+    ),
+    (
+        /// Coin type: 691
+        /// Symbol: TNT
+        /// Coin: Tangle
+        [691], Tangle, "Tangle", TNT, ,
+    ),
+    (
+        /// Coin type: 692
+        /// Symbol: GTG
+        /// Coin: Gotigin
+        [692], Gotigin, "Gotigin", GTG, ,
+    ),
+    (
+        /// Coin type: 693
+        /// Symbol: NET
+        /// Coin: RealityNet
+        [693], RealityNet, "RealityNet", NET, ,
+    ),
+    (
+        /// Coin type: 694
+        /// Symbol: VTBC
+        /// Coin: VTB Community
+        [694], VTBCommunity, "VTB Community", VTBC, ,
+    ),
+    (
+        /// Coin type: 695
+        /// Symbol: DIONE
+        /// Coin: Odyssey Chain
+        [695], OdysseyChain, "Odyssey Chain", DIONE, ,
+    ),
+    (
+        /// Coin type: 696
+        /// Symbol: LUM
+        /// Coin: Lumos
+        [696], Lumos, "Lumos", LUM, ,
+    ),
+    (
+        /// Coin type: 697
+        /// Symbol: AVA
+        /// Coin: Avalon
+        [697], Avalon, "Avalon", AVA, ,
     ),
     (
         /// Coin type: 698
-        ///
         /// Symbol: VEIL
-        ///
         /// Coin: Veil
-        [698], Veil, "Veil", "https://www.veil-project.com", VEIL, ,
+        [698], Veil, "Veil", VEIL, ,
+    ),
+    (
+        /// Coin type: 699
+        /// Symbol: GTB
+        /// Coin: GotaBit
+        [699], GotaBit, "GotaBit", GTB, ,
     ),
     (
         /// Coin type: 700
-        ///
         /// Symbol: XDAI
-        ///
         /// Coin: xDai
-        [700], xDai, "xDai", "https://blockscout.com/poa/dai", XDAI, ,
+        [700], xDai, "xDai", XDAI, ,
+    ),
+    (
+        /// Coin type: 701
+        /// Symbol: COM
+        /// Coin: Commercio
+        [701], Commercio, "Commercio", COM, ,
+    ),
+    (
+        /// Coin type: 702
+        /// Symbol: CCC
+        /// Coin: Commercio Cash Credit
+        [702], CommercioCashCredit, "Commercio Cash Credit", CCC, ,
+    ),
+    (
+        /// Coin type: 703
+        /// Symbol: SNR
+        /// Coin: Sonr
+        [703], Sonr, "Sonr", SNR, ,
+    ),
+    (
+        /// Coin type: 704
+        /// Symbol: RAQ
+        /// Coin: Ra Quantum
+        [704], RaQuantum, "Ra Quantum", RAQ, ,
+    ),
+    (
+        /// Coin type: 705
+        /// Symbol: PEG
+        /// Coin: Pegasus Token
+        [705], PegasusToken, "Pegasus Token", PEG, ,
+    ),
+    (
+        /// Coin type: 706
+        /// Symbol: LKG
+        /// Coin: Lionking
+        [706], Lionking, "Lionking", LKG, ,
     ),
     (
         /// Coin type: 707
-        ///
         /// Symbol: MCOIN
-        ///
         /// Coin: Moneta Coin
-        [707], MonetaCoin, "Moneta Coin", "https://moneta.today/monetacoin", MCOIN, ,
+        [707], MonetaCoin, "Moneta Coin", MCOIN, ,
+    ),
+    (
+        /// Coin type: 709
+        /// Symbol: AVAIL
+        /// Coin: Avail
+        [709], Avail, "Avail", AVAIL, ,
+    ),
+    (
+        /// Coin type: 710
+        /// Symbol: FURY
+        /// Coin: Highbury
+        [710], Highbury, "Highbury", FURY, ,
     ),
     (
         /// Coin type: 711
-        ///
         /// Symbol: CHC
-        ///
         /// Coin: Chaincoin
-        [711], Chaincoin, "Chaincoin", "https://www.chaincoin.org/", CHC, ,
+        [711], Chaincoin, "Chaincoin", CHC, ,
+    ),
+    (
+        /// Coin type: 712
+        /// Symbol: SERF
+        /// Coin: Serfnet
+        [712], Serfnet, "Serfnet", SERF, ,
     ),
     (
         /// Coin type: 713
-        ///
         /// Symbol: XTL
-        ///
         /// Coin: Katal Chain
-        [713], KatalChain, "Katal Chain", "https://katalchain.com", XTL, ,
+        [713], KatalChain, "Katal Chain", XTL, ,
     ),
     (
         /// Coin type: 714
-        ///
         /// Symbol: BNB
-        ///
         /// Coin: Binance
-        [714], Binance, "Binance", "https://www.binance.org", BNB, ,
+        [714], Binance, "Binance", BNB, ,
     ),
     (
         /// Coin type: 715
-        ///
         /// Symbol: SIN
-        ///
         /// Coin: Sinovate
-        [715], Sinovate, "Sinovate", "https://sinovate.io", SIN, ,
+        [715], Sinovate, "Sinovate", SIN, ,
     ),
     (
         /// Coin type: 716
-        ///
         /// Symbol: DLN
-        ///
         /// Coin: Delion
-        [716], Delion, "Delion", "https://delion.online", DLN, ,
+        [716], Delion, "Delion", DLN, ,
+    ),
+    (
+        /// Coin type: 717
+        /// Symbol: BONTE
+        /// Coin: Bontecoin
+        [717], Bontecoin, "Bontecoin", BONTE, ,
+    ),
+    (
+        /// Coin type: 718
+        /// Symbol: PEER
+        /// Coin: Peer
+        [718], Peer, "Peer", PEER, ,
+    ),
+    (
+        /// Coin type: 719
+        /// Symbol: ZET
+        /// Coin: Zetacoin
+        [719], Zetacoin, "Zetacoin", ZET, ,
+    ),
+    (
+        /// Coin type: 720
+        /// Symbol: ABY
+        /// Coin: Artbyte
+        [720], Artbyte, "Artbyte", ABY, ,
+    ),
+    (
+        /// Coin type: 721
+        /// Symbol: PGX
+        /// Coin: Mirai Chain
+        [721], MiraiChain, "Mirai Chain", PGX, ,
+    ),
+    (
+        /// Coin type: 722
+        /// Symbol: IL8P
+        /// Coin: InfiniLooP
+        [722], InfiniLooP, "InfiniLooP", IL8P, ,
+    ),
+    (
+        /// Coin type: 723
+        /// Symbol: VOI
+        /// Coin: Voi
+        [723], Voi, "Voi", VOI, ,
+    ),
+    (
+        /// Coin type: 724
+        /// Symbol: XVC
+        /// Coin: Vanillacash
+        [724], Vanillacash, "Vanillacash", XVC, ,
     ),
     (
         /// Coin type: 725
-        ///
         /// Symbol: MCX
-        ///
         /// Coin: MultiCash
-        [725], MultiCash, "MultiCash", "https://multicash.io/", MCX, ,
+        [725], MultiCash, "MultiCash", MCX, ,
+    ),
+    (
+        /// Coin type: 726
+        /// Symbol: TARA
+        /// Coin: Taraxa
+        [726], Taraxa, "Taraxa", TARA, ,
+    ),
+    (
+        /// Coin type: 727
+        /// Symbol: BLU
+        /// Coin: BluCrates
+        [727], BluCrates, "BluCrates", BLU, ,
+    ),
+    (
+        /// Coin type: 728
+        /// Symbol: BFC
+        /// Coin: BFC
+        [728], BFC, "BFC", BFC, ,
+    ),
+    (
+        /// Coin type: 729
+        /// Symbol: DCC
+        /// Coin: DecentraCast
+        [729], DecentraCast, "DecentraCast", DCC, ,
+    ),
+    (
+        /// Coin type: 730
+        /// Symbol: HEALIOS
+        /// Coin: Tenacity
+        [730], Tenacity, "Tenacity", HEALIOS, ,
     ),
     (
         /// Coin type: 731
-        ///
         /// Symbol: BMK
-        ///
         /// Coin: Bitmark
-        [731], Bitmark, "Bitmark", "https://bitmark.com", BMK, ,
+        [731], Bitmark, "Bitmark", BMK, ,
+    ),
+    (
+        /// Coin type: 733
+        /// Symbol: TBC
+        /// Coin: TBChat
+        [733], TBChat, "TBChat", TBC, ,
+    ),
+    (
+        /// Coin type: 734
+        /// Symbol: DENTX
+        /// Coin: DENTNet
+        [734], DENTNet, "DENTNet", DENTX, ,
     ),
     (
         /// Coin type: 737
-        ///
         /// Symbol: ATOP
-        ///
         /// Coin: Financial Blockchain
-        [737], FinancialBlockchain, "Financial Blockchain", , ATOP, ,
+        [737], FinancialBlockchain, "Financial Blockchain", ATOP, ,
+    ),
+    (
+        /// Coin type: 738
+        /// Symbol: BTE
+        /// Coin: Bitweb
+        [738], Bitweb, "Bitweb", BTE, ,
+    ),
+    (
+        /// Coin type: 739
+        /// Symbol: DPC
+        /// Coin: Dpowcoin (DualPowCoin)
+        [739], Dpowcoin, "Dpowcoin (DualPowCoin)", DPC, ,
+    ),
+    (
+        /// Coin type: 740
+        /// Symbol: MDC
+        /// Coin: MyDataCoin
+        [740], MyDataCoin, "MyDataCoin", MDC, ,
+    ),
+    (
+        /// Coin type: 741
+        /// Symbol: RIV
+        /// Coin: Rigvid
+        [741], Rigvid, "Rigvid", RIV, ,
+    ),
+    (
+        /// Coin type: 744
+        /// Symbol: DUSK
+        /// Coin: Dusk
+        [744], Dusk, "Dusk", DUSK, ,
     ),
     (
         /// Coin type: 747
-        ///
-        /// Symbol: RAD
-        ///
+        /// Symbol: CFG
         /// Coin: Centrifuge
-        [747], Centrifuge, "Centrifuge", "https://centrifuge.io/", RAD, ,
+        [747], Centrifuge, "Centrifuge", CFG, ,
     ),
     (
         /// Coin type: 750
-        ///
         /// Symbol: XPRT
-        ///
         /// Coin: Persistence
-        [750], Persistence, "Persistence", "https://persistence.one", XPRT, ,
+        [750], Persistence, "Persistence", XPRT, ,
+    ),
+    (
+        /// Coin type: 753
+        /// Coin: Age X25519 Encryption
+        [753], AgeX25519Encryption, "Age X25519 Encryption", , ,
+    ),
+    (
+        /// Coin type: 754
+        /// Coin: Age NIST Encryption
+        [754], AgeNISTEncryption, "Age NIST Encryption", , ,
+    ),
+    (
+        /// Coin type: 757
+        /// Symbol: HONEY
+        /// Coin: HoneyWood
+        [757], HoneyWood, "HoneyWood", HONEY, ,
+    ),
+    (
+        /// Coin type: 758
+        /// Symbol: XDD
+        /// Coin: XDDCoin
+        [758], XDDCoin, "XDDCoin", XDD, ,
+    ),
+    (
+        /// Coin type: 765
+        /// Symbol: TGN
+        /// Coin: Tagion
+        [765], Tagion, "Tagion", TGN, ,
     ),
     (
         /// Coin type: 768
-        ///
         /// Symbol: BALLZ
-        ///
         /// Coin: Ballzcoin
-        [768], Ballzcoin, "Ballzcoin", "https://ballzcoin.org", BALLZ, ,
+        [768], Ballzcoin, "Ballzcoin", BALLZ, ,
     ),
     (
         /// Coin type: 770
-        ///
         /// Symbol: COSA
-        ///
         /// Coin: Cosanta
-        [770], Cosanta, "Cosanta", "https://github.com/cosanta/", COSA, ,
+        [770], Cosanta, "Cosanta", COSA, ,
     ),
     (
         /// Coin type: 771
-        ///
         /// Symbol: BR
-        ///
         /// Coin: BR
-        [771], BR, "BR", "https://bolsadigital.com.br", BR, ,
+        [771], BR, "BR", BR, ,
+    ),
+    (
+        /// Coin type: 773
+        /// Symbol: CSB
+        /// Coin: CosmoBliss
+        [773], CosmoBliss, "CosmoBliss", CSB, ,
+    ),
+    (
+        /// Coin type: 775
+        /// Symbol: PLSR
+        /// Coin: Pulsar Coin
+        [775], PulsarCoin, "Pulsar Coin", PLSR, ,
+    ),
+    (
+        /// Coin type: 776
+        /// Symbol: KEY
+        /// Coin: Keymaker Coin
+        [776], KeymakerCoin, "Keymaker Coin", KEY, ,
     ),
     (
         /// Coin type: 777
-        ///
         /// Symbol: BTW
-        ///
         /// Coin: Bitcoin World
-        [777], BitcoinWorld, "Bitcoin World", "http://btw.one", BTW, ,
+        [777], BitcoinWorld, "Bitcoin World", BTW, ,
+    ),
+    (
+        /// Coin type: 780
+        /// Symbol: PLCUC
+        /// Coin: PLC Ultima Classic
+        [780], PLCUltimaClassic, "PLC Ultima Classic", PLCUC, ,
+    ),
+    (
+        /// Coin type: 781
+        /// Symbol: PLCUX
+        /// Coin: PLC Ultima X
+        [781], PLCUltimaX, "PLC Ultima X", PLCUX, ,
+    ),
+    (
+        /// Coin type: 782
+        /// Symbol: PLCU
+        /// Coin: PLC Ultima
+        [782], PLCUltima, "PLC Ultima", PLCU, ,
+    ),
+    (
+        /// Coin type: 783
+        /// Symbol: SMARTBC
+        /// Coin: SMART Blockchain
+        [783], SMARTBlockchain, "SMART Blockchain", SMARTBC, ,
+    ),
+    (
+        /// Coin type: 784
+        /// Symbol: SUI
+        /// Coin: Sui
+        [784], Sui, "Sui", SUI, ,
+    ),
+    (
+        /// Coin type: 785
+        /// Symbol: ULTIMA
+        /// Coin: ULTIMA
+        [785], ULTIMA, "ULTIMA", ULTIMA, ,
     ),
     (
         /// Coin type: 786
-        ///
         /// Symbol: UIDD
-        ///
         /// Coin: UIDD
-        [786], UIDD, "UIDD", "https://github.com/UIDD/UIDD", UIDD, ,
+        [786], UIDD, "UIDD", UIDD, ,
     ),
     (
         /// Coin type: 787
-        ///
         /// Symbol: ACA
-        ///
         /// Coin: Acala
-        [787], Acala, "Acala", "https://acala.network", ACA, ,
+        [787], Acala, "Acala", ACA, ,
+    ),
+    (
+        /// Coin type: 788
+        /// Symbol: BNC
+        /// Coin: Bifrost
+        [788], Bifrost, "Bifrost", BNC, ,
     ),
     (
         /// Coin type: 789
-        ///
         /// Symbol: TAU
-        ///
         /// Coin: Lamden
-        [789], Lamden, "Lamden", "https://lamden.io", TAU, ,
+        [789], Lamden, "Lamden", TAU, ,
+    ),
+    (
+        /// Coin type: 794
+        /// Symbol: INTR
+        /// Coin: Interlay
+        [794], Interlay, "Interlay", INTR, ,
+    ),
+    (
+        /// Coin type: 795
+        /// Symbol: KINT
+        /// Coin: Kintsugi
+        [795], Kintsugi, "Kintsugi", KINT, ,
+    ),
+    (
+        /// Coin type: 799
+        /// Symbol: PDEX
+        /// Coin: Polkadex
+        [799], Polkadex, "Polkadex", PDEX, ,
     ),
     (
         /// Coin type: 800
-        ///
         /// Symbol: BEET
-        ///
         /// Coin: Beetle Coin
-        [800], BeetleCoin, "Beetle Coin", "https://beetlecoin.io/", BEET, ,
+        [800], BeetleCoin, "Beetle Coin", BEET, ,
     ),
     (
         /// Coin type: 801
-        ///
         /// Symbol: DST
-        ///
         /// Coin: DSTRA
-        [801], DSTRA, "DSTRA", "https://dstra.io/", DST, ,
+        [801], DSTRA, "DSTRA", DST, ,
+    ),
+    (
+        /// Coin type: 802
+        /// Symbol: CY
+        /// Coin: Cyberyen
+        [802], Cyberyen, "Cyberyen", CY, ,
+    ),
+    (
+        /// Coin type: 803
+        /// Symbol: RYME
+        /// Coin: Ryme Network
+        [803], RymeNetwork, "Ryme Network", RYME, ,
+    ),
+    (
+        /// Coin type: 804
+        /// Symbol: ZKS
+        /// Coin: zkSync
+        [804], zkSync, "zkSync", ZKS, ,
+    ),
+    (
+        /// Coin type: 805
+        /// Symbol: SCASH
+        /// Coin: Scash
+        [805], Scash, "Scash", SCASH, ,
     ),
     (
         /// Coin type: 808
-        ///
         /// Symbol: QVT
-        ///
         /// Coin: Qvolta
-        [808], Qvolta, "Qvolta", "https://qvolta.com", QVT, ,
+        [808], Qvolta, "Qvolta", QVT, ,
     ),
     (
-        /// Coin type: 811
-        ///
-        /// Symbol: DVPN
-        ///
-        /// Coin: Sentinel
-        [811], Sentinel, "Sentinel", "https://sentinel.co", DVPN, ,
+        /// Coin type: 809
+        /// Symbol: SDN
+        /// Coin: Shiden Network
+        [809], ShidenNetwork, "Shiden Network", SDN, ,
+    ),
+    (
+        /// Coin type: 810
+        /// Symbol: ASTR
+        /// Coin: Astar Network
+        [810], AstarNetwork, "Astar Network", ASTR, ,
+    ),
+    (
+        /// Coin type: 813
+        /// Symbol: MEER
+        /// Coin: Qitmeer
+        [813], Qitmeer, "Qitmeer", MEER, ,
+    ),
+    (
+        /// Coin type: 815
+        /// Symbol: FACT
+        /// Coin: ImFACT
+        [815], ImFACT, "ImFACT", FACT, ,
+    ),
+    (
+        /// Coin type: 816
+        /// Symbol: FSC
+        /// Coin: FSC
+        [816], FSC, "FSC", FSC, ,
     ),
     (
         /// Coin type: 818
-        ///
         /// Symbol: VET
-        ///
         /// Coin: VeChain Token
-        [818], VeChainToken, "VeChain Token", "https://vechain.com/", VET, ,
+        [818], VeChainToken, "VeChain Token", VET, ,
+    ),
+    (
+        /// Coin type: 819
+        /// Symbol: REEF
+        /// Coin: Reef
+        [819], Reef, "Reef", REEF, ,
     ),
     (
         /// Coin type: 820
-        ///
         /// Symbol: CLO
-        ///
         /// Coin: Callisto
-        [820], Callisto, "Callisto", "http://callisto.network/", CLO, ,
+        [820], Callisto, "Callisto", CLO, ,
     ),
     (
         /// Coin type: 822
-        ///
         /// Symbol: BDB
-        ///
         /// Coin: BigchainDB
-        [822], BigchainDB, "BigchainDB", "https://github.com/bigchaindb/", BDB, ,
+        [822], BigchainDB, "BigchainDB", BDB, ,
+    ),
+    (
+        /// Coin type: 824
+        /// Symbol: RBNT
+        /// Coin: Redbelly Network
+        [824], RedbellyNetwork, "Redbelly Network", RBNT, ,
+    ),
+    (
+        /// Coin type: 827
+        /// Symbol: ACE
+        /// Coin: Endurance
+        [827], Endurance, "Endurance", ACE, ,
     ),
     (
         /// Coin type: 828
-        ///
         /// Symbol: CCN
-        ///
         /// Coin: ComputeCoin
-        [828], ComputeCoin, "ComputeCoin", "https://computecoin.network/", , "CCN",
+        [828], ComputeCoin, "ComputeCoin", , "CCN",
+    ),
+    (
+        /// Coin type: 829
+        /// Symbol: BBA
+        /// Coin: BBACHAIN
+        [829], BBACHAIN, "BBACHAIN", BBA, ,
     ),
     (
         /// Coin type: 831
-        ///
         /// Symbol: CRUZ
-        ///
         /// Coin: cruzbit
-        [831], cruzbit, "cruzbit", "https://github.com/cruzbit/cruzbit", CRUZ, ,
+        [831], cruzbit, "cruzbit", CRUZ, ,
     ),
     (
         /// Coin type: 832
-        ///
         /// Symbol: SAPP
-        ///
         /// Coin: Sapphire
-        [832], Sapphire, "Sapphire", "https://sappcoin.com/", SAPP, ,
+        [832], Sapphire, "Sapphire", SAPP, ,
     ),
     (
         /// Coin type: 833
-        ///
         /// Symbol: _777
-        ///
         /// Coin: Jackpot
-        [833], Jackpot, "Jackpot", "https://777coin.win/", _777, ,
+        [833], Jackpot, "Jackpot", _777, ,
     ),
     (
         /// Coin type: 834
-        ///
         /// Symbol: KYAN
-        ///
         /// Coin: Kyanite
-        [834], Kyanite, "Kyanite", "https://kyancoin.net/", KYAN, ,
+        [834], Kyanite, "Kyanite", KYAN, ,
     ),
     (
         /// Coin type: 835
-        ///
         /// Symbol: AZR
-        ///
         /// Coin: Azzure
-        [835], Azzure, "Azzure", "https://azzurecoin.net/", AZR, ,
+        [835], Azzure, "Azzure", AZR, ,
     ),
     (
         /// Coin type: 836
-        ///
         /// Symbol: CFL
-        ///
         /// Coin: CryptoFlow
-        [836], CryptoFlow, "CryptoFlow", "https://cryptoflow.eu/", CFL, ,
+        [836], CryptoFlow, "CryptoFlow", CFL, ,
     ),
     (
         /// Coin type: 837
-        ///
         /// Symbol: DASHD
-        ///
         /// Coin: Dash Diamond
-        [837], DashDiamond, "Dash Diamond", "https://dashdiamond.net/", DASHD, ,
+        [837], DashDiamond, "Dash Diamond", DASHD, ,
     ),
     (
         /// Coin type: 838
-        ///
         /// Symbol: TRTT
-        ///
         /// Coin: Trittium
-        [838], Trittium, "Trittium", "https://github.com/Trittium/trittium", TRTT, ,
+        [838], Trittium, "Trittium", TRTT, ,
     ),
     (
         /// Coin type: 839
-        ///
         /// Symbol: UCR
-        ///
         /// Coin: Ultra Clear
-        [839], UltraClear, "Ultra Clear", "https://ucrcoin.net/", UCR, ,
+        [839], UltraClear, "Ultra Clear", UCR, ,
     ),
     (
         /// Coin type: 840
-        ///
         /// Symbol: PNY
-        ///
         /// Coin: Peony
-        [840], Peony, "Peony", "https://github.com/PeonyTeam/peony", PNY, ,
+        [840], Peony, "Peony", PNY, ,
     ),
     (
         /// Coin type: 841
-        ///
         /// Symbol: BECN
-        ///
         /// Coin: Beacon
-        [841], Beacon, "Beacon", "https://github.com/beaconcrypto/beacon", BECN, ,
+        [841], Beacon, "Beacon", BECN, ,
     ),
     (
         /// Coin type: 842
-        ///
         /// Symbol: MONK
-        ///
         /// Coin: Monk
-        [842], Monk, "Monk", "https://monkcoin.net/", , "MONK",
+        [842], Monk, "Monk", , "MONK",
     ),
     (
         /// Coin type: 843
-        ///
         /// Symbol: SAGA
-        ///
         /// Coin: CryptoSaga
-        [843], CryptoSaga, "CryptoSaga", "https://github.com/cryptosagacoin/SAGA", SAGA, ,
+        [843], CryptoSaga, "CryptoSaga", SAGA, ,
     ),
     (
         /// Coin type: 844
-        ///
         /// Symbol: SUV
-        ///
         /// Coin: Suvereno
-        [844], Suvereno, "Suvereno", "https://github.com/decenomy/SUV", SUV, ,
+        [844], Suvereno, "Suvereno", SUV, ,
     ),
     (
         /// Coin type: 845
-        ///
         /// Symbol: ESK
-        ///
         /// Coin: EskaCoin
-        [845], EskaCoin, "EskaCoin", "https://eskacoin.com/", ESK, ,
+        [845], EskaCoin, "EskaCoin", ESK, ,
     ),
     (
         /// Coin type: 846
-        ///
         /// Symbol: OWO
-        ///
         /// Coin: OneWorld Coin
-        [846], OneWorldCoin, "OneWorld Coin", "https://oneworldcoin.io/", OWO, ,
+        [846], OneWorldCoin, "OneWorld Coin", OWO, ,
     ),
     (
         /// Coin type: 847
-        ///
         /// Symbol: PEPS
-        ///
         /// Coin: PEPS Coin
-        [847], PEPSCoin, "PEPS Coin", "https://project.peps.today/", PEPS, ,
+        [847], PEPSCoin, "PEPS Coin", PEPS, ,
     ),
     (
         /// Coin type: 848
-        ///
         /// Symbol: BIR
-        ///
         /// Coin: Birake
-        [848], Birake, "Birake", "https://birake.com/", BIR, ,
+        [848], Birake, "Birake", BIR, ,
+    ),
+    (
+        /// Coin type: 849
+        /// Symbol: MOBIC
+        /// Coin: MobilityCoin
+        [849], MobilityCoin, "MobilityCoin", MOBIC, ,
+    ),
+    (
+        /// Coin type: 850
+        /// Symbol: FLS
+        /// Coin: Flits
+        [850], Flits, "Flits", FLS, ,
+    ),
+    (
+        /// Coin type: 851
+        /// Symbol: FRECO
+        /// Coin: Freco
+        [851], Freco, "Freco", FRECO, ,
     ),
     (
         /// Coin type: 852
-        ///
         /// Symbol: DSM
-        ///
         /// Coin: Desmos
-        [852], Desmos, "Desmos", "https://desmos.network", DSM, ,
+        [852], Desmos, "Desmos", DSM, ,
     ),
     (
         /// Coin type: 853
-        ///
         /// Symbol: PRCY
-        ///
         /// Coin: PRCY Coin
-        [853], PRCYCoin, "PRCY Coin", "https://prcycoin.com", PRCY, ,
+        [853], PRCYCoin, "PRCY Coin", PRCY, ,
+    ),
+    (
+        /// Coin type: 858
+        /// Symbol: HVH
+        /// Coin: HAVAH
+        [858], HAVAH, "HAVAH", HVH, ,
+    ),
+    (
+        /// Coin type: 860
+        /// Symbol: XBIT
+        /// Coin: XBIT Coin
+        [860], XBITCoin, "XBIT Coin", XBIT, ,
+    ),
+    (
+        /// Coin type: 864
+        /// Symbol: CVM
+        /// Coin: Convex
+        [864], Convex, "Convex", CVM, ,
     ),
     (
         /// Coin type: 866
-        ///
         /// Symbol: MOB
-        ///
         /// Coin: MobileCoin
-        [866], MobileCoin, "MobileCoin", "https://www.mobilecoin.com/", MOB, ,
+        [866], MobileCoin, "MobileCoin", MOB, ,
     ),
     (
         /// Coin type: 868
-        ///
         /// Symbol: IF
-        ///
         /// Coin: Infinitefuture
-        [868], Infinitefuture, "Infinitefuture", "https://infinitefuture.top", IF, ,
+        [868], Infinitefuture, "Infinitefuture", IF, ,
+    ),
+    (
+        /// Coin type: 873
+        /// Symbol: QUORUM
+        /// Coin: Quorum
+        [873], Quorum, "Quorum", QUORUM, ,
+    ),
+    (
+        /// Coin type: 877
+        /// Symbol: NAM
+        /// Coin: Namada
+        [877], Namada, "Namada", NAM, ,
+    ),
+    (
+        /// Coin type: 878
+        /// Symbol: SCR
+        /// Coin: Scorum Network
+        [878], ScorumNetwork, "Scorum Network", SCR, ,
     ),
     (
         /// Coin type: 880
-        ///
         /// Symbol: LUM
-        ///
         /// Coin: Lum Network
-        [880], LumNetwork, "Lum Network", "https://lum.network", LUM, ,
+        [880], LumNetwork, "Lum Network", , "LUM",
     ),
     (
         /// Coin type: 883
-        ///
         /// Symbol: ZBC
-        ///
         /// Coin: ZooBC
-        [883], ZooBC, "ZooBC", "https://zoobc.com", ZBC, ,
+        [883], ZooBC, "ZooBC", ZBC, ,
     ),
     (
         /// Coin type: 886
-        ///
         /// Symbol: ADF
-        ///
         /// Coin: AD Token
-        [886], ADToken, "AD Token", "http://adfunds.org", ADF, ,
+        [886], ADToken, "AD Token", ADF, ,
     ),
     (
         /// Coin type: 888
-        ///
         /// Symbol: NEO
-        ///
         /// Coin: NEO
-        [888], NEO, "NEO", "https://neo.org/", NEO, ,
+        [888], NEO, "NEO", NEO, ,
     ),
     (
         /// Coin type: 889
-        ///
         /// Symbol: TOMO
-        ///
         /// Coin: TOMO
-        [889], TOMO, "TOMO", "https://tomochain.com/", TOMO, ,
+        [889], TOMO, "TOMO", TOMO, ,
     ),
     (
         /// Coin type: 890
-        ///
         /// Symbol: XSEL
-        ///
         /// Coin: Seln
-        [890], Seln, "Seln", "https://selnx.jp/", XSEL, ,
+        [890], Seln, "Seln", XSEL, ,
     ),
     (
         /// Coin type: 896
-        ///
         /// Symbol: LKSC
-        ///
         /// Coin: LKSCoin
-        [896], LKSCoin, "LKSCoin", "https://www.lkschain.io/", LKSC, ,
+        [896], LKSCoin, "LKSCoin", LKSC, ,
+    ),
+    (
+        /// Coin type: 898
+        /// Symbol: AS
+        /// Coin: Assetchain
+        [898], Assetchain, "Assetchain", AS, ,
     ),
     (
         /// Coin type: 899
-        ///
         /// Symbol: XEC
-        ///
         /// Coin: eCash
-        [899], eCash, "eCash", "https://e.cash/", XEC, ,
+        [899], eCash, "eCash", XEC, ,
     ),
     (
         /// Coin type: 900
-        ///
         /// Symbol: LMO
-        ///
         /// Coin: Lumeneo
-        [900], Lumeneo, "Lumeneo", "https://lumeneo.network/", LMO, ,
+        [900], Lumeneo, "Lumeneo", LMO, ,
+    ),
+    (
+        /// Coin type: 901
+        /// Symbol: NXT
+        /// Coin: NxtMeta
+        [901], NxtMeta, "NxtMeta", , "NXT",
     ),
     (
         /// Coin type: 904
-        ///
         /// Symbol: HNT
-        ///
         /// Coin: Helium
-        [904], Helium_HNT, "Helium", "https://helium.com/", HNT, ,
+        [904], Helium_HNT, "Helium", HNT, ,
+    ),
+    (
+        /// Coin type: 906
+        /// Symbol: XPX
+        /// Coin: Sirius
+        [906], Sirius, "Sirius", XPX, ,
     ),
     (
         /// Coin type: 907
-        ///
         /// Symbol: FIS
-        ///
         /// Coin: StaFi
-        [907], StaFi, "StaFi", "https://stafi.io/", FIS, ,
+        [907], StaFi, "StaFi", FIS, ,
     ),
     (
         /// Coin type: 909
-        ///
-        /// Symbol: SAAGE
-        ///
+        /// Symbol: SGE
         /// Coin: Saage
-        [909], Saage, "Saage", "https://saage.io/", SAAGE, ,
+        [909], Saage, "Saage", SGE, ,
+    ),
+    (
+        /// Coin type: 911
+        /// Symbol: GERT
+        /// Coin: Gert
+        [911], Gert, "Gert", GERT, ,
+    ),
+    (
+        /// Coin type: 913
+        /// Symbol: VARA
+        /// Coin: Vara Network
+        [913], VaraNetwork, "Vara Network", VARA, ,
     ),
     (
         /// Coin type: 916
-        ///
         /// Symbol: META
-        ///
         /// Coin: Metadium
-        [916], Metadium, "Metadium", "https://www.metadium.com/", META, ,
+        [916], Metadium, "Metadium", META, ,
     ),
     (
         /// Coin type: 917
-        ///
         /// Symbol: FRA
-        ///
         /// Coin: Findora
-        [917], Findora, "Findora", "https://www.findora.org/", FRA, ,
+        [917], Findora, "Findora", FRA, ,
+    ),
+    (
+        /// Coin type: 919
+        /// Symbol: CCD
+        /// Coin: Concordium
+        [919], Concordium, "Concordium", CCD, ,
+    ),
+    (
+        /// Coin type: 921
+        /// Symbol: AVN
+        /// Coin: Avian Network
+        [921], AvianNetwork, "Avian Network", AVN, ,
     ),
     (
         /// Coin type: 925
-        ///
         /// Symbol: DIP
-        ///
         /// Coin: Dipper Network
-        [925], DipperNetwork, "Dipper Network", "https://www.dippernetwork.com/", DIP, ,
+        [925], DipperNetwork, "Dipper Network", DIP, ,
+    ),
+    (
+        /// Coin type: 928
+        /// Symbol: GHM
+        /// Coin: HermitMatrixNetwork
+        [928], HermitMatrixNetwork, "HermitMatrixNetwork", GHM, ,
     ),
     (
         /// Coin type: 931
-        ///
         /// Symbol: RUNE
-        ///
         /// Coin: THORChain (RUNE)
-        [931], THORChain, "THORChain (RUNE)", "RUNE", RUNE, ,
+        [931], THORChain, "THORChain (RUNE)", RUNE, ,
+    ),
+    (
+        /// Coin type: 938
+        /// Symbol: MGO
+        /// Coin: Mango Network
+        [938], MangoNetwork, "Mango Network", MGO, ,
+    ),
+    (
+        /// Coin type: 939
+        /// Symbol: AB
+        /// Coin: Argot Protocol
+        [939], ArgotProtocol, "Argot Protocol", AB, ,
+    ),
+    (
+        /// Coin type: 942
+        /// Symbol: KCN
+        /// Coin: Kylacoin
+        [942], Kylacoin, "Kylacoin", KCN, ,
+    ),
+    (
+        /// Coin type: 943
+        /// Symbol: LCN
+        /// Coin: Lyncoin
+        [943], Lyncoin, "Lyncoin", LCN, ,
+    ),
+    (
+        /// Coin type: 945
+        /// Symbol: UNLOCK
+        /// Coin: Jasiri protocol
+        [945], Jasiriprotocol, "Jasiri protocol", UNLOCK, ,
     ),
     (
         /// Coin type: 955
-        ///
         /// Symbol: LTP
-        ///
         /// Coin: LifetionCoin
-        [955], LifetionCoin, "LifetionCoin", "https://cointobanks.com", LTP, ,
+        [955], LifetionCoin, "LifetionCoin", LTP, ,
     ),
     (
         /// Coin type: 958
-        ///
         /// Coin: KickSoccer
-        [958], KickSoccer, "KickSoccer", "https://kicksoccercoin.com", , ,
+        [958], KickSoccer, "KickSoccer", , ,
+    ),
+    (
+        /// Coin type: 960
+        /// Symbol: VKAX
+        /// Coin: Vkax
+        [960], Vkax, "Vkax", VKAX, ,
     ),
     (
         /// Coin type: 966
-        ///
         /// Symbol: MATIC
-        ///
         /// Coin: Matic
-        [966], Matic, "Matic", "https://matic.network", MATIC, ,
+        [966], Matic, "Matic", MATIC, ,
+    ),
+    (
+        /// Coin type: 968
+        /// Symbol: UNW
+        /// Coin: UNW
+        [968], UNW, "UNW", UNW, ,
+    ),
+    (
+        /// Coin type: 969
+        /// Symbol: QI
+        /// Coin: Quai Network
+        [969], QuaiNetwork_QI, "Quai Network", QI, ,
     ),
     (
         /// Coin type: 970
-        ///
         /// Symbol: TWINS
-        ///
         /// Coin: TWINS
-        [970], TWINS, "TWINS", "https://win.win/", TWINS, ,
+        [970], TWINS, "TWINS", TWINS, ,
+    ),
+    (
+        /// Coin type: 977
+        /// Symbol: TLOS
+        /// Coin: Telos
+        [977], Telos, "Telos", TLOS, ,
+    ),
+    (
+        /// Coin type: 981
+        /// Symbol: TAFECO
+        /// Coin: Taf ECO Chain
+        [981], TafECOChain, "Taf ECO Chain", TAFECO, ,
+    ),
+    (
+        /// Coin type: 985
+        /// Symbol: AU
+        /// Coin: Autonomy
+        [985], Autonomy, "Autonomy", AU, ,
+    ),
+    (
+        /// Coin type: 987
+        /// Symbol: VCG
+        /// Coin: VipCoin
+        [987], VipCoin, "VipCoin", VCG, ,
     ),
     (
         /// Coin type: 988
-        ///
         /// Symbol: XAZAB
-        ///
         /// Coin: Xazab core
-        [988], Xazabcore, "Xazab core", "https://github.com/xazab", XAZAB, ,
+        [988], Xazabcore, "Xazab core", XAZAB, ,
     ),
     (
         /// Coin type: 989
-        ///
         /// Symbol: AIOZ
-        ///
         /// Coin: AIOZ
-        [989], AIOZ, "AIOZ", "https://aioz.network", AIOZ, ,
+        [989], AIOZ, "AIOZ", AIOZ, ,
+    ),
+    (
+        /// Coin type: 990
+        /// Symbol: CORE
+        /// Coin: Coreum
+        [990], Coreum, "Coreum", CORE, ,
     ),
     (
         /// Coin type: 991
-        ///
         /// Symbol: PEC
-        ///
         /// Coin: Phoenix
-        [991], Phoenix, "Phoenix", "https://github.com/phoenixchain/phoenix", PEC, ,
+        [991], Phoenix_PEC, "Phoenix", PEC, ,
+    ),
+    (
+        /// Coin type: 992
+        /// Symbol: UNT
+        /// Coin: Unit
+        [992], Unit, "Unit", UNT, ,
+    ),
+    (
+        /// Coin type: 993
+        /// Symbol: XRB
+        /// Coin: X Currency
+        [993], XCurrency, "X Currency", XRB, ,
+    ),
+    (
+        /// Coin type: 994
+        /// Symbol: QUAI
+        /// Coin: Quai Network
+        [994], QuaiNetwork_QUAI, "Quai Network", QUAI, ,
+    ),
+    (
+        /// Coin type: 995
+        /// Symbol: CAPS
+        /// Coin: Ternoa
+        [995], Ternoa, "Ternoa", CAPS, ,
     ),
     (
         /// Coin type: 996
-        ///
         /// Symbol: OKT
-        ///
         /// Coin: OKChain Token
-        [996], OKChainToken, "OKChain Token", "https://www.okex.com/okchain", OKT, ,
+        [996], OKChainToken, "OKChain Token", OKT, ,
     ),
     (
         /// Coin type: 997
-        ///
         /// Symbol: SUM
-        ///
         /// Coin: Solidum
-        [997], Solidum, "Solidum", "https://solidum.network", , "SUM",
+        [997], Solidum, "Solidum", , "SUM",
     ),
     (
         /// Coin type: 998
-        ///
         /// Symbol: LBTC
-        ///
         /// Coin: Lightning Bitcoin
-        [998], LightningBitcoin, "Lightning Bitcoin", "http://lbtc.io/", LBTC, ,
+        [998], LightningBitcoin, "Lightning Bitcoin", LBTC, ,
     ),
     (
         /// Coin type: 999
-        ///
         /// Symbol: BCD
-        ///
         /// Coin: Bitcoin Diamond
-        [999], BitcoinDiamond, "Bitcoin Diamond", "http://btcd.io/", BCD, ,
+        [999], BitcoinDiamond, "Bitcoin Diamond", BCD, ,
     ),
     (
         /// Coin type: 1000
-        ///
         /// Symbol: BTN
-        ///
         /// Coin: Bitcoin New
-        [1000], BitcoinNew, "Bitcoin New", "http://bitcoinnew.org/", BTN, ,
+        [1000], BitcoinNew, "Bitcoin New", BTN, ,
     ),
     (
         /// Coin type: 1001
-        ///
         /// Symbol: TT
-        ///
         /// Coin: ThunderCore
-        [1001], ThunderCore, "ThunderCore", "https://thundercore.com/", TT, ,
+        [1001], ThunderCore, "ThunderCore", TT, ,
     ),
     (
         /// Coin type: 1002
-        ///
         /// Symbol: BKT
-        ///
         /// Coin: BanKitt
-        [1002], BanKitt, "BanKitt", "https://www.bankitt.network/", BKT, ,
+        [1002], BanKitt, "BanKitt", BKT, ,
     ),
     (
         /// Coin type: 1003
-        ///
         /// Symbol: NODL
-        ///
         /// Coin: Nodle
-        [1003], Nodle, "Nodle", "https://nodle.io", NODL, ,
+        [1003], Nodle, "Nodle", NODL, ,
+    ),
+    (
+        /// Coin type: 1004
+        /// Symbol: PCOIN
+        /// Coin: PCOIN
+        [1004], PCOIN, "PCOIN", PCOIN, ,
+    ),
+    (
+        /// Coin type: 1005
+        /// Symbol: TAO
+        /// Coin: Bittensor
+        [1005], Bittensor, "Bittensor", , "TAO",
+    ),
+    (
+        /// Coin type: 1006
+        /// Symbol: HSK
+        /// Coin: HashKey Chain
+        [1006], HashKeyChain, "HashKey Chain", HSK, ,
     ),
     (
         /// Coin type: 1007
-        ///
         /// Symbol: FTM
-        ///
         /// Coin: Fantom
-        [1007], Fantom, "Fantom", "https://fantom.foundation", FTM, ,
+        [1007], Fantom, "Fantom", FTM, ,
+    ),
+    (
+        /// Coin type: 1008
+        /// Symbol: RPG
+        /// Coin: RPG
+        [1008], RPG, "RPG", RPG, ,
+    ),
+    (
+        /// Coin type: 1009
+        /// Symbol: LAKE
+        /// Coin: iconLake
+        [1009], iconLake, "iconLake", LAKE, ,
     ),
     (
         /// Coin type: 1010
-        ///
         /// Symbol: HT
-        ///
         /// Coin: Huobi ECO Chain
-        [1010], HuobiECOChain, "Huobi ECO Chain", "https://www.hecochain.com/", HT, ,
+        [1010], HuobiECOChain, "Huobi ECO Chain", HT, ,
     ),
     (
         /// Coin type: 1011
-        ///
         /// Symbol: ELV
-        ///
         /// Coin: Eluvio
-        [1011], Eluvio, "Eluvio", "https://eluv.io/", ELV, ,
+        [1011], Eluvio, "Eluvio", ELV, ,
+    ),
+    (
+        /// Coin type: 1012
+        /// Symbol: JOC
+        /// Coin: Japan Open Chain
+        [1012], JapanOpenChain, "Japan Open Chain", JOC, ,
     ),
     (
         /// Coin type: 1013
-        ///
         /// Symbol: BIC
-        ///
         /// Coin: Beincrypto
-        [1013], Beincrypto, "Beincrypto", "https://beincrypto.org", BIC, ,
+        [1013], Beincrypto, "Beincrypto", BIC, ,
+    ),
+    (
+        /// Coin type: 1014
+        /// Symbol: JOY
+        /// Coin: Joystream
+        [1014], Joystream, "Joystream", JOY, ,
+    ),
+    (
+        /// Coin type: 1015
+        /// Symbol: ZCX
+        /// Coin: ZEN Exchange Token
+        [1015], ZENExchangeToken, "ZEN Exchange Token", ZCX, ,
     ),
     (
         /// Coin type: 1020
-        ///
         /// Symbol: EVC
-        ///
         /// Coin: Evrice
-        [1020], Evrice, "Evrice", "https://evrice.com", EVC, ,
+        [1020], Evrice, "Evrice", EVC, ,
     ),
     (
         /// Coin type: 1022
-        ///
         /// Symbol: XRD
-        ///
         /// Coin: Radix DLT
-        [1022], RadixDLT, "Radix DLT", "https://www.radixdlt.com/", , "XRD",
+        [1022], RadixDLT, "Radix DLT", , "XRD",
     ),
     (
         /// Coin type: 1023
-        ///
         /// Symbol: ONE
-        ///
-        /// Coin: HARMONY-ONE
-        [1023], HarmonyOne, "HARMONY-ONE", "https://harmony.one/", , "ONE",
+        /// Coin: HARMONY-ONE (Legacy)
+        [1023], HarmonyOne, "HARMONY-ONE (Legacy)", , "ONE",
     ),
     (
         /// Coin type: 1024
-        ///
         /// Symbol: ONT
-        ///
         /// Coin: Ontology
-        [1024], Ontology, "Ontology", "https://ont.io", ONT, ,
+        [1024], Ontology, "Ontology", ONT, ,
+    ),
+    (
+        /// Coin type: 1025
+        /// Symbol: CZZ
+        /// Coin: Classzz
+        [1025], Classzz, "Classzz", CZZ, ,
     ),
     (
         /// Coin type: 1026
-        ///
         /// Symbol: KEX
-        ///
         /// Coin: Kira Exchange Token
-        [1026], KiraExchangeToken, "Kira Exchange Token", "https://kiraex.com", KEX, ,
+        [1026], KiraExchangeToken, "Kira Exchange Token", KEX, ,
     ),
     (
         /// Coin type: 1027
-        ///
         /// Symbol: MCM
-        ///
         /// Coin: Mochimo
-        [1027], Mochimo, "Mochimo", "https://mochimo.org", MCM, ,
+        [1027], Mochimo, "Mochimo", MCM, ,
+    ),
+    (
+        /// Coin type: 1028
+        /// Symbol: PLS
+        /// Coin: Pulse Coin
+        [1028], PulseCoin, "Pulse Coin", PLS, ,
     ),
     (
         /// Coin type: 1032
-        ///
         /// Symbol: BTCR
-        ///
         /// Coin: BTCR
-        [1032], BTCR, "BTCR", "https://github.com/did-btcr", , "BTCR",
+        [1032], BTCR, "BTCR", , "BTCR",
+    ),
+    (
+        /// Coin type: 1042
+        /// Symbol: MFID
+        /// Coin: Moonfish ID
+        [1042], MoonfishID, "Moonfish ID", MFID, ,
     ),
     (
         /// Coin type: 1111
-        ///
         /// Symbol: BBC
-        ///
         /// Coin: Big Bitcoin
-        [1111], BigBitcoin, "Big Bitcoin", "http://bigbitcoins.org/", , "BBC",
+        [1111], BigBitcoin, "Big Bitcoin", , "BBC",
+    ),
+    (
+        /// Coin type: 1116
+        /// Symbol: CORE
+        /// Coin: Core
+        [1116], Core, "Core", , "CORE",
     ),
     (
         /// Coin type: 1120
-        ///
         /// Symbol: RISE
-        ///
         /// Coin: RISE
-        [1120], RISE, "RISE", "https://rise.vision", RISE, ,
+        [1120], RISE, "RISE", RISE, ,
     ),
     (
         /// Coin type: 1122
-        ///
         /// Symbol: CMT
-        ///
         /// Coin: CyberMiles Token
-        [1122], CyberMilesToken, "CyberMiles Token", "https://www.cybermiles.io", , "CMT",
+        [1122], CyberMilesToken, "CyberMiles Token", , "CMT",
     ),
     (
         /// Coin type: 1128
-        ///
         /// Symbol: ETSC
-        ///
         /// Coin: Ethereum Social
-        [1128], EthereumSocial, "Ethereum Social", "https://ethereumsocial.kr/", ETSC, ,
+        [1128], EthereumSocial, "Ethereum Social", ETSC, ,
     ),
     (
         /// Coin type: 1129
-        ///
         /// Symbol: DFI
-        ///
         /// Coin: DeFiChain
-        [1129], DeFiChain, "DeFiChain", "https://defichain.com/", DFI, ,
+        [1129], DeFiChain, "DeFiChain", DFI, ,
+    ),
+    (
+        /// Coin type: 1130
+        /// Symbol: DFI
+        /// Coin: DeFiChain EVM Network
+        [1130], DeFiChainEVMNetwork, "DeFiChain EVM Network", , "DFI",
+    ),
+    (
+        /// Coin type: 1133
+        /// Symbol: MESH
+        /// Coin: StateMesh
+        [1133], StateMesh, "StateMesh", MESH, ,
     ),
     (
         /// Coin type: 1137
-        ///
         /// Symbol: DAG
-        ///
         /// Coin: Constellation Labs
-        [1137], ConstellationLabs, "Constellation Labs", "https://constellationnetwork.io/", DAG, ,
+        [1137], ConstellationLabs, "Constellation Labs", DAG, ,
     ),
     (
         /// Coin type: 1145
-        ///
         /// Symbol: CDY
-        ///
         /// Coin: Bitcoin Candy
-        [1145], BitcoinCandy, "Bitcoin Candy", "http://www.bitcoincandy.one", CDY, ,
+        [1145], BitcoinCandy, "Bitcoin Candy", CDY, ,
+    ),
+    (
+        /// Coin type: 1155
+        /// Symbol: ENJ
+        /// Coin: Enjin Coin
+        [1155], EnjinCoin, "Enjin Coin", ENJ, ,
     ),
     (
         /// Coin type: 1170
-        ///
         /// Symbol: HOO
-        ///
         /// Coin: Hoo Smart Chain
-        [1170], HooSmartChain, "Hoo Smart Chain", "https://www.hoosmartchain.com/", HOO, ,
+        [1170], HooSmartChain, "Hoo Smart Chain", HOO, ,
     ),
     (
         /// Coin type: 1234
-        ///
         /// Symbol: ALPH
-        ///
         /// Coin: Alephium
-        [1234], Alephium, "Alephium", "https://github.com/alephium/alephium/", ALPH, ,
+        [1234], Alephium, "Alephium", ALPH, ,
+    ),
+    (
+        /// Coin type: 1236
+        /// Coin: Masca
+        [1236], Masca, "Masca", , ,
+    ),
+    (
+        /// Coin type: 1237
+        /// Coin: Nostr
+        [1237], Nostr, "Nostr", , ,
+    ),
+    (
+        /// Coin type: 1280
+        /// Coin: Kudos Setler
+        [1280], KudosSetler, "Kudos Setler", , ,
+    ),
+    (
+        /// Coin type: 1284
+        /// Symbol: GLMR
+        /// Coin: Moonbeam
+        [1284], Moonbeam, "Moonbeam", GLMR, ,
     ),
     (
         /// Coin type: 1285
-        ///
         /// Symbol: MOVR
-        ///
         /// Coin: Moonriver
-        [1285], Moonriver, "Moonriver", "https://github.com/PureStake/moonbeam", MOVR, ,
+        [1285], Moonriver, "Moonriver", MOVR, ,
+    ),
+    (
+        /// Coin type: 1286
+        /// Symbol: DSG
+        /// Coin: Dessage Social Protocol
+        [1286], DessageSocialProtocol, "Dessage Social Protocol", DSG, ,
+    ),
+    (
+        /// Coin type: 1298
+        /// Symbol: WPC
+        /// Coin: Wpc
+        [1298], Wpc, "Wpc", WPC, ,
+    ),
+    (
+        /// Coin type: 1308
+        /// Symbol: WEI
+        /// Coin: WEI
+        [1308], WEI, "WEI", WEI, ,
+    ),
+    (
+        /// Coin type: 1312
+        /// Symbol: BITS
+        /// Coin: Entropy
+        [1312], Entropy, "Entropy", BITS, ,
     ),
     (
         /// Coin type: 1337
-        ///
         /// Symbol: DFC
-        ///
         /// Coin: Defcoin
-        [1337], Defcoin, "Defcoin", "http://defcoin-ng.org", DFC, ,
+        [1337], Defcoin, "Defcoin", DFC, ,
+    ),
+    (
+        /// Coin type: 1338
+        /// Symbol: IRON
+        /// Coin: Iron Fish
+        [1338], IronFish, "Iron Fish", IRON, ,
+    ),
+    (
+        /// Coin type: 1348
+        /// Symbol: ISLM
+        /// Coin: IslamicCoin
+        [1348], IslamicCoin, "IslamicCoin", ISLM, ,
     ),
     (
         /// Coin type: 1397
-        ///
         /// Symbol: HYC
-        ///
         /// Coin: Hycon
-        [1397], Hycon, "Hycon", "https://hycon.io", HYC, ,
+        [1397], Hycon, "Hycon", HYC, ,
     ),
     (
         /// Coin type: 1410
-        ///
         /// Symbol: TENTSLP
-        ///
         /// Coin: TENT Simple Ledger Protocol
-        [1410], TENTSimpleLedgerProtocol, "TENT Simple Ledger Protocol", , TENTSLP, ,
+        [1410], TENTSimpleLedgerProtocol, "TENT Simple Ledger Protocol", TENTSLP, ,
+    ),
+    (
+        /// Coin type: 1510
+        /// Symbol: XSC
+        /// Coin: XT Smart Chain
+        [1510], XTSmartChain, "XT Smart Chain", XSC, ,
     ),
     (
         /// Coin type: 1524
-        ///
         /// Coin: Taler
-        [1524], Taler, "Taler", "http://taler.site", , ,
+        [1524], Taler, "Taler", , ,
     ),
     (
         /// Coin type: 1533
-        ///
         /// Symbol: BEAM
-        ///
         /// Coin: Beam
-        [1533], Beam, "Beam", "https://www.beam.mw/", BEAM, ,
+        [1533], Beam, "Beam", BEAM, ,
+    ),
+    (
+        /// Coin type: 1536
+        /// Symbol: GAS
+        /// Coin: BubiChain
+        [1536], BubiChain, "BubiChain", GAS, ,
+    ),
+    (
+        /// Coin type: 1540
+        /// Symbol: ATHENA
+        /// Coin: Athena
+        [1540], Athena, "Athena", ATHENA, ,
+    ),
+    (
+        /// Coin type: 1551
+        /// Symbol: SDK
+        /// Coin: Sovereign SDK
+        [1551], SovereignSDK, "Sovereign SDK", SDK, ,
+    ),
+    (
+        /// Coin type: 1555
+        /// Symbol: APC
+        /// Coin: Apc Chain
+        [1555], ApcChain, "Apc Chain", APC, ,
     ),
     (
         /// Coin type: 1616
-        ///
         /// Symbol: ELF
-        ///
         /// Coin: AELF
-        [1616], AELF, "AELF", "https://aelf.io", ELF, ,
+        [1616], AELF, "AELF", ELF, ,
     ),
     (
         /// Coin type: 1618
-        ///
         /// Symbol: AUDL
-        ///
         /// Coin: AUDL
-        [1618], AUDL, "AUDL", "https://aud.one", AUDL, ,
+        [1618], AUDL, "AUDL", AUDL, ,
     ),
     (
         /// Coin type: 1620
-        ///
         /// Symbol: ATH
-        ///
         /// Coin: Atheios
-        [1620], Atheios, "Atheios", "https://atheios.com", ATH, ,
+        [1620], Atheios, "Atheios", ATH, ,
+    ),
+    (
+        /// Coin type: 1627
+        /// Symbol: LUME
+        /// Coin: Lume Web
+        [1627], LumeWeb, "Lume Web", LUME, ,
     ),
     (
         /// Coin type: 1642
-        ///
         /// Symbol: NEW
-        ///
         /// Coin: Newton
-        [1642], Newton, "Newton", "https://www.newtonproject.org", NEW, ,
+        [1642], Newton, "Newton", NEW, ,
     ),
     (
         /// Coin type: 1657
-        ///
         /// Symbol: BTA
-        ///
         /// Coin: Btachain
-        [1657], Btachain, "Btachain", "https://bitcoinasset.io", , "BTA",
+        [1657], Btachain, "Btachain", , "BTA",
+    ),
+    (
+        /// Coin type: 1668
+        /// Symbol: NEOX
+        /// Coin: Neoxa
+        [1668], Neoxa, "Neoxa", NEOX, ,
+    ),
+    (
+        /// Coin type: 1669
+        /// Symbol: MEWC
+        /// Coin: Meowcoin
+        [1669], Meowcoin, "Meowcoin", MEWC, ,
     ),
     (
         /// Coin type: 1688
-        ///
         /// Symbol: BCX
-        ///
         /// Coin: BitcoinX
-        [1688], BitcoinX, "BitcoinX", "https://bcx.org", BCX, ,
+        [1688], BitcoinX, "BitcoinX", BCX, ,
     ),
     (
         /// Coin type: 1729
-        ///
         /// Symbol: XTZ
-        ///
         /// Coin: Tezos
-        [1729], Tezos, "Tezos", "https://tezos.com", XTZ, ,
+        [1729], Tezos, "Tezos", XTZ, ,
     ),
     (
         /// Coin type: 1776
-        ///
         /// Symbol: LBTC
-        ///
         /// Coin: Liquid BTC
-        [1776], LiquidBTC, "Liquid BTC", "https://blockstream.com/liquid/", , "LBTC",
+        [1776], LiquidBTC, "Liquid BTC", , "LBTC",
     ),
     (
         /// Coin type: 1777
-        ///
         /// Symbol: BBP
-        ///
         /// Coin: Biblepay
-        [1777], Biblepay, "Biblepay", "https://www.biblepay.org/", BBP, ,
+        [1777], Biblepay, "Biblepay", BBP, ,
     ),
     (
         /// Coin type: 1784
-        ///
         /// Symbol: JPYS
-        ///
         /// Coin: JPY Stablecoin
-        [1784], JPYStablecoin, "JPY Stablecoin", "https://settlenet.io/", JPYS, ,
+        [1784], JPYStablecoin, "JPY Stablecoin", JPYS, ,
     ),
     (
         /// Coin type: 1789
-        ///
         /// Symbol: VEGA
-        ///
         /// Coin: Vega Protocol
-        [1789], VegaProtocol, "Vega Protocol", "https://vega.xyz/", VEGA, ,
+        [1789], VegaProtocol, "Vega Protocol", VEGA, ,
     ),
     (
         /// Coin type: 1815
-        ///
         /// Symbol: ADA
-        ///
         /// Coin: Cardano
-        [1815], Cardano, "Cardano", "https://www.cardanohub.org/en/home/", ADA, ,
+        [1815], Cardano, "Cardano", ADA, ,
     ),
     (
-        /// Coin type: 1856
-        ///
-        /// Symbol: TES
-        ///
-        /// Coin: Teslacoin
-        [1856], Teslacoin, "Teslacoin", "https://www.tesla-coin.com/", TES, ,
+        /// Coin type: 1818
+        /// Symbol: CUBE
+        /// Coin: Cube Chain Native Token
+        [1818], CubeChainNativeToken, "Cube Chain Native Token", CUBE, ,
+    ),
+    (
+        /// Coin type: 1888
+        /// Symbol: ZTX
+        /// Coin: Zetrix
+        [1888], Zetrix, "Zetrix", ZTX, ,
     ),
     (
         /// Coin type: 1899
-        ///
         /// Symbol: XEC
-        ///
         /// Coin: eCash token
-        [1899], eCashtoken, "eCash token", "https://e.cash/", , "XEC",
+        [1899], eCashtoken, "eCash token", , "XEC",
+    ),
+    (
+        /// Coin type: 1900
+        /// Symbol: XNA
+        /// Coin: Neurai
+        [1900], Neurai, "Neurai", XNA, ,
     ),
     (
         /// Coin type: 1901
-        ///
         /// Symbol: CLC
-        ///
         /// Coin: Classica
-        [1901], Classica, "Classica", "https://github.com/classica/", CLC, ,
+        [1901], Classica, "Classica", CLC, ,
+    ),
+    (
+        /// Coin type: 1907
+        /// Symbol: BITCI
+        /// Coin: Bitcicoin
+        [1907], Bitcicoin, "Bitcicoin", BITCI, ,
+    ),
+    (
+        /// Coin type: 1918
+        /// Symbol: BKC
+        /// Coin: Briskcoin
+        [1918], Briskcoin, "Briskcoin", BKC, ,
     ),
     (
         /// Coin type: 1919
-        ///
         /// Symbol: VIPS
-        ///
         /// Coin: VIPSTARCOIN
-        [1919], VIPSTARCOIN, "VIPSTARCOIN", "https://www.vipstarcoin.jp/", VIPS, ,
+        [1919], VIPSTARCOIN, "VIPSTARCOIN", VIPS, ,
     ),
     (
         /// Coin type: 1926
-        ///
         /// Symbol: CITY
-        ///
         /// Coin: City Coin
-        [1926], CityCoin, "City Coin", "https://city-chain.org/", CITY, ,
+        [1926], CityCoin, "City Coin", CITY, ,
+    ),
+    (
+        /// Coin type: 1951
+        /// Symbol: ESA
+        /// Coin: Esa
+        [1951], Esa, "Esa", ESA, ,
+    ),
+    (
+        /// Coin type: 1952
+        /// Symbol: ESC
+        /// Coin: EsaCoin
+        [1952], EsaCoin, "EsaCoin", ESC, ,
     ),
     (
         /// Coin type: 1955
-        ///
         /// Symbol: XX
-        ///
         /// Coin: xx coin
-        [1955], xxcoin, "xx coin", "https://xx.network/", XX, ,
+        [1955], xxcoin, "xx coin", XX, ,
     ),
     (
         /// Coin type: 1977
-        ///
         /// Symbol: XMX
-        ///
         /// Coin: Xuma
-        [1977], Xuma, "Xuma", "http://www.xumacoin.org/", XMX, ,
+        [1977], Xuma, "Xuma", XMX, ,
     ),
     (
         /// Coin type: 1984
-        ///
         /// Symbol: TRTL
-        ///
         /// Coin: TurtleCoin
-        [1984], TurtleCoin, "TurtleCoin", "https://turtlecoin.lol/", TRTL, ,
+        [1984], TurtleCoin, "TurtleCoin", TRTL, ,
+    ),
+    (
+        /// Coin type: 1985
+        /// Symbol: SLRT
+        /// Coin: Solarti Chain
+        [1985], SolartiChain, "Solarti Chain", SLRT, ,
+    ),
+    (
+        /// Coin type: 1986
+        /// Symbol: QTH
+        /// Coin: Qing Tong Horizon
+        [1986], QingTongHorizon, "Qing Tong Horizon", QTH, ,
     ),
     (
         /// Coin type: 1987
-        ///
         /// Symbol: EGEM
-        ///
         /// Coin: EtherGem
-        [1987], EtherGem, "EtherGem", "https://egem.io", EGEM, ,
+        [1987], EtherGem, "EtherGem", EGEM, ,
+    ),
+    (
+        /// Coin type: 1988
+        /// Symbol: MIRA
+        /// Coin: Mira Chain
+        [1988], MiraChain, "Mira Chain", MIRA, ,
     ),
     (
         /// Coin type: 1989
-        ///
         /// Symbol: HODL
-        ///
         /// Coin: HOdlcoin
-        [1989], HOdlcoin, "HOdlcoin", "https://hodlcoin.com/", HODL, ,
+        [1989], HOdlcoin, "HOdlcoin", HODL, ,
     ),
     (
         /// Coin type: 1990
-        ///
         /// Symbol: PHL
-        ///
         /// Coin: Placeholders
-        [1990], Placeholders, "Placeholders", "https://placeh.io/", PHL, ,
+        [1990], Placeholders, "Placeholders", PHL, ,
     ),
     (
         /// Coin type: 1991
-        ///
         /// Symbol: SC
-        ///
         /// Coin: Sia
-        [1991], Sia, "Sia", "https://sia.tech/", SC, ,
+        [1991], Sia, "Sia", SC, ,
     ),
     (
         /// Coin type: 1996
-        ///
         /// Symbol: MYT
-        ///
         /// Coin: Mineyourtime
-        [1996], Mineyourtime, "Mineyourtime", "https://mineyourtime.com/", MYT, ,
+        [1996], Mineyourtime, "Mineyourtime", MYT, ,
     ),
     (
         /// Coin type: 1997
-        ///
         /// Symbol: POLIS
-        ///
         /// Coin: Polis
-        [1997], Polis, "Polis", "https://polispay.org/", POLIS, ,
+        [1997], Polis, "Polis", POLIS, ,
     ),
     (
         /// Coin type: 1998
-        ///
         /// Symbol: XMCC
-        ///
         /// Coin: Monoeci
-        [1998], Monoeci, "Monoeci", "https://monoeci.io/", XMCC, ,
+        [1998], Monoeci, "Monoeci", XMCC, ,
     ),
     (
         /// Coin type: 1999
-        ///
         /// Symbol: COLX
-        ///
         /// Coin: ColossusXT
-        [1999], ColossusXT, "ColossusXT", "https://colossusxt.io/", COLX, ,
+        [1999], ColossusXT, "ColossusXT", COLX, ,
     ),
     (
         /// Coin type: 2000
-        ///
         /// Symbol: GIN
-        ///
         /// Coin: GinCoin
-        [2000], GinCoin, "GinCoin", "https://gincoin.io/", GIN, ,
+        [2000], GinCoin, "GinCoin", GIN, ,
     ),
     (
         /// Coin type: 2001
-        ///
         /// Symbol: MNP
-        ///
         /// Coin: MNPCoin
-        [2001], MNPCoin, "MNPCoin", "https://mnpcoin.pro/", MNP, ,
+        [2001], MNPCoin, "MNPCoin", MNP, ,
+    ),
+    (
+        /// Coin type: 2002
+        /// Symbol: MLN
+        /// Coin: Miraland
+        [2002], Miraland, "Miraland", MLN, ,
+    ),
+    (
+        /// Coin type: 2003
+        /// Symbol: ISNA
+        /// Coin: iSarrana
+        [2003], iSarrana, "iSarrana", ISNA, ,
+    ),
+    (
+        /// Coin type: 2015
+        /// Symbol: TEER
+        /// Coin: Integritee
+        [2015], Integritee, "Integritee", TEER, ,
     ),
     (
         /// Coin type: 2017
-        ///
         /// Symbol: KIN
-        ///
         /// Coin: Kin
-        [2017], Kin, "Kin", "https://www.kinecosystem.org/", KIN, ,
+        [2017], Kin, "Kin", KIN, ,
     ),
     (
         /// Coin type: 2018
-        ///
         /// Symbol: EOSC
-        ///
         /// Coin: EOSClassic
-        [2018], EOSClassic, "EOSClassic", "https://eos-classic.io/", EOSC, ,
+        [2018], EOSClassic, "EOSClassic", EOSC, ,
     ),
     (
         /// Coin type: 2019
-        ///
         /// Symbol: GBT
-        ///
         /// Coin: GoldBean Token
-        [2019], GoldBeanToken, "GoldBean Token", "http://www.adfunds.org/", GBT, ,
+        [2019], GoldBeanToken, "GoldBean Token", GBT, ,
     ),
     (
         /// Coin type: 2020
-        ///
         /// Symbol: PKC
-        ///
         /// Coin: PKC
-        [2020], PKC, "PKC", "https://www.pkc.ink/", PKC, ,
+        [2020], PKC, "PKC", PKC, ,
     ),
     (
         /// Coin type: 2021
-        ///
         /// Symbol: SKT
-        ///
         /// Coin: Sukhavati
-        [2021], Sukhavati, "Sukhavati", "https://sukhavati.io/", SKT, ,
+        [2021], Sukhavati, "Sukhavati", SKT, ,
     ),
     (
         /// Coin type: 2022
-        ///
         /// Symbol: XHT
-        ///
         /// Coin: Xinghuo Token
-        [2022], XinghuoToken, "Xinghuo Token", "https://xinghuo.space/", XHT, ,
+        [2022], XinghuoToken, "Xinghuo Token", XHT, ,
+    ),
+    (
+        /// Coin type: 2023
+        /// Symbol: COC
+        /// Coin: Chat On Chain
+        [2023], ChatOnChain, "Chat On Chain", COC, ,
+    ),
+    (
+        /// Coin type: 2024
+        /// Symbol: USBC
+        /// Coin: Universal Ledger USBC
+        [2024], UniversalLedgerUSBC, "Universal Ledger USBC", USBC, ,
+    ),
+    (
+        /// Coin type: 2025
+        /// Symbol: ROCK
+        /// Coin: Zenrock Labs
+        [2025], ZenrockLabs, "Zenrock Labs", ROCK, ,
+    ),
+    (
+        /// Coin type: 2026
+        /// Symbol: ASTRON
+        /// Coin: ASTRON Token
+        [2026], ASTRONToken, "ASTRON Token", ASTRON, ,
+    ),
+    (
+        /// Coin type: 2046
+        /// Symbol: ANY
+        /// Coin: Any
+        [2046], Any, "Any", ANY, ,
     ),
     (
         /// Coin type: 2048
-        ///
         /// Symbol: MCASH
-        ///
         /// Coin: MCashChain
-        [2048], MCashChain, "MCashChain", "https://mcash.network/", MCASH, ,
+        [2048], MCashChain, "MCashChain", MCASH, ,
     ),
     (
         /// Coin type: 2049
-        ///
         /// Symbol: TRUE
-        ///
         /// Coin: TrueChain
-        [2049], TrueChain, "TrueChain", "https://www.truechain.pro/", TRUE, ,
+        [2049], TrueChain, "TrueChain", TRUE, ,
+    ),
+    (
+        /// Coin type: 2050
+        /// Symbol: MOVO
+        /// Coin: Movo Smart Chain
+        [2050], MovoSmartChain, "Movo Smart Chain", MOVO, ,
+    ),
+    (
+        /// Coin type: 2086
+        /// Symbol: KILT
+        /// Coin: KILT Spiritnet
+        [2086], KILTSpiritnet, "KILT Spiritnet", KILT, ,
+    ),
+    (
+        /// Coin type: 2091
+        /// Symbol: FRQCY
+        /// Coin: Frequency
+        [2091], Frequency, "Frequency", FRQCY, ,
+    ),
+    (
+        /// Coin type: 2109
+        /// Symbol: SAMA
+        /// Coin: Exosama Network
+        [2109], ExosamaNetwork, "Exosama Network", SAMA, ,
     ),
     (
         /// Coin type: 2112
-        ///
         /// Symbol: IoTE
-        ///
         /// Coin: IoTE
-        [2112], IoTE, "IoTE", "https://www.iote.one/", IoTE, ,
+        [2112], IoTE, "IoTE", IoTE, ,
+    ),
+    (
+        /// Coin type: 2121
+        /// Symbol: CBTC
+        /// Coin: Coordinate BTC (Anduro)
+        [2121], CoordinateBTC, "Coordinate BTC (Anduro)", CBTC, ,
+    ),
+    (
+        /// Coin type: 2125
+        /// Symbol: BAY
+        /// Coin: BitBay
+        [2125], BitBay, "BitBay", BAY, ,
     ),
     (
         /// Coin type: 2137
-        ///
         /// Symbol: XRG
-        ///
         /// Coin: Ergon
-        [2137], Ergon, "Ergon", "https://ergon.moe", XRG, ,
+        [2137], Ergon, "Ergon", XRG, ,
+    ),
+    (
+        /// Coin type: 2199
+        /// Symbol: SAMA
+        /// Coin: Moonsama Network
+        [2199], MoonsamaNetwork, "Moonsama Network", , "SAMA",
     ),
     (
         /// Coin type: 2221
-        ///
         /// Symbol: ASK
-        ///
         /// Coin: ASK
-        [2221], ASK, "ASK", "https://permission.io/", ASK, ,
+        [2221], ASK, "ASK", ASK, ,
+    ),
+    (
+        /// Coin type: 2222
+        /// Symbol: CWEB
+        /// Coin: Coinweb
+        [2222], Coinweb, "Coinweb", CWEB, ,
+    ),
+    (
+        /// Coin type: 2285
+        /// Coin: Qiyi Chain
+        [2285], QiyiChain, "Qiyi Chain", , ,
     ),
     (
         /// Coin type: 2301
-        ///
         /// Symbol: QTUM
-        ///
         /// Coin: QTUM
-        [2301], QTUM, "QTUM", "https://qtum.org/en/", QTUM, ,
+        [2301], QTUM, "QTUM", QTUM, ,
     ),
     (
         /// Coin type: 2302
-        ///
         /// Symbol: ETP
-        ///
         /// Coin: Metaverse
-        [2302], Metaverse, "Metaverse", "https://mvs.org/", ETP, ,
+        [2302], Metaverse, "Metaverse", ETP, ,
     ),
     (
         /// Coin type: 2303
-        ///
         /// Symbol: GXC
-        ///
         /// Coin: GXChain
-        [2303], GXChain, "GXChain", "https://www.gxb.io", GXC, ,
+        [2303], GXChain, "GXChain", GXC, ,
     ),
     (
         /// Coin type: 2304
-        ///
         /// Symbol: CRP
-        ///
         /// Coin: CranePay
-        [2304], CranePay, "CranePay", "https://cranepay.io", CRP, ,
+        [2304], CranePay, "CranePay", CRP, ,
     ),
     (
         /// Coin type: 2305
-        ///
         /// Symbol: ELA
-        ///
         /// Coin: Elastos
-        [2305], Elastos, "Elastos", "https://www.elastos.org/", ELA, ,
+        [2305], Elastos, "Elastos", ELA, ,
     ),
     (
         /// Coin type: 2338
-        ///
         /// Symbol: SNOW
-        ///
         /// Coin: Snowblossom
-        [2338], Snowblossom, "Snowblossom", "https://snowblossom.org/", SNOW, ,
+        [2338], Snowblossom, "Snowblossom", SNOW, ,
+    ),
+    (
+        /// Coin type: 2365
+        /// Symbol: XIN
+        /// Coin: Mixin
+        [2365], Mixin, "Mixin", XIN, ,
+    ),
+    (
+        /// Coin type: 2500
+        /// Symbol: NEXI
+        /// Coin: Nexi
+        [2500], Nexi, "Nexi", NEXI, ,
     ),
     (
         /// Coin type: 2570
-        ///
         /// Symbol: AOA
-        ///
         /// Coin: Aurora
-        [2570], Aurora, "Aurora", "https://www.aurorachain.io/", AOA, ,
+        [2570], Aurora, "Aurora", AOA, ,
+    ),
+    (
+        /// Coin type: 2686
+        /// Symbol: AIPG
+        /// Coin: AIPowerGrid
+        [2686], AIPowerGrid, "AIPowerGrid", AIPG, ,
     ),
     (
         /// Coin type: 2718
-        ///
         /// Symbol: NAS
-        ///
         /// Coin: Nebulas
-        [2718], Nebulas, "Nebulas", "https://nebulas.io/", NAS, ,
+        [2718], Nebulas, "Nebulas", NAS, ,
+    ),
+    (
+        /// Coin type: 2809
+        /// Symbol: LAN
+        /// Coin: Lanify
+        [2809], Lanify, "Lanify", LAN, ,
     ),
     (
         /// Coin type: 2894
-        ///
         /// Symbol: REOSC
-        ///
         /// Coin: REOSC Ecosystem
-        [2894], REOSCEcosystem, "REOSC Ecosystem", "https://www.reosc.io/", REOSC, ,
+        [2894], REOSCEcosystem, "REOSC Ecosystem", REOSC, ,
     ),
     (
         /// Coin type: 2941
-        ///
         /// Symbol: BND
-        ///
         /// Coin: Blocknode
-        [2941], Blocknode, "Blocknode", "https://blocknode.tech", BND, ,
+        [2941], Blocknode, "Blocknode", BND, ,
+    ),
+    (
+        /// Coin type: 3000
+        /// Symbol: SM
+        /// Coin: Stealth Message
+        [3000], StealthMessage, "Stealth Message", SM, ,
     ),
     (
         /// Coin type: 3003
-        ///
         /// Symbol: LUX
-        ///
         /// Coin: LUX
-        [3003], LUX, "LUX", "https://luxcore.io/", LUX, ,
+        [3003], LUX, "LUX", LUX, ,
     ),
     (
         /// Coin type: 3030
-        ///
-        /// Symbol: XHB
-        ///
+        /// Symbol: HBAR
         /// Coin: Hedera HBAR
-        [3030], HederaHBAR, "Hedera HBAR", "https://www.hedera.com/", XHB, ,
+        [3030], HederaHBAR, "Hedera HBAR", HBAR, ,
     ),
     (
         /// Coin type: 3077
-        ///
         /// Symbol: COS
-        ///
         /// Coin: Contentos
-        [3077], Contentos, "Contentos", "https://www.contentos.io/", COS, ,
+        [3077], Contentos, "Contentos", COS, ,
     ),
     (
         /// Coin type: 3276
-        ///
         /// Symbol: CCC
-        ///
         /// Coin: CodeChain
-        [3276], CodeChain, "CodeChain", "https://codechain.io/", CCC, ,
+        [3276], CodeChain, "CodeChain", , "CCC",
+    ),
+    (
+        /// Coin type: 3333
+        /// Symbol: SXP
+        /// Coin: Solar
+        [3333], Solar, "Solar", SXP, ,
+    ),
+    (
+        /// Coin type: 3338
+        /// Symbol: PEAQ
+        /// Coin: peaq
+        [3338], peaq, "peaq", PEAQ, ,
+    ),
+    (
+        /// Coin type: 3344
+        /// Symbol: PLMC
+        /// Coin: Polimec
+        [3344], Polimec, "Polimec", PLMC, ,
     ),
     (
         /// Coin type: 3377
-        ///
         /// Symbol: ROI
-        ///
         /// Coin: ROIcoin
-        [3377], ROIcoin, "ROIcoin", "https://roi-coin.com/", ROI, ,
+        [3377], ROIcoin, "ROIcoin", ROI, ,
     ),
     (
         /// Coin type: 3381
-        ///
         /// Symbol: DYN
-        ///
         /// Coin: Dynamic
-        [3381], Dynamic, "Dynamic", "https://duality.solutions/dynamic/", , "DYN",
+        [3381], Dynamic, "Dynamic", , "DYN",
     ),
     (
         /// Coin type: 3383
-        ///
         /// Symbol: SEQ
-        ///
         /// Coin: Sequence
-        [3383], Sequence, "Sequence", "https://duality.solutions/sequence/", SEQ, ,
+        [3383], Sequence, "Sequence", SEQ, ,
+    ),
+    (
+        /// Coin type: 3434
+        /// Symbol: PEPE
+        /// Coin: Pepecoin Core
+        [3434], PepecoinCore, "Pepecoin Core", PEPE, ,
+    ),
+    (
+        /// Coin type: 3501
+        /// Symbol: JFIN
+        /// Coin: JFIN Coin
+        [3501], JFINCoin, "JFIN Coin", JFIN, ,
     ),
     (
         /// Coin type: 3552
-        ///
         /// Symbol: DEO
-        ///
         /// Coin: Destocoin
-        [3552], Destocoin, "Destocoin", "https://desto.io", DEO, ,
+        [3552], Destocoin, "Destocoin", DEO, ,
     ),
     (
         /// Coin type: 3564
-        ///
         /// Symbol: DST
-        ///
         /// Coin: DeStream
-        [3564], DeStream, "DeStream", "https://destream.io", , "DST",
+        [3564], DeStream, "DeStream", , "DST",
+    ),
+    (
+        /// Coin type: 3601
+        /// Symbol: CY
+        /// Coin: Cybits
+        [3601], Cybits, "Cybits", , "CY",
+    ),
+    (
+        /// Coin type: 3757
+        /// Symbol: MPC
+        /// Coin: Partisia Blockchain
+        [3757], PartisiaBlockchain, "Partisia Blockchain", MPC, ,
+    ),
+    (
+        /// Coin type: 3840
+        /// Symbol: RED
+        /// Coin: ReDeFi RED
+        [3840], ReDeFiRED, "ReDeFi RED", RED, ,
     ),
     (
         /// Coin type: 4040
-        ///
         /// Symbol: FC8
-        ///
         /// Coin: FCH Network
-        [4040], FCHNetwork, "FCH Network", "https://fch.network/", FC8, ,
+        [4040], FCHNetwork, "FCH Network", FC8, ,
     ),
     (
         /// Coin type: 4096
-        ///
         /// Symbol: YEE
-        ///
         /// Coin: YeeCo
-        [4096], YeeCo, "YeeCo", "https://www.yeeco.io/", YEE, ,
+        [4096], YeeCo, "YeeCo", YEE, ,
     ),
     (
         /// Coin type: 4218
-        ///
         /// Symbol: IOTA
-        ///
         /// Coin: IOTA
-        [4218], IOTA, "IOTA", "https://www.iota.org/", IOTA, ,
+        [4218], IOTA, "IOTA", IOTA, ,
+    ),
+    (
+        /// Coin type: 4219
+        /// Symbol: SMR
+        /// Coin: Shimmer
+        [4219], Shimmer, "Shimmer", SMR, ,
     ),
     (
         /// Coin type: 4242
-        ///
         /// Symbol: AXE
-        ///
         /// Coin: Axe
-        [4242], Axe, "Axe", "https://github.com/AXErunners/axe", AXE, ,
+        [4242], Axe, "Axe", AXE, ,
     ),
     (
         /// Coin type: 4343
-        ///
         /// Symbol: XYM
-        ///
         /// Coin: Symbol
-        [4343], Symbol, "Symbol", "https://github.com/nemtech/catapult-server", XYM, ,
+        [4343], Symbol, "Symbol", XYM, ,
+    ),
+    (
+        /// Coin type: 4444
+        /// Symbol: C4E
+        /// Coin: Chain4Energy
+        [4444], Chain4Energy, "Chain4Energy", C4E, ,
+    ),
+    (
+        /// Coin type: 4646
+        /// Symbol: MST
+        /// Coin: MST
+        [4646], MST, "MST", MST, ,
+    ),
+    (
+        /// Coin type: 4919
+        /// Symbol: XVM
+        /// Coin: Venidium
+        [4919], Venidium, "Venidium", XVM, ,
+    ),
+    (
+        /// Coin type: 4976
+        /// Symbol: VARA
+        /// Coin: Vara
+        [4976], Vara, "Vara", , "VARA",
+    ),
+    (
+        /// Coin type: 4999
+        /// Symbol: BXN
+        /// Coin: BlackFort Exchange Network
+        [4999], BlackFortExchangeNetwork, "BlackFort Exchange Network", BXN, ,
+    ),
+    (
+        /// Coin type: 5000
+        /// Symbol: V12
+        /// Coin: Vet The Vote
+        [5000], VetTheVote, "Vet The Vote", V12, ,
+    ),
+    (
+        /// Coin type: 5006
+        /// Symbol: SBC
+        /// Coin: Senior Blockchain
+        [5006], SeniorBlockchain, "Senior Blockchain", , "SBC",
     ),
     (
         /// Coin type: 5248
-        ///
         /// Symbol: FIC
-        ///
         /// Coin: FIC
-        [5248], FIC, "FIC", "https://ficnetwork.com", FIC, ,
+        [5248], FIC, "FIC", FIC, ,
     ),
     (
         /// Coin type: 5353
-        ///
         /// Symbol: HNS
-        ///
         /// Coin: Handshake
-        [5353], Handshake, "Handshake", "https://handshake.org", HNS, ,
+        [5353], Handshake, "Handshake", HNS, ,
+    ),
+    (
+        /// Coin type: 5404
+        /// Symbol: ISK
+        /// Coin: ISKRA
+        [5404], ISKRA, "ISKRA", ISK, ,
+    ),
+    (
+        /// Coin type: 5467
+        /// Symbol: ALTME
+        /// Coin: ALTME
+        [5467], ALTME, "ALTME", ALTME, ,
     ),
     (
         /// Coin type: 5555
-        ///
         /// Symbol: FUND
-        ///
         /// Coin: Unification
-        [5555], Unification, "Unification", "https://unification.com", FUND, ,
+        [5555], Unification, "Unification", FUND, ,
     ),
     (
         /// Coin type: 5757
-        ///
         /// Symbol: STX
-        ///
-        /// Coin: Blockstack
-        [5757], Blockstack, "Blockstack", "https://github.com/blockstack/blockstack-core", STX, ,
+        /// Coin: Stacks
+        [5757], Stacks, "Stacks", STX, ,
     ),
     (
         /// Coin type: 5895
-        ///
         /// Symbol: VOW
-        ///
         /// Coin: VowChain VOW
-        [5895], VowChainVOW, "VowChain VOW", "https://vowchain.net/", VOW, ,
+        [5895], VowChainVOW, "VowChain VOW", VOW, ,
     ),
     (
         /// Coin type: 5920
-        ///
         /// Symbol: SLU
-        ///
         /// Coin: SILUBIUM
-        [5920], SILUBIUM, "SILUBIUM", "https://github.com/SilubiumProject/slucore", SLU, ,
+        [5920], SILUBIUM, "SILUBIUM", SLU, ,
+    ),
+    (
+        /// Coin type: 5995
+        /// Symbol: DUSK
+        /// Coin: Dusk Network
+        [5995], DuskNetwork, "Dusk Network", , "DUSK",
     ),
     (
         /// Coin type: 6060
-        ///
         /// Symbol: GO
-        ///
         /// Coin: GoChain GO
-        [6060], GoChainGO, "GoChain GO", "https://gochain.io/", GO, ,
+        [6060], GoChainGO, "GoChain GO", GO, ,
+    ),
+    (
+        /// Coin type: 6144
+        /// Symbol: DTS
+        /// Coin: Datos
+        [6144], Datos, "Datos", DTS, ,
     ),
     (
         /// Coin type: 6174
-        ///
         /// Symbol: MOI
-        ///
         /// Coin: My Own Internet
-        [6174], MyOwnInternet, "My Own Internet", "https://moi-id.life/", MOI, ,
+        [6174], MyOwnInternet, "My Own Internet", MOI, ,
+    ),
+    (
+        /// Coin type: 6278
+        /// Symbol: STEAMX
+        /// Coin: Rails Network Mainnet
+        [6278], RailsNetworkMainnet, "Rails Network Mainnet", STEAMX, ,
+    ),
+    (
+        /// Coin type: 6532
+        /// Symbol: UM
+        /// Coin: Penumbra
+        [6532], Penumbra, "Penumbra", UM, ,
+    ),
+    (
+        /// Coin type: 6599
+        /// Symbol: RSC
+        /// Coin: Royal Sports City
+        [6599], RoyalSportsCity, "Royal Sports City", RSC, ,
     ),
     (
         /// Coin type: 6666
-        ///
         /// Symbol: BPA
-        ///
         /// Coin: Bitcoin Pizza
-        [6666], BitcoinPizza, "Bitcoin Pizza", "http://p.top/", BPA, ,
+        [6666], BitcoinPizza, "Bitcoin Pizza", BPA, ,
     ),
     (
         /// Coin type: 6688
-        ///
         /// Symbol: SAFE
-        ///
         /// Coin: SAFE
-        [6688], SAFE, "SAFE", "http://www.anwang.com/", SAFE, ,
+        [6688], SAFE, "SAFE", SAFE, ,
+    ),
+    (
+        /// Coin type: 6779
+        /// Symbol: COTI
+        /// Coin: COTI
+        [6779], COTI, "COTI", COTI, ,
     ),
     (
         /// Coin type: 6969
-        ///
         /// Symbol: ROGER
-        ///
         /// Coin: TheHolyrogerCoin
-        [6969], TheHolyrogerCoin, "TheHolyrogerCoin", "https://github.com/TheHolyRoger/TheHolyRogerCoin", ROGER, ,
+        [6969], TheHolyrogerCoin, "TheHolyrogerCoin", ROGER, ,
+    ),
+    (
+        /// Coin type: 7000
+        /// Symbol: ZETA
+        /// Coin: ZetaChain
+        [7000], ZetaChain, "ZetaChain", ZETA, ,
+    ),
+    (
+        /// Coin type: 7027
+        /// Symbol: ELLA
+        /// Coin: Ella the heart
+        [7027], Ellatheheart, "Ella the heart", , "ELLA",
+    ),
+    (
+        /// Coin type: 7028, 10242
+        /// Symbol: AA
+        /// Coin: Arthera
+        [7028,10242], Arthera, "Arthera", AA, ,
+    ),
+    (
+        /// Coin type: 7070
+        /// Symbol: DOI
+        /// Coin: Doichain
+        [7070], Doichain, "Doichain", DOI, ,
     ),
     (
         /// Coin type: 7091
-        ///
         /// Symbol: TOPL
-        ///
         /// Coin: Topl
-        [7091], Topl, "Topl", "https://www.topl.co", TOPL, ,
+        [7091], Topl, "Topl", TOPL, ,
+    ),
+    (
+        /// Coin type: 7272
+        /// Symbol: ABTC
+        /// Coin: Alys BTC (Anduro)
+        [7272], AlysBTC, "Alys BTC (Anduro)", ABTC, ,
+    ),
+    (
+        /// Coin type: 7331
+        /// Symbol: KLY
+        /// Coin: KLYNTAR
+        [7331], KLYNTAR, "KLYNTAR", KLY, ,
+    ),
+    (
+        /// Coin type: 7341
+        /// Symbol: SHFT
+        /// Coin: Shyft
+        [7341], Shyft, "Shyft", SHFT, ,
+    ),
+    (
+        /// Coin type: 7518
+        /// Symbol: MEV
+        /// Coin: MEVerse
+        [7518], MEVerse, "MEVerse", MEV, ,
+    ),
+    (
+        /// Coin type: 7576
+        /// Symbol: ADIL
+        /// Coin: ADIL Chain
+        [7576], ADILChain, "ADIL Chain", ADIL, ,
     ),
     (
         /// Coin type: 7777
-        ///
         /// Symbol: BTV
-        ///
         /// Coin: Bitvote
-        [7777], Bitvote, "Bitvote", "https://www.bitvote.one", BTV, ,
+        [7777], Bitvote, "Bitvote", BTV, ,
+    ),
+    (
+        /// Coin type: 7779
+        /// Symbol: CPV
+        /// Coin: Compverse
+        [7779], Compverse, "Compverse", CPV, ,
     ),
     (
         /// Coin type: 8000
-        ///
         /// Symbol: SKY
-        ///
         /// Coin: Skycoin
-        [8000], Skycoin, "Skycoin", "https://www.skycoin.net", SKY, ,
+        [8000], Skycoin, "Skycoin", SKY, ,
+    ),
+    (
+        /// Coin type: 8017
+        /// Symbol: ISC
+        /// Coin: iSunCoin
+        [8017], iSunCoin, "iSunCoin", ISC, ,
     ),
     (
         /// Coin type: 8080
-        ///
         /// Coin: DSRV
-        [8080], DSRV, "DSRV", "https://www.dsrvlabs.com/", , ,
+        [8080], DSRV, "DSRV", , ,
+    ),
+    (
+        /// Coin type: 8181
+        /// Symbol: BOC
+        /// Coin: BeOne Chain
+        [8181], BeOneChain, "BeOne Chain", BOC, ,
     ),
     (
         /// Coin type: 8192
-        ///
         /// Symbol: PAC
-        ///
         /// Coin: pacprotocol
-        [8192], pacprotocol, "pacprotocol", "https://www.pacprotocol.com", PAC, ,
+        [8192], pacprotocol, "pacprotocol", PAC, ,
     ),
     (
         /// Coin type: 8217
-        ///
-        /// Symbol: KLAY
-        ///
-        /// Coin: KLAY
-        [8217], KLAY, "KLAY", "https://www.klaytn.com", KLAY, ,
+        /// Symbol: KAIA
+        /// Coin: KAIA
+        [8217], KAIA, "KAIA", KAIA, ,
     ),
     (
         /// Coin type: 8339
-        ///
         /// Symbol: BTQ
-        ///
         /// Coin: BitcoinQuark
-        [8339], BitcoinQuark, "BitcoinQuark", "https://www.bitcoinquark.org", BTQ, ,
+        [8339], BitcoinQuark, "BitcoinQuark", BTQ, ,
     ),
     (
         /// Coin type: 8444
-        ///
         /// Symbol: XCH
-        ///
         /// Coin: Chia
-        [8444], Chia, "Chia", "https://www.chia.net", , "XCH",
+        [8444], Chia, "Chia", , "XCH",
+    ),
+    (
+        /// Coin type: 8453
+        /// Coin: Base
+        [8453], Base, "Base", , ,
+    ),
+    (
+        /// Coin type: 8680
+        /// Symbol: PLMNT
+        /// Coin: Planetmint
+        [8680], Planetmint, "Planetmint", PLMNT, ,
+    ),
+    (
+        /// Coin type: 8732
+        /// Symbol: BLN
+        /// Coin: Bullions
+        [8732], Bullions, "Bullions", BLN, ,
+    ),
+    (
+        /// Coin type: 8738
+        /// Symbol: ALPH
+        /// Coin: Alph Network
+        [8738], AlphNetwork, "Alph Network", , "ALPH",
+    ),
+    (
+        /// Coin type: 8866
+        /// Symbol: GGX
+        /// Coin: Golden Gate
+        [8866], GoldenGate, "Golden Gate", GGX, ,
+    ),
+    (
+        /// Coin type: 8886
+        /// Symbol: GGXT
+        /// Coin: Golden Gate Sydney
+        [8886], GoldenGateSydney, "Golden Gate Sydney", GGXT, ,
     ),
     (
         /// Coin type: 8888
-        ///
         /// Symbol: SBTC
-        ///
         /// Coin: Super Bitcoin
-        [8888], SuperBitcoin, "Super Bitcoin", "https://www.superbtc.org", SBTC, ,
+        [8888], SuperBitcoin, "Super Bitcoin", SBTC, ,
     ),
     (
         /// Coin type: 8964
-        ///
         /// Symbol: NULS
-        ///
         /// Coin: NULS
-        [8964], NULS, "NULS", "https://nuls.io", NULS, ,
+        [8964], NULS, "NULS", NULS, ,
+    ),
+    (
+        /// Coin type: 8997
+        /// Symbol: BBC
+        /// Coin: Babacoin
+        [8997], Babacoin, "Babacoin", , "BBC",
+    ),
+    (
+        /// Coin type: 8998
+        /// Symbol: JGC
+        /// Coin: JagoanCoin
+        [8998], JagoanCoin, "JagoanCoin", JGC, ,
     ),
     (
         /// Coin type: 8999
-        ///
         /// Symbol: BTP
-        ///
         /// Coin: Bitcoin Pay
-        [8999], BitcoinPay, "Bitcoin Pay", "http://www.btceasypay.com", BTP, ,
+        [8999], BitcoinPay, "Bitcoin Pay", BTP, ,
     ),
     (
         /// Coin type: 9000
-        ///
         /// Symbol: AVAX
-        ///
         /// Coin: Avalanche
-        [9000], Avalanche, "Avalanche", "https://www.avalabs.org", AVAX, ,
+        [9000], Avalanche, "Avalanche", AVAX, ,
+    ),
+    (
+        /// Coin type: 9001
+        /// Symbol: ARB1
+        /// Coin: Arbitrum
+        [9001], Arbitrum, "Arbitrum", ARB1, ,
+    ),
+    (
+        /// Coin type: 9002
+        /// Symbol: BOBA
+        /// Coin: Boba
+        [9002], Boba, "Boba", BOBA, ,
+    ),
+    (
+        /// Coin type: 9003
+        /// Symbol: LOOP
+        /// Coin: Loopring
+        [9003], Loopring, "Loopring", LOOP, ,
+    ),
+    (
+        /// Coin type: 9004
+        /// Symbol: STRK
+        /// Coin: StarkNet
+        [9004], StarkNet, "StarkNet", STRK, ,
+    ),
+    (
+        /// Coin type: 9006
+        /// Symbol: BSC
+        /// Coin: Binance Smart Chain
+        [9006], BinanceSmartChain, "Binance Smart Chain", , "BSC",
     ),
     (
         /// Coin type: 9797
-        ///
         /// Symbol: NRG
-        ///
         /// Coin: Energi
-        [9797], Energi, "Energi", "https://www.energi.world/", NRG, ,
+        [9797], Energi, "Energi", NRG, ,
     ),
     (
         /// Coin type: 9888
-        ///
         /// Symbol: BTF
-        ///
         /// Coin: Bitcoin Faith
-        [9888], BitcoinFaith, "Bitcoin Faith", "http://bitcoinfaith.org", BTF, ,
+        [9888], BitcoinFaith, "Bitcoin Faith", BTF, ,
+    ),
+    (
+        /// Coin type: 9969
+        /// Symbol: OSMI
+        /// Coin: Osmium
+        [9969], Osmium, "Osmium", OSMI, ,
     ),
     (
         /// Coin type: 9999
-        ///
         /// Symbol: GOD
-        ///
         /// Coin: Bitcoin God
-        [9999], BitcoinGod, "Bitcoin God", "https://www.bitcoingod.org", GOD, ,
+        [9999], BitcoinGod, "Bitcoin God", GOD, ,
     ),
     (
         /// Coin type: 10000
-        ///
         /// Symbol: FO
-        ///
         /// Coin: FIBOS
-        [10000], FIBOS, "FIBOS", "https://fibos.io/", FO, ,
+        [10000], FIBOS, "FIBOS", FO, ,
+    ),
+    (
+        /// Coin type: 10001
+        /// Symbol: SPACE
+        /// Coin: Space
+        [10001], Space, "Space", SPACE, ,
+    ),
+    (
+        /// Coin type: 10007
+        /// Symbol: S
+        /// Coin: SONIC
+        [10007], SONIC, "SONIC", S, ,
+    ),
+    (
+        /// Coin type: 10111
+        /// Symbol: DHP
+        /// Coin: dHealth
+        [10111], dHealth, "dHealth", DHP, ,
     ),
     (
         /// Coin type: 10226
-        ///
         /// Symbol: RTM
-        ///
         /// Coin: Raptoreum
-        [10226], Raptoreum, "Raptoreum", "https://raptoreum.com/", RTM, ,
+        [10226], Raptoreum, "Raptoreum", RTM, ,
     ),
     (
         /// Coin type: 10291
-        ///
         /// Symbol: XRC
-        ///
         /// Coin: XRhodium
-        [10291], XRhodium, "XRhodium", "https://www.xrhodium.org", XRC, ,
+        [10291], XRhodium, "XRhodium", XRC, ,
+    ),
+    (
+        /// Coin type: 10507
+        /// Symbol: NUM
+        /// Coin: Numbers Protocol
+        [10507], NumbersProtocol, "Numbers Protocol", NUM, ,
     ),
     (
         /// Coin type: 10605
-        ///
         /// Symbol: XPI
-        ///
         /// Coin: Lotus
-        [10605], Lotus, "Lotus", "https://givelotus.org/", XPI, ,
+        [10605], Lotus, "Lotus", XPI, ,
     ),
     (
         /// Coin type: 11111
-        ///
         /// Symbol: ESS
-        ///
         /// Coin: Essentia One
-        [11111], EssentiaOne, "Essentia One", "https://essentia.one/", ESS, ,
+        [11111], EssentiaOne, "Essentia One", ESS, ,
+    ),
+    (
+        /// Coin type: 11742
+        /// Symbol: VARCH
+        /// Coin: InvArch
+        [11742], InvArch, "InvArch", VARCH, ,
+    ),
+    (
+        /// Coin type: 11743
+        /// Symbol: TNKR
+        /// Coin: Tinkernet
+        [11743], Tinkernet, "Tinkernet", TNKR, ,
     ),
     (
         /// Coin type: 12345
-        ///
         /// Symbol: IPOS
-        ///
         /// Coin: IPOS
-        [12345], IPOS, "IPOS", "https://iposlab.com", IPOS, ,
+        [12345], IPOS, "IPOS", IPOS, ,
     ),
     (
         /// Coin type: 12586
-        ///
         /// Symbol: MINA
-        ///
         /// Coin: Mina
-        [12586], Mina, "Mina", "https://minaprotocol.com/", MINA, ,
+        [12586], Mina, "Mina", MINA, ,
     ),
     (
         /// Coin type: 13107
-        ///
         /// Symbol: BTY
-        ///
         /// Coin: BitYuan
-        [13107], BitYuan, "BitYuan", "https://www.bityuan.com", BTY, ,
+        [13107], BitYuan, "BitYuan", BTY, ,
     ),
     (
         /// Coin type: 13108
-        ///
         /// Symbol: YCC
-        ///
         /// Coin: Yuan Chain Coin
-        [13108], YuanChainCoin, "Yuan Chain Coin", "https://www.yuan.org", YCC, ,
+        [13108], YuanChainCoin, "Yuan Chain Coin", YCC, ,
+    ),
+    (
+        /// Coin type: 13381
+        /// Symbol: PHX
+        /// Coin: Phoenix
+        [13381], Phoenix_PHX, "Phoenix", PHX, ,
+    ),
+    (
+        /// Coin type: 14001
+        /// Symbol: WAX
+        /// Coin: Worldwide Asset Exchange
+        [14001], WorldwideAssetExchange, "Worldwide Asset Exchange", WAX, ,
     ),
     (
         /// Coin type: 15845
-        ///
         /// Symbol: SDGO
-        ///
         /// Coin: SanDeGo
-        [15845], SanDeGo, "SanDeGo", "http://www.sandego.net", SDGO, ,
+        [15845], SanDeGo, "SanDeGo", SDGO, ,
     ),
     (
         /// Coin type: 16181
-        ///
         /// Symbol: XTX
-        ///
         /// Coin: Totem Live Network
-        [16181], TotemLiveNetwork, "Totem Live Network", "https://totem.live", XTX, ,
+        [16181], TotemLiveNetwork, "Totem Live Network", XTX, ,
     ),
     (
         /// Coin type: 16754
-        ///
         /// Symbol: ARDR
-        ///
         /// Coin: Ardor
-        [16754], Ardor, "Ardor", "https://www.jelurida.com", ARDR, ,
+        [16754], Ardor, "Ardor", ARDR, ,
     ),
     (
         /// Coin type: 18000
-        ///
         /// Symbol: MTR
-        ///
         /// Coin: Meter
-        [18000], Meter, "Meter", "https://Meter.io", , "MTR",
+        [18000], Meter, "Meter", , "MTR",
     ),
     (
         /// Coin type: 19165
-        ///
         /// Symbol: SAFE
-        ///
         /// Coin: Safecoin
-        [19165], Safecoin, "Safecoin", "https://www.safecoin.org", , "SAFE",
+        [19165], Safecoin, "Safecoin", , "SAFE",
     ),
     (
         /// Coin type: 19167
-        ///
         /// Symbol: FLUX
-        ///
         /// Coin: Flux
-        [19167], Flux, "Flux", "https://runonflux.io", FLUX, ,
+        [19167], Flux, "Flux", FLUX, ,
     ),
     (
         /// Coin type: 19169
-        ///
         /// Symbol: RITO
-        ///
         /// Coin: Ritocoin
-        [19169], Ritocoin, "Ritocoin", "https://www.ritocoin.org", RITO, ,
+        [19169], Ritocoin, "Ritocoin", RITO, ,
+    ),
+    (
+        /// Coin type: 19788
+        /// Symbol: ML
+        /// Coin: Mintlayer
+        [19788], Mintlayer, "Mintlayer", ML, ,
     ),
     (
         /// Coin type: 20036
-        ///
         /// Symbol: XND
-        ///
         /// Coin: ndau
-        [20036], ndau, "ndau", "https://ndau.io/", XND, ,
+        [20036], ndau, "ndau", XND, ,
+    ),
+    (
+        /// Coin type: 21004
+        /// Symbol: C4EI
+        /// Coin: c4ei
+        [21004], c4ei, "c4ei", C4EI, ,
+    ),
+    (
+        /// Coin type: 21337
+        /// Symbol: XAH
+        /// Coin: Xahau
+        [21337], Xahau, "Xahau", XAH, ,
+    ),
+    (
+        /// Coin type: 21888
+        /// Symbol: PAC
+        /// Coin: Pactus
+        [21888], Pactus, "Pactus", , "PAC",
     ),
     (
         /// Coin type: 22504
-        ///
         /// Symbol: PWR
-        ///
         /// Coin: PWRcoin
-        [22504], PWRcoin, "PWRcoin", "https://github.com/Plainkoin/PWRcoin", PWR, ,
+        [22504], PWRcoin, "PWRcoin", PWR, ,
+    ),
+    (
+        /// Coin type: 23000
+        /// Symbol: EPIC
+        /// Coin: Epic Cash
+        [23000], EpicCash, "Epic Cash", EPIC, ,
     ),
     (
         /// Coin type: 25252
-        ///
         /// Symbol: BELL
-        ///
         /// Coin: Bellcoin
-        [25252], Bellcoin, "Bellcoin", "https://bellcoin.web4u.jp/", BELL, ,
+        [25252], Bellcoin, "Bellcoin", BELL, ,
     ),
     (
         /// Coin type: 25718
-        ///
         /// Symbol: CHX
-        ///
         /// Coin: Own
-        [25718], Own, "Own", "https://wallet.weown.com", CHX, ,
+        [25718], Own, "Own", CHX, ,
+    ),
+    (
+        /// Coin type: 29223
+        /// Symbol: NEXA
+        /// Coin: Nexa
+        [29223], Nexa, "Nexa", NEXA, ,
     ),
     (
         /// Coin type: 31102
-        ///
         /// Symbol: ESN
-        ///
         /// Coin: EtherSocial Network
-        [31102], EtherSocialNetwork, "EtherSocial Network", "https://ethersocial.network", ESN, ,
+        [31102], EtherSocialNetwork, "EtherSocial Network", ESN, ,
     ),
     (
         /// Coin type: 31337
-        ///
-        /// Coin: ThePower.io
-        [31337], ThePower, "ThePower.io", "https://thepower.io", , ,
+        /// Coin: ThePower
+        [31337], ThePower, "ThePower", , ,
     ),
     (
         /// Coin type: 33416
-        ///
         /// Symbol: TEO
-        ///
         /// Coin: Trust Eth reOrigin
-        [33416], TrustEthreOrigin, "Trust Eth reOrigin", "https://tao.foundation", TEO, ,
+        [33416], TrustEthreOrigin, "Trust Eth reOrigin", TEO, ,
     ),
     (
         /// Coin type: 33878
-        ///
         /// Symbol: BTCS
-        ///
         /// Coin: Bitcoin Stake
-        [33878], BitcoinStake, "Bitcoin Stake", "http://www.btcscoin.com/", BTCS, ,
+        [33878], BitcoinStake, "Bitcoin Stake", BTCS, ,
     ),
     (
         /// Coin type: 34952
-        ///
         /// Symbol: BTT
-        ///
         /// Coin: ByteTrade
-        [34952], ByteTrade, "ByteTrade", "https://bytetrade.io/", BTT, ,
+        [34952], ByteTrade, "ByteTrade", BTT, ,
     ),
     (
         /// Coin type: 37992
-        ///
         /// Symbol: FXTC
-        ///
         /// Coin: FixedTradeCoin
-        [37992], FixedTradeCoin, "FixedTradeCoin", "https://fixedtradecoin.org/", FXTC, ,
+        [37992], FixedTradeCoin, "FixedTradeCoin", FXTC, ,
     ),
     (
         /// Coin type: 39321
-        ///
         /// Symbol: AMA
-        ///
         /// Coin: Amabig
-        [39321], Amabig, "Amabig", "https://amabig.com/", AMA, ,
+        [39321], Amabig, "Amabig", AMA, ,
+    ),
+    (
+        /// Coin type: 42069
+        /// Symbol: FACT
+        /// Coin: FACT0RN
+        [42069], FACT0RN, "FACT0RN", , "FACT",
     ),
     (
         /// Coin type: 43028
-        ///
         /// Symbol: AXIV
-        ///
         /// Coin: AXIV
-        [43028], AXIV, "AXIV", "https://phore.io/", AXIV, ,
+        [43028], AXIV, "AXIV", AXIV, ,
+    ),
+    (
+        /// Coin type: 47803
+        /// Symbol: BAX
+        /// Coin: BAX
+        [47803], BAX, "BAX", BAX, ,
     ),
     (
         /// Coin type: 49262
-        ///
         /// Symbol: EVE
-        ///
-        /// Coin: evan.network
-        [49262], EvanNetwork, "evan.network", "https://evan.network/", EVE, ,
+        /// Coin: evan
+        [49262], evan, "evan", EVE, ,
     ),
     (
         /// Coin type: 49344
-        ///
         /// Symbol: STASH
-        ///
         /// Coin: STASH
-        [49344], STASH, "STASH", "https://stashpay.io/", STASH, ,
+        [49344], STASH, "STASH", STASH, ,
     ),
     (
         /// Coin type: 52752
-        ///
         /// Symbol: CELO
-        ///
         /// Coin: Celo
-        [52752], Celo, "Celo", "https://celo.org/", CELO, ,
+        [52752], Celo, "Celo", CELO, ,
+    ),
+    (
+        /// Coin type: 54176
+        /// Symbol: OVER
+        /// Coin: OverProtocol
+        [54176], OverProtocol, "OverProtocol", OVER, ,
+    ),
+    (
+        /// Coin type: 61616
+        /// Symbol: TH
+        /// Coin: TianHe
+        [61616], TianHe, "TianHe", TH, ,
     ),
     (
         /// Coin type: 65536
-        ///
         /// Symbol: KETH
-        ///
         /// Coin: Krypton World
-        [65536], KryptonWorld, "Krypton World", "http:/krypton.world/", KETH, ,
+        [65536], KryptonWorld, "Krypton World", KETH, ,
+    ),
+    (
+        /// Coin type: 69420
+        /// Symbol: GRLC
+        /// Coin: Garlicoin
+        [69420], Garlicoin, "Garlicoin", GRLC, ,
     ),
     (
         /// Coin type: 70007
-        ///
         /// Symbol: GWL
-        ///
         /// Coin: Gewel
-        [70007], Gewel, "Gewel", "https://gewel.io/", GWL, ,
+        [70007], Gewel, "Gewel", GWL, ,
     ),
     (
         /// Coin type: 77777
-        ///
         /// Symbol: ZYN
-        ///
         /// Coin: Wethio
-        [77777], Wethio, "Wethio", "https://wethio.io", ZYN, ,
+        [77777], Wethio, "Wethio", ZYN, ,
+    ),
+    (
+        /// Coin type: 83293
+        /// Symbol: QUBIC
+        /// Coin: Qubic
+        [83293], Qubic, "Qubic", QUBIC, ,
     ),
     (
         /// Coin type: 88888
-        ///
         /// Symbol: RYO
-        ///
         /// Coin: c0ban
-        [88888], c0ban, "c0ban", "https://www.c0ban.co/", , "RYO",
+        [88888], c0ban, "c0ban", , "RYO",
     ),
     (
         /// Coin type: 99999
-        ///
         /// Symbol: WICC
-        ///
         /// Coin: Waykichain
-        [99999], Waykichain, "Waykichain", "http://www.waykichain.com", WICC, ,
+        [99999], Waykichain, "Waykichain", WICC, ,
     ),
     (
         /// Coin type: 100500
-        ///
         /// Symbol: HOME
-        ///
         /// Coin: HomeCoin
-        [100500], HomeCoin, "HomeCoin", "https://homecoin.ru", HOME, ,
+        [100500], HomeCoin, "HomeCoin", HOME, ,
     ),
     (
         /// Coin type: 101010
-        ///
         /// Symbol: STC
-        ///
         /// Coin: Starcoin
-        [101010], Starcoin, "Starcoin", "https://starcoin.org", STC, ,
+        [101010], Starcoin, "Starcoin", STC, ,
+    ),
+    (
+        /// Coin type: 104109
+        /// Coin: Seed Hypermedia
+        [104109], SeedHypermedia, "Seed Hypermedia", , ,
     ),
     (
         /// Coin type: 105105
-        ///
         /// Symbol: STRAX
-        ///
         /// Coin: Strax
-        [105105], Strax, "Strax", "http://www.stratisplatform.com", STRAX, ,
+        [105105], Strax, "Strax", STRAX, ,
+    ),
+    (
+        /// Coin type: 111111
+        /// Symbol: KAS
+        /// Coin: Kaspa
+        [111111], Kaspa, "Kaspa", KAS, ,
+    ),
+    (
+        /// Coin type: 121337
+        /// Symbol: KLS
+        /// Coin: Karlsen
+        [121337], Karlsen, "Karlsen", KLS, ,
+    ),
+    (
+        /// Coin type: 123456
+        /// Symbol: SPR
+        /// Coin: Spectre
+        [123456], Spectre, "Spectre", SPR, ,
+    ),
+    (
+        /// Coin type: 130822
+        /// Symbol: WBT
+        /// Coin: WhiteBIT Coin
+        [130822], WhiteBITCoin, "WhiteBIT Coin", WBT, ,
+    ),
+    (
+        /// Coin type: 161803
+        /// Symbol: APTA
+        /// Coin: Bloqs4Good
+        [161803], Bloqs4Good, "Bloqs4Good", APTA, ,
     ),
     (
         /// Coin type: 200625
-        ///
         /// Symbol: AKA
-        ///
         /// Coin: Akroma
-        [200625], Akroma, "Akroma", "https://akroma.io", AKA, ,
+        [200625], Akroma, "Akroma", AKA, ,
     ),
     (
-        /// Coin type: 200665
-        ///
-        /// Symbol: GENOM
-        ///
-        /// Coin: GENOM
-        [200665], GENOM, "GENOM", "https://genom.tech", GENOM, ,
+        /// Coin type: 200901
+        /// Symbol: BTR
+        /// Coin: Bitlayer
+        [200901], Bitlayer, "Bitlayer", BTR, ,
+    ),
+    (
+        /// Coin type: 224433
+        /// Symbol: CONET
+        /// Coin: CONET Holesky Network
+        [224433], CONETHoleskyNetwork, "CONET Holesky Network", CONET, ,
     ),
     (
         /// Coin type: 246529
-        ///
         /// Symbol: ATS
-        ///
         /// Coin: ARTIS sigma1
-        [246529], ARTISsigma1, "ARTIS sigma1", "https://artis.eco/", ATS, ,
+        [246529], ARTISsigma1, "ARTIS sigma1", ATS, ,
+    ),
+    (
+        /// Coin type: 261131
+        /// Symbol: ZAMA
+        /// Coin: Zama
+        [261131], Zama, "Zama", ZAMA, ,
     ),
     (
         /// Coin type: 314159
-        ///
         /// Symbol: PI
-        ///
         /// Coin: Pi Network
-        [314159], PiNetwork, "Pi Network", "http://minepi.com", PI, ,
+        [314159], PiNetwork, "Pi Network", PI, ,
     ),
     (
         /// Coin type: 333332
-        ///
         /// Symbol: VALUE
-        ///
         /// Coin: Value Chain
-        [333332], ValueChain, "Value Chain", , VALUE, ,
+        [333332], ValueChain, "Value Chain", VALUE, ,
     ),
     (
         /// Coin type: 333333
-        ///
         /// Symbol: _3333
-        ///
         /// Coin: Pi Value Consensus
-        [333333], PiValueConsensus, "Pi Value Consensus", , _3333, ,
+        [333333], PiValueConsensus, "Pi Value Consensus", _3333, ,
     ),
     (
         /// Coin type: 424242
-        ///
         /// Symbol: X42
-        ///
         /// Coin: x42
-        [424242], x42, "x42", "http://www.x42.tech", X42, ,
+        [424242], x42, "x42", X42, ,
+    ),
+    (
+        /// Coin type: 440017
+        /// Symbol: @G
+        /// Coin: Graphite
+        [440017], Graphite, "Graphite", G, ,
+    ),
+    (
+        /// Coin type: 534352
+        /// Symbol: SCR
+        /// Coin: Scroll
+        [534352], Scroll, "Scroll", , "SCR",
     ),
     (
         /// Coin type: 666666
-        ///
         /// Symbol: VITE
-        ///
         /// Coin: Vite
-        [666666], Vite, "Vite", "https://www.vite.org", VITE, ,
+        [666666], Vite, "Vite", VITE, ,
+    ),
+    (
+        /// Coin type: 696365
+        /// Symbol: ICE
+        /// Coin: Ice Network
+        [696365], IceNetwork, "Ice Network", ICE, ,
     ),
     (
         /// Coin type: 888888
-        ///
         /// Symbol: SEA
-        ///
         /// Coin: Second Exchange Alliance
-        [888888], SecondExchangeAlliance, "Second Exchange Alliance", "https://www.seaio.cc", SEA, ,
+        [888888], SecondExchangeAlliance, "Second Exchange Alliance", SEA, ,
+    ),
+    (
+        /// Coin type: 1048576
+        /// Symbol: AMAX
+        /// Coin: Armonia Meta Chain
+        [1048576], ArmoniaMetaChain, "Armonia Meta Chain", AMAX, ,
     ),
     (
         /// Coin type: 1171337
-        ///
         /// Symbol: ILT
-        ///
         /// Coin: iOlite
-        [1171337], iOlite, "iOlite", "https://iolite.io/", ILT, ,
+        [1171337], iOlite, "iOlite", ILT, ,
     ),
     (
         /// Coin type: 1313114
-        ///
         /// Symbol: ETHO
-        ///
-        /// Coin: Ether-1
-        [1313114], EtherOne, "Ether-1", "https://www.ether1.org", ETHO, ,
+        /// Coin: Etho Protocol
+        [1313114], EthoProtocol, "Etho Protocol", ETHO, ,
     ),
     (
         /// Coin type: 1313500
-        ///
         /// Symbol: XERO
-        ///
         /// Coin: Xerom
-        [1313500], Xerom, "Xerom", "https://www.xerom.org", XERO, ,
+        [1313500], Xerom, "Xerom", XERO, ,
     ),
     (
         /// Coin type: 1712144
-        ///
         /// Symbol: LAX
-        ///
         /// Coin: LAPO
-        [1712144], LAPO, "LAPO", "https://lapo.io", LAX, ,
+        [1712144], LAPO, "LAPO", LAX, ,
     ),
     (
         /// Coin type: 3924011
-        ///
         /// Symbol: EPK
-        ///
         /// Coin: EPIK Protocol
-        [3924011], EPIKProtocol, "EPIK Protocol", "https://www.epik-protocol.io/", EPK, ,
+        [3924011], EPIKProtocol, "EPIK Protocol", EPK, ,
     ),
     (
         /// Coin type: 4741444
-        ///
         /// Symbol: HYD
-        ///
         /// Coin: Hydra Token
-        [4741444], HydraToken, "Hydra Token", "https://iop.global/hydra-token/", HYD, ,
+        [4741444], HydraToken, "Hydra Token", HYD, ,
     ),
     (
         /// Coin type: 5249353
-        ///
         /// Symbol: BCO
-        ///
         /// Coin: BitcoinOre
-        [5249353], BitcoinOre, "BitcoinOre", "http://bitcoinore.org/", , "BCO",
+        [5249353], BitcoinOre, "BitcoinOre", , "BCO",
     ),
     (
         /// Coin type: 5249354
-        ///
         /// Symbol: BHD
-        ///
         /// Coin: BitcoinHD
-        [5249354], BitcoinHD, "BitcoinHD", "https://btchd.org", BHD, ,
+        [5249354], BitcoinHD, "BitcoinHD", BHD, ,
     ),
     (
         /// Coin type: 5264462
-        ///
         /// Symbol: PTN
-        ///
         /// Coin: PalletOne
-        [5264462], PalletOne, "PalletOne", "https://pallet.one/", PTN, ,
+        [5264462], PalletOne, "PalletOne", PTN, ,
+    ),
+    (
+        /// Coin type: 5655640
+        /// Symbol: VLX
+        /// Coin: Velas
+        [5655640], Velas, "Velas", VLX, ,
     ),
     (
         /// Coin type: 5718350
-        ///
         /// Symbol: WAN
-        ///
         /// Coin: Wanchain
-        [5718350], Wanchain, "Wanchain", "https://wanchain.org/", WAN, ,
+        [5718350], Wanchain, "Wanchain", WAN, ,
     ),
     (
         /// Coin type: 5741564
-        ///
         /// Symbol: WAVES
-        ///
         /// Coin: Waves
-        [5741564], Waves, "Waves", "https://wavesplatform.com/", WAVES, ,
+        [5741564], Waves, "Waves", WAVES, ,
+    ),
+    (
+        /// Coin type: 5741565
+        /// Symbol: WEST
+        /// Coin: Waves Enterprise
+        [5741565], WavesEnterprise, "Waves Enterprise", WEST, ,
+    ),
+    (
+        /// Coin type: 6382179
+        /// Symbol: ABC
+        /// Coin: Abcmint
+        [6382179], Abcmint, "Abcmint", ABC, ,
+    ),
+    (
+        /// Coin type: 6517357
+        /// Symbol: CRM
+        /// Coin: Creamcoin
+        [6517357], Creamcoin, "Creamcoin", CRM, ,
+    ),
+    (
+        /// Coin type: 7171666
+        /// Symbol: BROCK
+        /// Coin: Bitrock
+        [7171666], Bitrock, "Bitrock", BROCK, ,
     ),
     (
         /// Coin type: 7562605
-        ///
         /// Symbol: SEM
-        ///
         /// Coin: Semux
-        [7562605], Semux, "Semux", "https://semux.org", SEM, ,
+        [7562605], Semux, "Semux", SEM, ,
     ),
     (
         /// Coin type: 7567736
-        ///
         /// Symbol: ION
-        ///
         /// Coin: ION
-        [7567736], ION, "ION", "https://ionomy.com/", ION, ,
+        [7567736], ION, "ION", ION, ,
     ),
     (
         /// Coin type: 7777777
-        ///
         /// Symbol: FCT
-        ///
         /// Coin: FirmaChain
-        [7777777], FirmaChain, "FirmaChain", "https://www.firmachain.org", , "FCT",
+        [7777777], FirmaChain, "FirmaChain", , "FCT",
     ),
     (
         /// Coin type: 7825266
-        ///
         /// Symbol: WGR
-        ///
         /// Coin: WGR
-        [7825266], WGR, "WGR", "https://wagerr.com", WGR, ,
+        [7825266], WGR, "WGR", WGR, ,
     ),
     (
         /// Coin type: 7825267
-        ///
         /// Symbol: OBSR
-        ///
         /// Coin: OBServer
-        [7825267], OBServer, "OBServer", "https://obsr.org/", OBSR, ,
+        [7825267], OBServer, "OBServer", OBSR, ,
     ),
     (
         /// Coin type: 8163271
-        ///
         /// Symbol: AFS
-        ///
         /// Coin: ANFS
-        [8163271], ANFS, "ANFS", "https://www.anfs.network", AFS, ,
+        [8163271], ANFS, "ANFS", AFS, ,
+    ),
+    (
+        /// Coin type: 10000118
+        /// Symbol: OSMO
+        /// Coin: Osmosis
+        [10000118], Osmosis, "Osmosis", OSMO, ,
+    ),
+    (
+        /// Coin type: 11259375
+        /// Symbol: LBR
+        /// Coin: 0L
+        [11259375], _0L, "0L", LBR, ,
     ),
     (
         /// Coin type: 15118976
-        ///
         /// Symbol: XDS
-        ///
         /// Coin: XDS
-        [15118976], XDS, "XDS", "https://github.com/xds-decentralised/", XDS, ,
+        [15118976], XDS, "XDS", XDS, ,
+    ),
+    (
+        /// Coin type: 19000118
+        /// Symbol: SEI
+        /// Coin: SEI
+        [19000118], SEI, "SEI", SEI, ,
+    ),
+    (
+        /// Coin type: 20230101
+        /// Symbol: ROH
+        /// Coin: Rooch
+        [20230101], Rooch, "Rooch", ROH, ,
+    ),
+    (
+        /// Coin type: 20240430
+        /// Symbol: NLK
+        /// Coin: NuLinkCoin
+        [20240430], NuLinkCoin, "NuLinkCoin", NLK, ,
     ),
     (
         /// Coin type: 61717561
-        ///
         /// Symbol: AQUA
-        ///
         /// Coin: Aquachain
-        [61717561], Aquachain, "Aquachain", "https://aquachain.github.io/", AQUA, ,
+        [61717561], Aquachain, "Aquachain", AQUA, ,
+    ),
+    (
+        /// Coin type: 77777777
+        /// Symbol: AZT
+        /// Coin: Aztecoin
+        [77777777], Aztecoin, "Aztecoin", AZT, ,
     ),
     (
         /// Coin type: 88888888
-        ///
         /// Symbol: HATCH
-        ///
         /// Coin: Hatch
-        [88888888], Hatch, "Hatch", "https://hatch.ga/", HATCH, ,
+        [88888888], Hatch, "Hatch", HATCH, ,
     ),
     (
         /// Coin type: 91927009
-        ///
         /// Symbol: kUSD
-        ///
         /// Coin: kUSD
-        [91927009], kUSD, "kUSD", "https://kowala.tech", kUSD, ,
+        [91927009], kUSD, "kUSD", kUSD, ,
     ),
     (
         /// Coin type: 99999996
-        ///
         /// Symbol: GENS
-        ///
         /// Coin: GENS
-        [99999996], GENS, "GENS", "https://genshiro.equilibrium.io", GENS, ,
+        [99999996], GENS, "GENS", GENS, ,
     ),
     (
         /// Coin type: 99999997
-        ///
         /// Symbol: EQ
-        ///
         /// Coin: EQ
-        [99999997], EQ, "EQ", "https://equilibrium.io", EQ, ,
+        [99999997], EQ, "EQ", EQ, ,
     ),
     (
         /// Coin type: 99999998
-        ///
         /// Symbol: FLUID
-        ///
         /// Coin: Fluid Chains
-        [99999998], FluidChains, "Fluid Chains", "https://www.fluidchains.com", FLUID, ,
+        [99999998], FluidChains, "Fluid Chains", FLUID, ,
     ),
     (
         /// Coin type: 99999999
-        ///
         /// Symbol: QKC
-        ///
         /// Coin: QuarkChain
-        [99999999], QuarkChain, "QuarkChain", "https://www.quarkchain.io", QKC, ,
+        [99999999], QuarkChain, "QuarkChain", QKC, ,
     ),
     (
         /// Coin type: 608589380
-        ///
         /// Symbol: FVDC
-        ///
         /// Coin: ForumCoin
-        [608589380], ForumCoin, "ForumCoin", "https://fvd.nl", FVDC, ,
+        [608589380], ForumCoin, "ForumCoin", FVDC, ,
+    ),
+    (
+        /// Coin type: 1010101010
+        /// Symbol: FAIC
+        /// Coin: Free AI Chain
+        [1010101010], FreeAIChain, "Free AI Chain", FAIC, ,
+    ),
+    (
+        /// Coin type: 1179993420
+        /// Coin: Fuel
+        [1179993420], Fuel, "Fuel", , ,
+    ),
+    (
+        /// Coin type: 1179993421
+        /// Symbol: TTNC
+        /// Coin: TakeTitan
+        [1179993421], TakeTitan, "TakeTitan", TTNC, ,
+    ),
+    (
+        /// Coin type: 1179993431
+        /// Symbol: MTGBP
+        /// Coin: MTGBP
+        [1179993431], MTGBP, "MTGBP", MTGBP, ,
+    ),
+    (
+        /// Coin type: 1179993441
+        /// Symbol: QFS
+        /// Coin: Qfs
+        [1179993441], Qfs, "Qfs", QFS, ,
+    ),
+    (
+        /// Coin type: 1179993451
+        /// Symbol: RWA
+        /// Coin: Asset Chain
+        [1179993451], AssetChain, "Asset Chain", RWA, ,
+    ),
+    (
+        /// Coin type: 1179993461
+        /// Symbol: HXC
+        /// Coin: HuaXia Chain
+        [1179993461], HuaXiaChain, "HuaXia Chain", HXC, ,
     ),
 );
