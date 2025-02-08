@@ -7,7 +7,8 @@ use reqwest;
 
 const SLIP_0044_MARKDOWN_URL: &str =
     "https://raw.githubusercontent.com/satoshilabs/slips/master/slip-0044.md";
-const SLIP_044_MARKDOWN_HEADER: &str = "| Coin type  | Path component (`coin_type'`) | Symbol  | Coin                              |";
+const SLIP_044_MARKDOWN_HEADER: &str =
+    "| Coin type  | Path component (`coin_type'`) | Symbol  | Coin                              |";
 
 #[derive(Debug)]
 struct CoinType {
@@ -23,7 +24,10 @@ struct CoinType {
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("Fetching SLIP-0044 markdown from GitHub...");
     let markdown_content = reqwest::blocking::get(SLIP_0044_MARKDOWN_URL)?.text()?;
-    println!("Successfully fetched {} bytes of markdown", markdown_content.len());
+    println!(
+        "Successfully fetched {} bytes of markdown",
+        markdown_content.len()
+    );
 
     println!("Processing markdown content...");
     let coin_types = markdown_content
@@ -39,13 +43,19 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .filter_map(|line| {
             let columns: Vec<_> = line.split('|').collect();
             if columns.len() != 6 {
-                println!("Warning: Skipping line due to incorrect number of columns: {}", line);
+                println!(
+                    "Warning: Skipping line due to incorrect number of columns: {}",
+                    line
+                );
                 return None;
             }
 
             let original_name = columns[4].trim();
             if original_name.is_empty() || original_name == "reserved" {
-                println!("Warning: Skipping coin due to empty or reserved name: {}", original_name);
+                println!(
+                    "Warning: Skipping coin due to empty or reserved name: {}",
+                    original_name
+                );
                 return None;
             }
 
@@ -85,19 +95,18 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         });
 
     println!("Building coin type map...");
-    let coin_types = coin_types
-        .fold(HashMap::<_, CoinType>::new(), |mut acc, coin_type| {
-            let id = coin_type.id.clone();
-            acc.entry((
-                coin_type.symbol.clone(),
-                coin_type.name.clone(),
-                coin_type.original_name.clone(),
-            ))
-            .or_insert(coin_type)
-            .ids
-            .push(id);
-            acc
-        });
+    let coin_types = coin_types.fold(HashMap::<_, CoinType>::new(), |mut acc, coin_type| {
+        let id = coin_type.id.clone();
+        acc.entry((
+            coin_type.symbol.clone(),
+            coin_type.name.clone(),
+            coin_type.original_name.clone(),
+        ))
+        .or_insert(coin_type)
+        .ids
+        .push(id);
+        acc
+    });
 
     println!("Processing {} unique coins...", coin_types.len());
 
@@ -169,7 +178,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     for coin_type in coin_types.sorted_by_key(|coin_type| coin_type.id) {
         coin_count += 1;
-        
+
         // Pre-compute escaped symbol if it exists
         let escaped_symbol = coin_type.symbol.as_ref().map(|s| escape_rust_string(s));
 
@@ -209,7 +218,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
     writeln!(&mut file, ");")?;
 
-    println!("Successfully wrote {} coins to {}", coin_count, output_path.display());
+    println!(
+        "Successfully wrote {} coins to {}",
+        coin_count,
+        output_path.display()
+    );
     println!("Done!");
 
     Ok(())
@@ -272,12 +285,21 @@ fn prepend_enum(name: &str) -> String {
 
 fn escape_rust_string(s: &str) -> String {
     s.replace('@', "") // Remove @ symbols
-     .replace('^', "") // Remove ^ symbols
-     .replace('\'', "") // Remove single quotes
-     .replace('"', "") // Remove double quotes
-     .replace('\\', "") // Remove backslashes
-     .replace('$', "") // Remove dollar signs
-     .chars()
-     .filter(|c| c.is_ascii_alphanumeric() || *c == '_' || *c == ' ' || *c == '-' || *c == '+' || *c == '.' || *c == '(' || *c == ')') // Only allow these characters
-     .collect()
+        .replace('^', "") // Remove ^ symbols
+        .replace('\'', "") // Remove single quotes
+        .replace('"', "") // Remove double quotes
+        .replace('\\', "") // Remove backslashes
+        .replace('$', "") // Remove dollar signs
+        .chars()
+        .filter(|c| {
+            c.is_ascii_alphanumeric()
+                || *c == '_'
+                || *c == ' '
+                || *c == '-'
+                || *c == '+'
+                || *c == '.'
+                || *c == '('
+                || *c == ')'
+        }) // Only allow these characters
+        .collect()
 }

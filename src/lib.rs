@@ -5,7 +5,7 @@
 //! and convert one into another.
 //! ```
 //! use std::{convert::TryFrom, str::FromStr};
-//! use slip44::{Coin, Symbol};
+//! use nil_slip44::{Coin, Symbol};
 //!
 //! const BITCOIN_ID: u32 = Coin::Bitcoin.id(); // Coin IDs are constant
 //!
@@ -31,4 +31,3 @@
 mod coin;
 mod coins_macro;
 pub use coin::*;
-

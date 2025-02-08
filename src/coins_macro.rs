@@ -30,7 +30,7 @@ macro_rules! coins {
 
         impl std::fmt::Display for Coin {
             /// ```
-            /// use slip44::Coin;
+            /// use nil_slip44::Coin;
             ///
             /// assert_eq!(Coin::Bitcoin.to_string(), "Bitcoin");
             /// ```
@@ -42,7 +42,7 @@ macro_rules! coins {
         impl Coin {
             /// Coin ID according to [SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) spec.
             /// ```
-            /// use slip44::Coin;
+            /// use nil_slip44::Coin;
             ///
             /// assert_eq!(Coin::Bitcoin.id(), 0);
             /// ```
@@ -52,7 +52,7 @@ macro_rules! coins {
             ///
             /// Coins may have multiple IDs if both name and symbol identical.
             /// ```
-            /// use slip44::Coin;
+            /// use nil_slip44::Coin;
             ///
             /// assert_eq!(Coin::Credits.ids(), vec![334, 498]);
             /// ```
@@ -60,7 +60,7 @@ macro_rules! coins {
 
             /// Coin unedited name according to [SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) spec.
             /// ```
-            /// use slip44::Coin;
+            /// use nil_slip44::Coin;
             ///
             /// assert_eq!(Coin::UniformFiscalObject.name(), "Uniform Fiscal Object");
             /// ```
@@ -68,14 +68,14 @@ macro_rules! coins {
 
             /// Coin symbol that's not included into [Symbol] enum due to being a duplicate of another coin by symbol name.
             /// ```
-            /// use slip44::Coin;
+            /// use nil_slip44::Coin;
             ///
             /// assert_eq!(Coin::CPChain.duplicate_symbol(), Some("CPC".to_string()));
             /// ```
             /// Such conflicts are resolved by taking only first coin (ordered by id) into [Symbol] enum
             /// (e.g. both [Coin::CPChain] and [Coin::Capricoin] has symbol "CPC" but only [Coin::Capricoin] is eligible to be linked to [Symbol::CPC] since
             /// ```
-            /// use slip44::Coin;
+            /// use nil_slip44::Coin;
             ///
             /// assert!(Coin::Capricoin.id() < Coin::CPChain.id());
             /// ```
@@ -92,7 +92,7 @@ macro_rules! coins {
 
             /// ```
             /// use std::convert::TryFrom;
-            /// use slip44::Coin;
+            /// use nil_slip44::Coin;
             ///
             /// assert_eq!(Coin::try_from(0), Ok(Coin::Bitcoin));
             /// assert!(Coin::try_from(2147483647).is_err());
@@ -107,7 +107,7 @@ macro_rules! coins {
 
         impl From<Symbol> for Coin {
             /// ```
-            /// use slip44::{Coin, Symbol};
+            /// use nil_slip44::{Coin, Symbol};
             ///
             /// assert_eq!(Coin::from(Symbol::BTC), Coin::Bitcoin);
             /// ```
@@ -121,7 +121,7 @@ macro_rules! coins {
 
             /// ```
             /// use std::str::FromStr;
-            /// use slip44::Coin;
+            /// use nil_slip44::Coin;
             ///
             /// assert_eq!(Coin::from_str("Uniform Fiscal Object"), Ok(Coin::UniformFiscalObject));
             /// assert!(Coin::from_str("Unknown Coin That's Definitely Not Exist").is_err());
@@ -150,12 +150,12 @@ macro_rules! coins {
             type Error = &'static str;
 
             /// ```
-            /// use slip44::Symbol;
+            /// use nil_slip44::Symbol;
             ///
             /// assert_eq!(Symbol::BTC.to_string(), "BTC");
             /// ```
             fn try_from(id: u32) -> Result<Self, Self::Error> {
-                Ok(Coin::try_from(id).map(Symbol::try_from)??)
+                Coin::try_from(id).map(Symbol::try_from)?
             }
         }
 
@@ -164,7 +164,7 @@ macro_rules! coins {
 
             /// ```
             /// use std::convert::TryFrom;
-            /// use slip44::{Coin, Symbol};
+            /// use nil_slip44::{Coin, Symbol};
             ///
             /// assert_eq!(Symbol::try_from(Coin::Bitcoin), Ok(Symbol::BTC));
             /// assert!(Symbol::try_from(Coin::Testnet).is_err());
@@ -182,7 +182,7 @@ macro_rules! coins {
 
             /// ```
             /// use std::str::FromStr;
-            /// use slip44::Symbol;
+            /// use nil_slip44::Symbol;
             ///
             /// assert_eq!(Symbol::from_str("BTC"), Ok(Symbol::BTC));
             /// assert!(Symbol::from_str("UNKNOWN").is_err());
