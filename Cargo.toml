@@ -1,9 +1,9 @@
 [package]
 name = "nil-slip44"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Alexey Shekhirin <alexey@shekhirin.com>", "Larry Salibra <larry@newinternetlabs.com>"]
 license = "MIT"
-edition = "2018"
+edition = "2021"
 readme = "README.md"
 documentation = "https://docs.rs/nil-slip44"
 repository = "https://github.com/newinternetlabs/nil-slip44"
