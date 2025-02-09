@@ -367,7 +367,7 @@ coins!(
         /// Coin type: 61
         /// Symbol: ETC
         /// Coin: Ether Classic
-        [61], Ethereum Classic, "Ether Classic", ETC, ,
+        [61], EthereumClassic, "Ether Classic", ETC, ,
     ),
     (
         /// Coin type: 62
