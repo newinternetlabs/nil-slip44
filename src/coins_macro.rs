@@ -18,7 +18,7 @@ macro_rules! coins {
             };
         }
 
-        #[derive(Debug, PartialEq, Copy, Clone)]
+        #[derive(Debug, PartialEq, Copy, Clone, Hash, Eq)]
         #[allow(non_camel_case_types)]
         /// Coins according to [SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) spec.
         pub enum Coin {
@@ -135,7 +135,7 @@ macro_rules! coins {
             }
         }
 
-        #[derive(Debug, PartialEq, Copy, Clone)]
+        #[derive(Debug, PartialEq, Copy, Clone, Hash, Eq)]
         #[allow(non_camel_case_types)]
         /// Coin symbol according to [SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) spec.
         pub enum Symbol { $($($symbol, )?)* }

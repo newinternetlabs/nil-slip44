@@ -11,7 +11,7 @@ SLIP-0044 is a standard that defines coin type values for use in hierarchical de
 Add the following dependency to your Cargo manifest...
 ```toml
 [dependencies]
-nil-slip44 = "0.3.3"
+nil-slip44 = "0.3.4"
 ```
 ...and see the [docs](https://docs.rs/nil-slip44) or [What can I do?](#what-can-i-do) section below for how to use it.
 
