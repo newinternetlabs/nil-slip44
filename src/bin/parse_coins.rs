@@ -249,8 +249,16 @@ fn original_name_to_short(original_name: &str) -> Result<String, String> {
         .map_or(name.to_string(), |(name, _)| name.to_string());
     name = prepend_enum(&name);
 
+    // Check direct mappings first
+    let name_match = match name.as_str() {
+        "Ether" => Ok("Ethereum"),
+        "EtherClassic" => Ok("EthereumClassic"),
+        name => Ok(name), // Default to original name if no mapping
+    };
+
+    // Then handle special characters if needed
     if name.contains(|ch: char| !ch.is_ascii_alphanumeric() && ch != '_') {
-        let name_match = match name.as_str() {
+        let special_match = match name.as_str() {
             "Pl^g" => Ok("Plug"),
             "BitcoinMatteo'sVision" => Ok("BitcoinMatteosVision"),
             "Crypto.orgChain" => Ok("CryptoOrgChain"),
@@ -266,12 +274,11 @@ fn original_name_to_short(original_name: &str) -> Result<String, String> {
             "Ether-1" => Ok("EtherOne"),
             "æternity" => Ok("aeternity"),
             "θ" => Ok("Theta"),
-            name => Err(format!("unknown original coin name `{}`", name)),
+            name => name_match.and_then(|_| Err(format!("unknown original coin name `{}`", name))),
         };
-
-        name_match.map(|name| name.to_string())
+        special_match.map(|name| name.to_string())
     } else {
-        Ok(name)
+        name_match.map(|name| name.to_string())
     }
 }
 

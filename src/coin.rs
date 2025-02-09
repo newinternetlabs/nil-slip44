@@ -361,13 +361,13 @@ coins!(
         /// Coin type: 60
         /// Symbol: ETH
         /// Coin: Ether
-        [60], Ether, "Ether", ETH, ,
+        [60], Ethereum, "Ether", ETH, ,
     ),
     (
         /// Coin type: 61
         /// Symbol: ETC
         /// Coin: Ether Classic
-        [61], EtherClassic, "Ether Classic", ETC, ,
+        [61], Ethereum Classic, "Ether Classic", ETC, ,
     ),
     (
         /// Coin type: 62
