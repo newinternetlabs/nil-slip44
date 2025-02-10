@@ -11,7 +11,7 @@ SLIP-0044 is a standard that defines coin type values for use in hierarchical de
 Add the following dependency to your Cargo manifest...
 ```toml
 [dependencies]
-nil-slip44 = "0.3.6"
+nil-slip44 = "0.3.7"
 ```
 ...and see the [docs](https://docs.rs/nil-slip44) or [What can I do?](#what-can-i-do) section below for how to use it.
 
@@ -21,14 +21,12 @@ nil-slip44 = "0.3.6"
 use std::{convert::TryFrom, str::FromStr};
 use nil_slip44::{Coin, Symbol};
 
-fn main() {
-    assert_eq!(BITCOIN_ID, 0);
+
     assert_eq!(Coin::Bitcoin.id(), 0);
     assert_eq!(Coin::Bitcoin.ids(), vec![0]); // Coin may have multiple IDs (e.g. Credits)
     assert_eq!(Coin::Bitcoin.name(), "Bitcoin");
     assert_eq!(Coin::Bitcoin.to_string(), "Bitcoin");
 
-    assert_eq!(STACKS_ID, 5757);
     assert_eq!(Coin::Stacks.id(), 5757);
     assert_eq!(Coin::Stacks.ids(), vec![5757]); // Coin may have multiple IDs (e.g. Credits)
     assert_eq!(Coin::Stacks.name(), "Stacks");
@@ -50,7 +48,6 @@ fn main() {
 
     assert_eq!(Symbol::from_str("BTC"), Ok(Symbol::BTC));
     assert_eq!(Symbol::from_str("STX"), Ok(Symbol::STX));
-}
 ```
 
 ## Updating coins list
