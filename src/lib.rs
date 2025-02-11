@@ -1,5 +1,5 @@
 // Copyright (c) 2025 New Internet Labs Limited
-//
+// Copyright (c) 2021 Alexey Shekhirin
 // SPDX-License-Identifier: MIT
 
 #![doc = include_str!("../README.md")]

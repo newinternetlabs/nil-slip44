@@ -1,6 +1,6 @@
 [package]
 name = "nil-slip44"
-version = "0.3.7"
+version = "0.3.8"
 authors = ["Alexey Shekhirin <alexey@shekhirin.com>", "Larry Salibra <larry@newinternetlabs.com>"]
 license = "MIT"
 edition = "2021"
